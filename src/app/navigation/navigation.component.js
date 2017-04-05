@@ -15,7 +15,7 @@ NavigationComponent = __decorate([
     core_1.Component({
         selector: 'navigation',
         templateUrl: './navigation.html',
-        styleUrls: []
+        styleUrls: ['./navigation.css']
     })
 ], NavigationComponent);
 exports.NavigationComponent = NavigationComponent;
