@@ -1,27 +1,25 @@
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
- <button class="navbar-toggler navbar-toggler-left" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed"
-         aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
-   <span class="navbar-toggler-icon"></span>
- </button>
- <img class="navbar-brand logo-big" routerLink="/front-page" src="../images/big_logo.png">
+    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+        </button>
+    <img class="navbar-brand logo-big" routerLink="/front-page" src="../images/big_logo.png">
 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto header-links">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/buy-page">Köp Bostad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/sell-page">Sälj Bostad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/about-us">Om Oss</a>
+            </li>
+        </ul>
 
- <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="exCollapsingNavbar2">
-    <ul class="navbar-nav mr-auto header-links">
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/buy-page">Köp Bostad</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/sell-page">Sälj Bostad</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/about-us">Om Oss</a>
-        </li>
-    </ul>
-
-    <div class="form-inline icon-content my-2 my-lg-0">
-        <i class="fa fa-search search-icon" routerLink="/buy-page" aria-hidden="false"></i>
-        <img class="navbar-brand contact-icon" routerLink="/contact-us" src="../images/contact.png">
+        <div class="form-inline icon-content my-2 my-lg-0">
+            <i class="fa fa-search search-icon" routerLink="/buy-page" aria-hidden="false"></i>
+            <img class="navbar-brand contact-icon" routerLink="/contact-us" src="../images/contact.png">
+        </div>
     </div>
-  </div>
 </nav>

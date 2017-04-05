@@ -1,7 +1,5 @@
 // Custom Navbar styling
-.navbar-light .navbar-toggler {
-    border-color: rgba(0,0,0,0);
-  }
+.navbar-toggler { border-color: rgba(0, 0, 0, 0); }
 
 a {
     color: #EFE9E5;
@@ -40,16 +38,4 @@ a {
   margin: 0;
   display: inline-block;
   width: 32px;
-}
-
-
-// ====================================
-
-@media screen and (max-width: 500px) {
-
-  .logo-big {
-  margin: 6px auto 0;
-  width: 160px;
-}
-
 }
