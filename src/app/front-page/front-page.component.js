@@ -8,6 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var FrontPageComponent = (function () {
     function FrontPageComponent() {
+        this.backgroundImage = 'url(../images/headers/front.png)';
+        this.slogan = 'De dyraste rummen...';
+        this.buttons = {
+            sell: 'Vill du sälja din bostad?',
+            buy: 'Bostäder till salu'
+        };
     }
     return FrontPageComponent;
 }());
