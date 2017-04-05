@@ -1,0 +1,68 @@
+[
+	{
+		"Bild": "",
+		"Titel": "En vacker bolagsinvestering",
+		"Område": "Stockholm",
+		"Adress":"Bolagsgränd 1",
+		"Bostadstyp": "Lägenhet",
+		"Antal rum": "4 rum och kök",
+		"Boyta": "129 kvm",
+		"Månadshyra": "4825 kr/mån",
+		"Pris": "4.800.000 kr eller högstbjudande"
+	},
+	{
+		"Bild": "",
+		"Titel": "I höjd med gammel-eken",
+		"Område": "Malmö",
+		"Adress":"Stattutgatan 14",
+		"Bostadstyp": "Lägenhet",
+		"Antal rum": "3 rum och kök",
+		"Boyta": "99 kvm",
+		"Månadshyra": "5229 kr/mån",
+		"Pris": "2.300.000 kr eller högstbjudande"
+	},
+	{
+		"Bild": "",
+		"Titel": "Sockertoppad på tre plan",
+		"Område": "Göteborg",
+		"Adress":"Härdaregatan 5",
+		"Bostadstyp": "2-plansvilla med källare",
+		"Antal rum": "5 rum och kök",
+		"Boyta": "995 kvm",
+		"Månadshyra": "-",
+		"Pris": "3.200.000 kr eller högstbjudande"
+	},
+	{
+		"Bild": "",
+		"Titel": "Den välslipade lärlingen",
+		"Område": "Luleå",
+		"Adress":"Lärlingsgatan 4A",
+		"Bostadstyp": "Lägenhet",
+		"Antal rum": "2 rum och kök",
+		"Boyta": "60 kvm",
+		"Månadshyra": "2115 kr/mån",
+		"Pris": "1.900.000 kr eller högstbjudande"
+	},
+	{
+		"Bild": "",
+		"Titel": "Arkitekten och soldaten",
+		"Område": "Stockholm",
+		"Adress":"Mjälaryd 12",
+		"Bostadstyp": "1-planshus med loft",
+		"Antal rum": "5 rum och kök",
+		"Boyta": "129 + 6 kvm",
+		"Månadshyra": "-",
+		"Pris": "3.000.000 kr eller högstbjudande"
+	},
+	{
+		"Bild": "",
+		"Titel": "Förförisk träsmak",
+		"Område": "Göteborg",
+		"Adress":"Björnebergsvägen 12",
+		"Bostadstyp": "2-plansvilla med källare samt separat bostadshus",
+		"Antal rum": "8 rum och kök",
+		"Boyta": "175 + 86 kvm",
+		"Månadshyra": "-",
+		"Pris": "7.500.000 kr"
+	},
+]
