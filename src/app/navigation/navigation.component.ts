@@ -3,9 +3,8 @@ import { Component } from '@angular/core';
 @Component({
 	selector: 'navigation',
 	templateUrl: './navigation.html',
-	styleUrls: ['./navigation.css']
+	styleUrls: []
 })
 
-export class NavigationComponent {
-
+export class NavigationComponent  {
 }

@@ -14,7 +14,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n\t<navigation></navigation>\n\t<router-outlet></router-outlet>\n\n\t",
+        template: "\n\n\t\t<nav>\n\t\t\t<a routerLink=\"/front-page\"\n\t\t\t\trouterLinkActive=\"active\">Framsida</a>\n\n\t\t\t<a routerLink=\"/sell-page\"\n\t\t\t\trouterLinkActive=\"active\">S\u00E4lj</a>\n\n\t\t\t<a routerLink=\"/buy-page\"\n\t\t\t\trouterLinkActive=\"active\">K\u00F6p</a>\n\n\t\t\t<a routerLink=\"/about-us\"\n\t\t\t\trouterLinkActive=\"active\">Om oss</a>\n\n\t\t\t<a routerLink=\"/contact-us\"\n\t\t\t\trouterLinkActive=\"active\">Kontakta oss</a>\n\t\t</nav>\n\n\t\t<router-outlet></router-outlet>\n\t",
         styleUrls: []
     })
 ], AppComponent);
