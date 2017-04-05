@@ -1,5 +1,33 @@
+// FONTS: 
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.headlines {
+	font-family: 'EB Garamond', serif;
+}
+
+// OUR COLOR-SCHEME: 
+
+/* 
+
+darker-white: #F5F5F5
+light-grey: #EFE9E5
+grey: #BDBDBD
+black: #202B30
+blue: #4FA9B8
+orange: #F17E19
+
+*/
+
+
+/* Master Styles */
 h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
+}
+
+h2, h3 {
+  font-weight: lighter;
 }
