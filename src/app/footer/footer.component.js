@@ -8,6 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var FooterComponent = (function () {
     function FooterComponent() {
+        this.company = 'Dhyr & Rumson';
+        this.image = 'logo_footer.png';
+        this.contact = { phone: '0768-9087670', address: 'Almbackgatan 16 Malmö', email: 'info@dhyrrumson.se' };
+        this.links = [
+            { name: 'facebook', url: 'http://www.facebook.com/dhyrandrumson', iconname: 'facebook-square' },
+            { name: 'twitter', url: 'http://www.twitter.com/dhyrandrumson', iconname: 'twitter-square' },
+            { name: 'linkedin', url: 'http://www.linkedin.com/dhyrandrumson', iconname: 'linkedin-square' },
+            { name: 'instagram', url: 'http://www.instagram.com/dhyrandrumson', iconname: 'instagram' }
+        ];
     }
     return FooterComponent;
 }());
@@ -15,7 +24,7 @@ FooterComponent = __decorate([
     core_1.Component({
         selector: 'footer',
         templateUrl: './footer.html',
-        styleUrls: []
+        styleUrls: ['./footer.css']
     })
 ], FooterComponent);
 exports.FooterComponent = FooterComponent;

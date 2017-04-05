@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
 	template: `
 		<navigation></navigation>
 		<router-outlet></router-outlet>
+        <footer></footer>
 	`,
 	styleUrls: []
 })

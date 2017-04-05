@@ -1,0 +1,37 @@
+/*  Get rid of blue border in focus mode */ 
+img:focus, i:focus, button:focus, li:focus { outline: none; border: 0; }
+
+.footer {
+	color: #F5F5F5;
+	background: #202B30;
+	border-top: 2px solid #F17E19;
+	bottom: 0;
+	padding-top: 20px;
+}
+
+.footer-logo { 
+	width: 150px;
+    margin-bottom: 6px;
+}
+
+.footer-address {
+	display: inline-block;
+    padding: 0 18px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #F5F5F5;
+}
+
+.footer-icons {
+	color: #F5F5F5;
+    display: inline-block;
+    padding: 3px 9px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}	
+
+.footer-icons:hover {
+	color: #BDBDBD;
+	text-decoration: none;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}

@@ -9,6 +9,12 @@ var core_1 = require("@angular/core");
 var NavigationComponent = (function () {
     function NavigationComponent() {
         this.isNavbarCollapsed = true;
+        this.isActive = false;
+        this.sections = [
+            { text: 'Köp Bostad', route: 'buy-page' },
+            { text: 'Sälj Bostad', route: 'sell-page' },
+            { text: 'Om Oss', route: 'about-us' },
+        ];
     }
     return NavigationComponent;
 }());

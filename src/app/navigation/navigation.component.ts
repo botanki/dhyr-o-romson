@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
 
 export class NavigationComponent {
     isNavbarCollapsed = true;
+    isActive = false;
+
+    sections = [
+    { text: 'Köp Bostad', route: 'buy-page'; },
+    { text: 'Sälj Bostad', route: 'sell-page'; },
+    { text: 'Om Oss', route: 'about-us'; },
+    ];
+
     
 }
