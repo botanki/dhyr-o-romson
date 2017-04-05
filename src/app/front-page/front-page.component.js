@@ -15,7 +15,7 @@ FrontPageComponent = __decorate([
     core_1.Component({
         selector: 'front-page',
         templateUrl: './front-page.html',
-        styleUrls: []
+        styleUrls: ['./front-page.css']
     })
 ], FrontPageComponent);
 exports.FrontPageComponent = FrontPageComponent;

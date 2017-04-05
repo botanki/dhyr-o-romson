@@ -1,0 +1,27 @@
+.center-content {
+	background: url(../images/headers/front.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	text-align:  center;
+	height: 100vh;
+	width: 100%;
+}
+
+.slogan {
+	text-transform: uppercase;
+	font-size: 60px;
+	margin-top: 35vh;
+}
+
+.button-collection {
+	display: inline-block;
+}
+
+.buttons {
+	text-transform: uppercase;
+	background: #4FA9B8;
+	border-color: #4FA9B8;
+	border-radius: 0;
+	margin: 10px 20px;
+	padding: 15px 25px;
+}
