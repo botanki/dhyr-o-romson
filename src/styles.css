@@ -1,17 +1,17 @@
-// FONTS: 
+// FONTS:
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Roboto');
 
 body {
-  font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .headlines {
 	font-family: 'EB Garamond', serif;
 }
 
-// OUR COLOR-SCHEME: 
+// OUR COLOR-SCHEME:
 
-/* 
+/*
 
 darker-white: #F5F5F5
 light-grey: #EFE9E5
@@ -25,9 +25,9 @@ orange: #F17E19
 
 /* Master Styles */
 h1 {
-  font-size: 250%;
+	font-size: 250%;
 }
 
 h2, h3 {
-  font-weight: lighter;
+	font-weight: lighter;
 }
