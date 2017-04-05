@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 
 export class FrontPageComponent  {
+	backgroundImage = 'url(../images/headers/front.png)';
+
+	slogan = 'De dyraste rummen...';
+
+	buttons = {
+		sell: 'Vill du sälja din bostad?',
+		buy: 'Bostäder till salu'
+	}
 }
