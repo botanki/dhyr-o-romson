@@ -13,7 +13,7 @@ var NavigationComponent = (function () {
         this.sections = [
             { text: 'Köp Bostad', route: 'buy-page' },
             { text: 'Sälj Bostad', route: 'sell-page' },
-            { text: 'Om Oss', route: 'about-us' },
+            { text: 'Om Oss', route: 'about-us' }
         ];
     }
     return NavigationComponent;

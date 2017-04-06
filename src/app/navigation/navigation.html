@@ -7,11 +7,9 @@
 
 
  <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="exCollapsingNavbar2">
-    <ul  class="navbar-nav mr-auto header-links">
-        <li *ngFor="let section of sections" class="nav-item nav-link" routerLink="/{{section.route}}">{{section.text}}
-        </li>
-            
-    </ul>
+    <div class="navbar-nav mr-auto links-content">
+        <a *ngFor="let section of sections" class="nav-item nav-link" routerLink="/{{section.route}}" routerLinkActive="active">{{section.text}}</a>
+      </div>
 
     <div class="form-inline icon-content my-2 my-lg-0">
         <i class="fa fa-search search-icon" routerLink="/buy-page" aria-hidden="false"></i>

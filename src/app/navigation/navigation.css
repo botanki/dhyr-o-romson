@@ -1,21 +1,27 @@
 /*  Get rid of blue border in focus mode */ 
 img:focus, i:focus, button:focus, li:focus { outline: none; border: 0; }
 
+/* Remove hamburger border */
 .navbar-light .navbar-toggler { border-color: rgba(0, 0, 0, 0); }
-
-a {  color: #EFE9E5; }
-
-a:hover { font-weight: bold; color: #202B30; }
 
 .bg-navbar { background: #F5F5F5 }
 
-.header-links {
+.active { 
+    color: #202B30; 
+    font-weight: 300; 
+    text-decoration: underline;
+    -moz-text-decoration-color: #4FA9B8; /* Code for Firefox */
+    text-decoration-color: #4FA9B8;
+}
+
+.links-content {
     margin: 0 auto;
     width: 400px;
 }
 
 .nav-link {
-    margin-left: 60px;
+    color: #BDBDBD; 
+    font-weight: 300; 
     margin: 0 auto;
     font-size: 18px;
 }

@@ -11,10 +11,8 @@ export class NavigationComponent {
     isActive = false;
 
     sections = [
-    { text: 'Köp Bostad', route: 'buy-page'; },
-    { text: 'Sälj Bostad', route: 'sell-page'; },
-    { text: 'Om Oss', route: 'about-us'; },
-    ];
-
-    
+    { text: 'Köp Bostad', route: 'buy-page' },
+    { text: 'Sälj Bostad', route: 'sell-page' },
+    { text: 'Om Oss', route: 'about-us' }
+    ];   
 }
