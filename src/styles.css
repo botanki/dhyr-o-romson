@@ -3,10 +3,16 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	background: #FFF;
 }
 
 .headlines {
 	font-family: 'EB Garamond', serif;
+}
+
+body {
+  background: #e2e1e0;
+  text-align: center;
 }
 
 // OUR COLOR-SCHEME:
@@ -21,6 +27,16 @@ blue: #4FA9B8
 orange: #F17E19
 
 */
+
+// // Nice Shadow w/hover for the buttons and broker profile pics
+
+.drop-shadow {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25), 0 1px 5px rgba(0,0,0,0.22);
+}
+
+.drop-shadow:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
 
 /* Master Styles */
