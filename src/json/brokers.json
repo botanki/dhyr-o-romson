@@ -1,0 +1,40 @@
+{
+    "ATeam": [{
+        "id": 1,
+        "img": "staff1.png",
+        "name": "Lotta Walthenius",
+        "phone": "087-223454",
+        "email": "lotta@dhyr.se"
+    }, {
+        "id": 2,
+        "img": "staff2.png",
+        "name": "Hans Stotz",
+        "phone": "087-223454",
+        "email": "hans@dhyr.se"
+
+    }, {
+        "id": 3,
+        "img": "staff3.png",
+        "name": "Hannah af Schmildt",
+        "phone": "044-223454",
+        "email": "hannah@dhyr.se"
+    }, {
+        "id": 4,
+        "img": "staff4.png",
+        "name": "Bitte Nielsen",
+        "phone": "087-463572",
+        "email": "bitte@dhyr.se"
+    }, {
+        "id": 5,
+        "img": "staff5.png",
+        "name": "Bibbi Schultz",
+        "phone": "037-223454",
+        "email": "bibbi@dhyr.se"
+    }, {
+        "id": 6,
+        "img": "staff6.png",
+        "name": "Scott Tycho",
+        "phone": "087-223454",
+        "email": "scott@dhyr.se"
+    }]
+}
