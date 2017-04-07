@@ -1,0 +1,65 @@
+{
+  "OnSale": 
+  [
+  	{
+  		"id": 1,
+  		"img": "1.jpg",
+  		"title": "En vacker bolagsinvestering",
+  		"area": "Stockholm",
+  		"address":"Bolagsgränd 1",
+  		"type": "Lägenhet",
+  		"rooms": 4,
+  		"space": 129,
+  		"monthly Rental": 4825,
+  		"price": 4800000
+  	},
+  	{
+  		"id": 2,
+  		"img": "2.png",
+  		"title": "I höjd med gammel-eken",
+  		"area": "Malmö",
+  		"address":"Stattutgatan 14",
+  		"type": "Lägenhet",
+  		"rooms": 3,
+  		"space": 99,
+  		"monthly Rental": 5229,
+  		"price": 1300000
+  	},
+  	{
+  		"id": 3,
+  		"img": "3.jpg",
+  		"title": "Sockertoppad på tre plan",
+  		"area": "Göteborg",
+  		"address":"Härdaregatan 5",
+  		"type": "2-plansvilla med källare",
+  		"rooms": 5,
+  		"space": 995,
+  		"monthly Rental": 9229,
+		"price": 3200000
+  	},
+  	{
+  		"id": 4,
+  		"img": "4.jpg",
+  		"title": "Den välslipade lärlingen",
+  		"area": "Luleå",
+  		"address":"Lärlingsgatan 4A",
+  		"type": "Lägenhet",
+  		"rooms": 2,
+  		"space": 60,
+  		"monthly Rental": 5115,
+  		"price": 1900000
+  	},
+  	{
+  		"id": 5,
+  		"img": "5.jpg",
+  		"title": "Arkitekten och soldaten",
+  		"area": "Stockholm",
+  		"address": "Mjälaryd 12",
+  		"type": "1-planshus med loft",
+  		"rooms": 5,
+  		"space": 129,
+  		"monthly Rental": 7185,
+		"price": 3000000
+  	}
+  ]
+}

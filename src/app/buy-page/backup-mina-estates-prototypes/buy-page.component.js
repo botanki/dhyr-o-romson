@@ -6,17 +6,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var DetailedBuyPageComponent = (function () {
-    function DetailedBuyPageComponent() {
+var BuyPageComponent = (function () {
+    function BuyPageComponent() {
+        this.address = 'Toftavägen 21';
+        this.area = 'Malmö';
+        this.backgroundImage = 'url(../images/headers/front.png)';
+        this.slogan = 'De dyraste rummen...';
     }
-    return DetailedBuyPageComponent;
+    return BuyPageComponent;
 }());
-DetailedBuyPageComponent = __decorate([
+BuyPageComponent = __decorate([
     core_1.Component({
-        selector: 'detailed-buy-page',
-        templateUrl: './detailed-buy-page.html',
-        styleUrls: []
+        selector: 'buy-page',
+        templateUrl: './buy-page.html',
+        styleUrls: ['./buy-page.css']
     })
-], DetailedBuyPageComponent);
-exports.DetailedBuyPageComponent = DetailedBuyPageComponent;
-//# sourceMappingURL=detailed-buy-page.component.js.map
+], BuyPageComponent);
+exports.BuyPageComponent = BuyPageComponent;
+//# sourceMappingURL=buy-page.component.js.map

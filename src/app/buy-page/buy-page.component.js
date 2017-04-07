@@ -15,7 +15,7 @@ BuyPageComponent = __decorate([
     core_1.Component({
         selector: 'buy-page',
         templateUrl: './buy-page.html',
-        styleUrls: []
+        styleUrls: ['./buy-page.css']
     })
 ], BuyPageComponent);
 exports.BuyPageComponent = BuyPageComponent;

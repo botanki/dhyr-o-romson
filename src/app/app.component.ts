@@ -4,10 +4,10 @@ import { Component } from '@angular/core';
 	selector: 'my-app',
 	template: `
 		<navigation></navigation>
-		<router-outlet></router-outlet>
+	    <router-outlet></router-outlet>
         <footer></footer>
 	`,
-	styleUrls: []
+	styleUrls: ['./app.css']
 })
 
 export class AppComponent  {

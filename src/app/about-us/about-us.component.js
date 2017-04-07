@@ -15,7 +15,7 @@ AboutUsComponent = __decorate([
     core_1.Component({
         selector: 'about-us',
         templateUrl: './about-us.html',
-        styleUrls: []
+        styleUrls: ['./about-us.css']
     })
 ], AboutUsComponent);
 exports.AboutUsComponent = AboutUsComponent;

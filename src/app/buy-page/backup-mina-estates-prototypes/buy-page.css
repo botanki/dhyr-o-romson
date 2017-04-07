@@ -1,0 +1,39 @@
+.estate-master {
+	width: 100%;
+}
+
+.card { 
+	font-family: 'EB Garamond', serif;
+	border: 0; 
+}
+
+.card-title {
+	color: #BDBDBD;
+	font-size: 34px;
+}
+
+.card-title:first-of-type { color: #202B30; }
+
+.card-text {
+	font-size: 20px;
+}
+
+.card-text > span {
+	font-family: 'Roboto', sans-serif;
+	color: #4FA9B8;
+	font-size: 22px;
+}
+
+.buttons {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	background: #4FA9B8;
+	border-color: #4FA9B8;
+	border-radius: 0;
+	padding: 15px 25px;
+}
+
+@media screen and (max-width: 500px) {
+
+
+}

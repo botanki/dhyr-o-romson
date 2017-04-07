@@ -1,0 +1,45 @@
+.estate-content { padding: 40px 0 0;}
+
+.card { font-family: 'EB Garamond', serif;}
+
+.wide-card { border: 0; }
+
+.card-title {
+	color: #BDBDBD;
+	font-size: 38px;
+}
+
+.card-title:first-of-type { color: #202B30; }
+
+.card-text {
+	font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.card-text > span {
+	font-family: 'Roboto', sans-serif;
+	color: #4FA9B8;
+	font-size: 24px;
+}
+
+.buttons {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	background: #4FA9B8;
+	border-color: #4FA9B8;
+	border-radius: 0;
+	padding: 15px 25px;
+}
+
+.breaker { 
+	width: 86%;
+    margin: 0 auto;
+    height: 1px;
+    background: #EFE9E5; 
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 500px) {
+
+
+}

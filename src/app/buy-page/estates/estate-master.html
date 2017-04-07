@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row estate-content" *ngFor="let estate of estates[currentEstates]">
+            <div class="col-xs-12 col-sm-6 offset-lg-1 col-lg-5 col-md-6">
+                <a [routerLink]="['/estate', estate.id]">
+                    <div class="card wide-card">
+                        <div class="card-block">
+                            <img class="img-fluid" src="../images/estates/{{estate.img}}" alt="{{estate.address}}">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6  col-md-5">
+                <div class="card wide-card">
+                    <div class="card-block">
+                        <h3 class="card-title">{{estate.address}}</h3>
+                        <h3 class="card-title">{{estate.area}}</h3>
+                        <p class="card-text">{{estate.rooms}} rum och kök</p>
+                        <p class="card-text">{{estate.space}} kvm </p>
+                        <p class="card-text">Budstart: <span>{{estate.price}} kr</span></p>
+                        <a [routerLink]="['/estate', estate.id]" class=" btn btn-primary buttons drop-shadow">Mer Info</a>
+                    </div>
+                </div>
+            </div>
+
+        <div class="breaker hidden-sm-up"></div>
+    </div>
+</div>

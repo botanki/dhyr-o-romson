@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
 })
 
 export class BuyPageComponent  {
+    address = 'Toftavägen 21';
+    area = 'Malmö';
+    
+    backgroundImage = 'url(../images/headers/front.png)';
+
+    slogan = 'De dyraste rummen...';
+
     
 }
