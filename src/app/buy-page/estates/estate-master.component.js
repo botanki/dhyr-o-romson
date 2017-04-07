@@ -30,7 +30,7 @@ EstateMasterComponent = __decorate([
         selector: 'estate-master',
         templateUrl: './estate-master.html',
         styleUrls: ['./estate-master.css'],
-        providers: [rest_service_1.RestService]
+        providers: [rest_service_1.RestService],
     }),
     __metadata("design:paramtypes", [rest_service_1.RestService])
 ], EstateMasterComponent);

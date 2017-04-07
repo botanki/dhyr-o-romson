@@ -1,0 +1,72 @@
+.card {
+    font-family: 'EB Garamond', serif;
+    border: 0;
+}
+
+.breadcrumb {
+    padding: 0;
+    font-size: 11px;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #fff; 
+    border-radius: .25rem;
+}
+
+.breadcrumb > a { color: #f17e19; }
+
+.slim-card { padding-left: 0; }
+
+.estate-wrapper { padding: 28px 0;}
+
+.broker-info {
+    font-family: 'Roboto', sans-serif;
+    line-height: 8px;
+    color: #BDBDBD;
+}
+
+.card-title {
+    color: #BDBDBD;
+    font-size: 28px;
+    line-height: 26px;
+}
+
+.card-title:first-of-type {
+    color: #202B30;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.estate-title { padding-bottom: 8px; }
+
+.estate-body, .broker-body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    color: #BDBDBD;
+}
+
+.broker-body > p { margin-bottom: 0; }
+
+.broker-img { padding-bottom: 20px; }
+
+.buttons {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background: #4FA9B8;
+    border-color: #4FA9B8;
+    border-radius: 0;
+    padding: 15px 25px;
+    margin-top: 10px;
+}
+
+a:not([href]):not([tabindex]) {
+     color: #fff; 
+    text-decoration: none;
+    }
+
+@media screen and (max-width: 620px) {
+
+	.slim-card { padding-left: 20px; }
+}

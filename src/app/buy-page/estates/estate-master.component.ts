@@ -5,7 +5,7 @@ import { RestService } from '../../services/rest.service';
 	selector: 'estate-master',
 	templateUrl: './estate-master.html',
 	styleUrls: ['./estate-master.css'],
-    providers: [RestService]
+  providers: [RestService],
 })
 
 export class EstateMasterComponent  {

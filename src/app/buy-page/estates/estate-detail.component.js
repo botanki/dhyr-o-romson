@@ -8,31 +8,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var common_1 = require("@angular/common");
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var rest_service_1 = require("../../services/rest.service");
 var EstateDetailComponent = (function () {
-    function EstateDetailComponent(restService, route) {
+    function EstateDetailComponent(restService, route, location) {
         this.restService = restService;
         this.route = route;
         this.estate = {};
+        this.estates = {};
+        this.location = location;
     }
     EstateDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.params.subscribe(function (routeParams) {
             var Estates = _this.restService.newRestEntity("estates");
             Estates.find('').then(function (estates) {
-                var name = routeParams.name;
-                for (var category in estates) {
-                    for (var _i = 0, _a = estates[category]; _i < _a.length; _i++) {
+                var id = routeParams.id;
+                for (var currentEstates in estates) {
+                    for (var _i = 0, _a = estates[currentEstates]; _i < _a.length; _i++) {
                         var estate = _a[_i];
-                        if (estate.name == name) {
+                        if (estate.id == id) {
                             _this.estate = estate;
                         }
                     }
                 }
             });
         });
+    };
+    EstateDetailComponent.prototype.backClicked = function () {
+        this.location.back();
     };
     return EstateDetailComponent;
 }());
@@ -41,10 +47,11 @@ EstateDetailComponent = __decorate([
         selector: 'estate-detail',
         templateUrl: './estate-detail.html',
         styleUrls: ['./estate-detail.css'],
-        providers: [rest_service_1.RestService]
+        providers: [rest_service_1.RestService, common_1.Location, { provide: common_1.LocationStrategy, useClass: common_1.PathLocationStrategy }]
     }),
     __metadata("design:paramtypes", [rest_service_1.RestService,
-        router_1.ActivatedRoute])
+        router_1.ActivatedRoute,
+        common_1.Location])
 ], EstateDetailComponent);
 exports.EstateDetailComponent = EstateDetailComponent;
 //# sourceMappingURL=estate-detail.component.js.map

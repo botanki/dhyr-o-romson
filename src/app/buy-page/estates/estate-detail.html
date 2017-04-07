@@ -1,11 +1,58 @@
-<div class="container">
-   <div class="row" style="margin:20px 0">
-    <div class="col-sm-12">
-      <h2>{{estate.name}}</h2>
-      <div class="card" style="margin-left:-15px">
-        <div class="card-block">
-          <img class="img-fluid" src="../images/estates/{{estate.img}}" alt="{{estate.address}}">
+<img class="img-fluid" src="../images/estates/{{estate.img_detail}}" alt="{{estate.address}}">
+
+<div class='container'>
+    <div class="row estate-wrapper">
+        <nav class="breadcrumb">
+            <a class="breadcrumb-item" routerLink="/front-page">Home</a>
+            <a class="breadcrumb-item" routerLink="/buy-page">Köp Bostad</a>
+            <a class="breadcrumb-item active" routerLink="/estate/{{estate.id}}">{{estate.address}}</a>
+        </nav>
+        <div class='row'>
+            <div class="col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-block slim-card">
+                        <h3 class="card-title">{{estate.address}}</h3>
+                        <h3 class="card-title">{{estate.area }}</h3>
+                        <p class="card-text">Rum {{estate.rooms}} rum och kök</p>
+                        <p class="card-text">Boarea {{estate.space}} kvm</p>
+                        <p class="card-text">Byggnadsår {{estate.year}} kvm </p>
+                        <p class="card-text">Föreslagen budstart {{estate.price | number:'4.0-2'}} kr</p>
+                        <a (click)="backClicked()" class=" btn btn-primary buttons drop-shadow">Gå Tillbaks</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-sm-12 col-md-6">
+                <div class="card">
+                    <div class="card-block slim-card">
+                        <h3 class="estate-title">{{estate.title}}</h3>
+                        <p class="estate-body">{{estate.body}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-block slim-card">
+                       		 <div class="broker-body" *ngFor="let broker of estate.broker">
+	                       		 <img class="img-fluid broker-img" src="../images/brokers/{{broker.img}}">
+	                       		 <p>Ansvarig Mäklare:</p>
+	                       		 <p>{{broker.name}}</p>
+	                       		 <p>Tel: {{broker.phone}}</p>
+	                       		 <p>Kontakta: {{broker.email}}</p>
+                       		 </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
+        <div class='row'>
+            <div class="col-sm-12">
+                <img class="img-fluid" src="../images/estates/detail/{{estate.alt_1}}" alt="interior of {{estate.address}}">
+                <br><br>
+                <img class="img-fluid" src="../images/estates/detail/{{estate.alt_2}}" alt="interior of {{estate.address}}">
+            </div>
+        </div>
     </div>
-  </div>
+</div>
