@@ -17,6 +17,7 @@ import { EstateDetailComponent } from './buy-page/estates/estate-detail.componen
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FooterComponent }  from './footer/footer.component';
 import { PageNotFoundComponent } from './pagenotfound.component';
+import { BrokerMasterComponent } from './about-us/brokers/broker-master.component'
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -44,7 +45,8 @@ import { NgbdModalBasic } from './modal/modal.component';
 		AboutUsComponent,
 		FooterComponent,
 		PageNotFoundComponent,
-		NgbdModalBasic
+		NgbdModalBasic,
+		BrokerMasterComponent
 	],
   bootstrap: [ AppComponent ]
 })

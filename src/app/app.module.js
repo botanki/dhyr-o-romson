@@ -22,6 +22,7 @@ var estate_detail_component_1 = require("./buy-page/estates/estate-detail.compon
 var about_us_component_1 = require("./about-us/about-us.component");
 var footer_component_1 = require("./footer/footer.component");
 var pagenotfound_component_1 = require("./pagenotfound.component");
+var broker_master_component_1 = require("./about-us/brokers/broker-master.component");
 var app_routing_module_1 = require("./app-routing.module");
 var modal_component_1 = require("./modal/modal.component");
 var AppModule = (function () {
@@ -51,7 +52,8 @@ AppModule = __decorate([
             about_us_component_1.AboutUsComponent,
             footer_component_1.FooterComponent,
             pagenotfound_component_1.PageNotFoundComponent,
-            modal_component_1.NgbdModalBasic
+            modal_component_1.NgbdModalBasic,
+            broker_master_component_1.BrokerMasterComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

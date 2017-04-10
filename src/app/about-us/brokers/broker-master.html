@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="row broker-content" *ngFor="let broker of brokers[currentBroker]">
+            <div class="col-xs-12 col-sm-12  col-md-5">
+                <div class="card wide-card">
+                    <div class="card-block">
+                        <img src="../images/brokers/{{broker.img}}">
+                        <h3 class="card-title">{{broker.name }}</h3>
+                        <h3 class="card-title">{{broker.phone }}</h3>
+                    </div>
+                </div>
+            </div>
+
+        <div class="breaker hidden-sm-up"></div>
+    </div>
+</div>
