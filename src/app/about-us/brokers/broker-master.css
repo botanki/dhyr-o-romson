@@ -1,4 +1,4 @@
-.estate-content {
+.realtor-content {
     padding: 40px 0 0;
 }
 
@@ -7,7 +7,8 @@
 }
 
 .wide-card {
-    border: 0;
+    border: 2px solid gray;
+    margin: 5px;
 }
 
 .card-title {
@@ -48,5 +49,16 @@
     background: #EFE9E5;
     margin-top: 24px;
 }
+
+.info-title {
+    margin-right: 0px;
+    font-size: 10px;
+}
+
+.divider-line {
+    border-top: 1px solid black;
+}
+
+
 
 @media screen and (max-width: 500px) {}
