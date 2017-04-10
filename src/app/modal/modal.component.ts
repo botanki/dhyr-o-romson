@@ -20,7 +20,6 @@ export class NgbdModalBasic {
   ) {
     this.globalMem = this.memService.global();
     this.globalMem.openModal = ()=>{
-      console.log("I should open",this);
       this.open();
     }
   }

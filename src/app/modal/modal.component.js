@@ -18,7 +18,6 @@ var NgbdModalBasic = (function () {
         this.memService = memService;
         this.globalMem = this.memService.global();
         this.globalMem.openModal = function () {
-            console.log("I should open", _this);
             _this.open();
         };
     }
