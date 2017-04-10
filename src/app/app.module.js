@@ -17,10 +17,10 @@ var buy_page_component_1 = require("./buy-page/buy-page.component");
 var estate_master_component_1 = require("./buy-page/estates/estate-master.component");
 var estate_detail_component_1 = require("./buy-page/estates/estate-detail.component");
 var about_us_component_1 = require("./about-us/about-us.component");
-var contact_us_component_1 = require("./contact-us/contact-us.component");
 var footer_component_1 = require("./footer/footer.component");
 var pagenotfound_component_1 = require("./pagenotfound.component");
 var app_routing_module_1 = require("./app-routing.module");
+var modal_component_1 = require("./modal/modal.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -43,9 +43,9 @@ AppModule = __decorate([
             estate_master_component_1.EstateMasterComponent,
             estate_detail_component_1.EstateDetailComponent,
             about_us_component_1.AboutUsComponent,
-            contact_us_component_1.ContactUsComponent,
             footer_component_1.FooterComponent,
-            pagenotfound_component_1.PageNotFoundComponent
+            pagenotfound_component_1.PageNotFoundComponent,
+            modal_component_1.NgbdModalBasic
         ],
         bootstrap: [app_component_1.AppComponent]
     })

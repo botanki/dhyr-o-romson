@@ -9,52 +9,52 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var mem_service_1 = require("../services/mem.service");
-var NavigationComponent = (function () {
-    function NavigationComponent(memService) {
-        this.memService = memService;
-        this.isNavbarCollapsed = true;
-        this.isActive = false;
-        this.sections = [
-            { text: 'Köp Bostad', route: 'buy-page' },
-            { text: 'Sälj Bostad', route: 'sell-page' },
-            { text: 'Om Oss', route: 'about-us' }
-        ];
-        this.globalMem = this.memService.global();
-    }
-    return NavigationComponent;
-}());
-NavigationComponent = __decorate([
-    core_1.Component({
-        selector: 'navigation',
-        templateUrl: './navigation.html',
-        styleUrls: ['./navigation.css'],
-        providers: [mem_service_1.MemService]
-    }),
-    __metadata("design:paramtypes", [mem_service_1.MemService])
-], NavigationComponent);
-exports.NavigationComponent = NavigationComponent;
 var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
+var mem_service_1 = require("../services/mem.service");
 var NgbdModalBasic = (function () {
     function NgbdModalBasic(modalService, memService) {
         var _this = this;
         this.modalService = modalService;
         this.memService = memService;
         this.globalMem = this.memService.global();
-        this.globalMem.openModal = function (content) {
-            _this.open(content);
+        this.globalMem.openModal = function () {
+            console.log("I should open", _this);
+            _this.open();
         };
     }
+    NgbdModalBasic.prototype.open = function () {
+        var _this = this;
+        this.modalService.open(this.content).result.then(function (result) {
+            _this.closeResult = "Closed with: " + result;
+        }, function (reason) {
+            _this.closeResult = "Dismissed " + _this.getDismissReason(reason);
+        });
+    };
+    NgbdModalBasic.prototype.registerContent = function (content) {
+        this.content = content;
+    };
+    NgbdModalBasic.prototype.getDismissReason = function (reason) {
+        if (reason === ng_bootstrap_1.ModalDismissReasons.ESC) {
+            return 'by pressing ESC';
+        }
+        else if (reason === ng_bootstrap_1.ModalDismissReasons.BACKDROP_CLICK) {
+            return 'by clicking on a backdrop';
+        }
+        else {
+            return "with: " + reason;
+        }
+    };
     return NgbdModalBasic;
 }());
 NgbdModalBasic = __decorate([
     core_1.Component({
         selector: 'modal',
         templateUrl: './modal.html',
+        styleUrls: ['./modal.css'],
         providers: [mem_service_1.MemService]
     }),
     __metadata("design:paramtypes", [ng_bootstrap_1.NgbModal,
         mem_service_1.MemService])
 ], NgbdModalBasic);
 exports.NgbdModalBasic = NgbdModalBasic;
-//# sourceMappingURL=navigation.component.js.map
+//# sourceMappingURL=modal.component.js.map

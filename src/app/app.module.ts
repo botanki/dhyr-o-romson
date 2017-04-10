@@ -12,11 +12,12 @@ import { BuyPageComponent } from './buy-page/buy-page.component';
 import { EstateMasterComponent } from './buy-page/estates/estate-master.component';
 import { EstateDetailComponent } from './buy-page/estates/estate-detail.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent }  from './footer/footer.component';
 import { PageNotFoundComponent } from './pagenotfound.component';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { NgbdModalBasic } from './modal/modal.component';
 
 
 @NgModule({
@@ -35,9 +36,9 @@ import { AppRoutingModule } from './app-routing.module';
 		EstateMasterComponent,
 		EstateDetailComponent,
 		AboutUsComponent,
-		ContactUsComponent,
 		FooterComponent,
-		PageNotFoundComponent
+		PageNotFoundComponent,
+		NgbdModalBasic
 	],
   bootstrap: [ AppComponent ]
 })
