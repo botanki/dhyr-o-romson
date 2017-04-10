@@ -4,19 +4,21 @@
 }
 
 .breadcrumb {
-    padding: 0;
     font-size: 11px;
     margin-bottom: 1rem;
     list-style: none;
-    background-color: #fff; 
+    background-color: #fff;
     border-radius: .25rem;
+    padding: 28px 0 0 36px;
 }
 
-.breadcrumb > a { color: #f17e19; }
+.breadcrumb-item {
+    color: #BDBDBD;
+}
 
-.slim-card { padding-left: 0; }
-
-.estate-wrapper { padding: 28px 0;}
+.breadcrumb-item.active {
+    color: #f17e19;
+}
 
 .broker-info {
     font-family: 'Roboto', sans-serif;
@@ -39,34 +41,65 @@
     margin-bottom: 6px;
 }
 
-.estate-title { padding-bottom: 8px; }
+.estate-title {
+    padding-bottom: 8px;
+}
 
-.estate-body, .broker-body{
+.estate-body,
+.broker-body {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9em;
     color: #BDBDBD;
 }
 
-.broker-body > p { margin-bottom: 0; }
+.broker-body > p {
+    margin-bottom: 0;
+}
 
-.broker-img { padding-bottom: 20px; }
+.broker-img {
+    padding-bottom: 20px;
+}
 
-.buttons {
+.next-content {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.next-heading {
+    text-align: center;
+    background: #EFE9E5;
+    padding: 14px 0 8px;
+}
+
+.next-heading h5 > span {
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    background: #4FA9B8;
-    border-color: #4FA9B8;
-    border-radius: 0;
-    padding: 15px 25px;
-    margin-top: 10px;
+    color: #4FA9B8;
+    font-size: 14px;
+}
+
+.next-contact {
+    font-family: 'Roboto', sans-serif;
+    background: #202B30;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.next-contact > a:hover {
+    text-decoration: underline;
+}
+
+.back-arrow {
+    color: #BDBDBD;
+    cursor: pointer;
+}
+
+.fa>span {
+    padding-left: 10px;
 }
 
 a:not([href]):not([tabindex]) {
-     color: #fff; 
+    color: #fff;
     text-decoration: none;
-    }
-
-@media screen and (max-width: 620px) {
-
-	.slim-card { padding-left: 20px; }
 }
