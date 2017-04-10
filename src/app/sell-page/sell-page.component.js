@@ -15,7 +15,7 @@ SellPageComponent = __decorate([
     core_1.Component({
         selector: 'sell-page',
         templateUrl: './sell-page.html',
-        styleUrls: []
+        styleUrls: ['./sell-page.css']
     })
 ], SellPageComponent);
 exports.SellPageComponent = SellPageComponent;

@@ -1,0 +1,47 @@
+img {
+	width: 100%;
+	display: inline-block;
+}
+
+a {
+	color: #202B30;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 5px;
+	display: block;
+}
+
+.left-panel {
+	margin-top: 10vh;
+}
+
+.list-title {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.list-title-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #4FA9B8;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.list-spacer {
+	margin-top: 5vh;
+}
+
+.right-panel {
+	margin-top: 10vh;
+}
