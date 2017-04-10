@@ -11,6 +11,7 @@ import { MemService } from '../services/mem.service';
 export class NavigationComponent {
     isNavbarCollapsed = true;
     isActive = false;
+    globalMem: any;
 
     sections = [
         { text: 'Köp Bostad', route: 'buy-page' },
@@ -24,28 +25,3 @@ export class NavigationComponent {
         this.globalMem = this.memService.global();
     }
 }
-
-
-import {Component} from '@angular/core';
-
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
-import { MemService } from '../services/mem.service';
-
-@Component({
-  selector: 'modal',
-  templateUrl: './modal.html',
-  providers: [MemService]
-})
-export class NgbdModalBasic {
-  closeResult: string;
-  globalMem: any;
-
-  constructor(
-    private modalService: NgbModal,
-    private memService: MemService
-  ) {
-    this.globalMem = this.memService.global();
-    this.globalMem.openModal = (content:any)=>{
-      this.open(content);
-    }
-  }

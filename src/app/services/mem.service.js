@@ -24,10 +24,6 @@ var MemService = MemService_1 = (function () {
         // to get a global memory shared between all components 
         return MemService_1.globalMem;
     };
-    MemService.prototype.debug = function () {
-        window.globalMem = MemService_1.globalMem;
-        window.localMem = MemService_1.localMem;
-    };
     return MemService;
 }());
 MemService.globalMem = {}; // global for everyone

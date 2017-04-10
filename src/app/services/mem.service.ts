@@ -24,9 +24,4 @@ export class MemService {
      return MemService.globalMem;
    }
 
-   debug(){
-     window.globalMem = MemService.globalMem;
-     window.localMem = MemService.localMem;
-   }
-
 }

@@ -34,27 +34,4 @@ NavigationComponent = __decorate([
     __metadata("design:paramtypes", [mem_service_1.MemService])
 ], NavigationComponent);
 exports.NavigationComponent = NavigationComponent;
-var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
-var NgbdModalBasic = (function () {
-    function NgbdModalBasic(modalService, memService) {
-        var _this = this;
-        this.modalService = modalService;
-        this.memService = memService;
-        this.globalMem = this.memService.global();
-        this.globalMem.openModal = function (content) {
-            _this.open(content);
-        };
-    }
-    return NgbdModalBasic;
-}());
-NgbdModalBasic = __decorate([
-    core_1.Component({
-        selector: 'modal',
-        templateUrl: './modal.html',
-        providers: [mem_service_1.MemService]
-    }),
-    __metadata("design:paramtypes", [ng_bootstrap_1.NgbModal,
-        mem_service_1.MemService])
-], NgbdModalBasic);
-exports.NgbdModalBasic = NgbdModalBasic;
 //# sourceMappingURL=navigation.component.js.map
