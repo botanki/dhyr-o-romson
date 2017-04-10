@@ -9,6 +9,9 @@ import { FrontPageComponent }  from './front-page/front-page.component';
 import { NavigationComponent }  from './navigation/navigation.component';
 import { SellPageComponent } from './sell-page/sell-page.component';
 import { BuyPageComponent } from './buy-page/buy-page.component';
+import { SearchComponent } from './buy-page/search.component';
+import { FilterComponent } from './buy-page/filter.component';
+import { SortComponent } from './buy-page/sort.component';
 import { EstateMasterComponent } from './buy-page/estates/estate-master.component';
 import { EstateDetailComponent } from './buy-page/estates/estate-detail.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -33,6 +36,9 @@ import { NgbdModalBasic } from './modal/modal.component';
 		NavigationComponent,
 		SellPageComponent,
 		BuyPageComponent,
+		SearchComponent,
+		FilterComponent,
+		SortComponent,
 		EstateMasterComponent,
 		EstateDetailComponent,
 		AboutUsComponent,
