@@ -6,17 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var SellPageComponent = (function () {
-    function SellPageComponent() {
+var SortComponent = (function () {
+    function SortComponent() {
     }
-    return SellPageComponent;
+    return SortComponent;
 }());
-SellPageComponent = __decorate([
+SortComponent = __decorate([
     core_1.Component({
-        selector: 'sell-page',
-        templateUrl: './sell-page.html',
-        styleUrls: ['./sell-page.css']
+        selector: 'sort',
+        templateUrl: './sort.html',
+        styleUrls: ['./sort.css']
     })
-], SellPageComponent);
-exports.SellPageComponent = SellPageComponent;
-//# sourceMappingURL=sell-page.component.js.map
+], SortComponent);
+exports.SortComponent = SortComponent;
+//# sourceMappingURL=sort.component.js.map

@@ -6,17 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var ContactUsComponent = (function () {
-    function ContactUsComponent() {
+var SearchComponent = (function () {
+    function SearchComponent() {
     }
-    return ContactUsComponent;
+    return SearchComponent;
 }());
-ContactUsComponent = __decorate([
+SearchComponent = __decorate([
     core_1.Component({
-        selector: 'contact-us',
-        templateUrl: './contact-us.html',
-        styleUrls: []
+        selector: 'search',
+        templateUrl: './search.html',
+        styleUrls: ['./search.css']
     })
-], ContactUsComponent);
-exports.ContactUsComponent = ContactUsComponent;
-//# sourceMappingURL=contact-us.component.js.map
+], SearchComponent);
+exports.SearchComponent = SearchComponent;
+//# sourceMappingURL=search.component.js.map

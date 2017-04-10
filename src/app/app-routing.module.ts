@@ -41,10 +41,6 @@ const routes: Routes = [
 		component: AboutUsComponent
 	},
 	{
-		path: 'contact-us',
-		component: ContactUsComponent
-	},
-	{
 		path: '**',
 		component: PageNotFoundComponent
 	}

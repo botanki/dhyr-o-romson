@@ -6,17 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var SellPageComponent = (function () {
-    function SellPageComponent() {
+var FilterComponent = (function () {
+    function FilterComponent() {
     }
-    return SellPageComponent;
+    return FilterComponent;
 }());
-SellPageComponent = __decorate([
+FilterComponent = __decorate([
     core_1.Component({
-        selector: 'sell-page',
-        templateUrl: './sell-page.html',
-        styleUrls: ['./sell-page.css']
+        selector: 'filter',
+        templateUrl: './filter.html',
+        styleUrls: ['./filter.css']
     })
-], SellPageComponent);
-exports.SellPageComponent = SellPageComponent;
-//# sourceMappingURL=sell-page.component.js.map
+], FilterComponent);
+exports.FilterComponent = FilterComponent;
+//# sourceMappingURL=filter.component.js.map
