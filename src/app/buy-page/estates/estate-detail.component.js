@@ -12,13 +12,16 @@ var common_1 = require("@angular/common");
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var rest_service_1 = require("../../services/rest.service");
+var mem_service_1 = require("../../services/mem.service");
 var EstateDetailComponent = (function () {
-    function EstateDetailComponent(restService, route, location) {
+    function EstateDetailComponent(restService, route, memService, location) {
         this.restService = restService;
         this.route = route;
+        this.memService = memService;
         this.estate = {};
         this.estates = {};
         this.location = location;
+        this.globalMem = this.memService.global();
     }
     EstateDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -47,10 +50,11 @@ EstateDetailComponent = __decorate([
         selector: 'estate-detail',
         templateUrl: './estate-detail.html',
         styleUrls: ['./estate-detail.css'],
-        providers: [rest_service_1.RestService, common_1.Location, { provide: common_1.LocationStrategy, useClass: common_1.PathLocationStrategy }]
+        providers: [mem_service_1.MemService, rest_service_1.RestService, common_1.Location, { provide: common_1.LocationStrategy, useClass: common_1.PathLocationStrategy }]
     }),
     __metadata("design:paramtypes", [rest_service_1.RestService,
         router_1.ActivatedRoute,
+        mem_service_1.MemService,
         common_1.Location])
 ], EstateDetailComponent);
 exports.EstateDetailComponent = EstateDetailComponent;
