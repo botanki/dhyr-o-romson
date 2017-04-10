@@ -24,13 +24,17 @@ p {
 
 .form-control {
 	border-radius: 0;
-	width: 122%;
+
 }
 
 button {
 	border-radius: 0;
 	margin-right: 6px;
 	margin-top: 10px;
+}
+
+input {
+	width: 100%;
 }
 
 
