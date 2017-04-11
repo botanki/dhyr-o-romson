@@ -24,6 +24,10 @@
 	color:white;
 }
 
+.btn-outline-primary {
+	background-color: #c66300;
+}
+
 .btn-outline-primary:hover{
 	background-color: #c66300;
 	color:white;
