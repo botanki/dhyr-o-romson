@@ -8,7 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var SortComponent = (function () {
     function SortComponent() {
+        // Nyast
+        this.chosenOption = 'Nyast';
+        this.sortOptions = ["Högst Pris", "Lägst Pris"];
     }
+    SortComponent.prototype.sortChoice = function (noOfOptions) {
+        if (noOfOptions === 0) {
+            this.chosenOption = 'Nyast';
+        }
+        else {
+            this.chosenOption = noOfOptions;
+        }
+    };
     return SortComponent;
 }());
 SortComponent = __decorate([
