@@ -16,7 +16,8 @@
         "title": "En vacker bolagsinvestering",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 2001,
-        "nextdate": "2017-05-12T16:00:00"
+        "nextdate": "2017-05-12T16:00:00",
+        "added": "2017-01-10T16:00:00"
     }, {
         "id": 2,
         "area": "Malmö",
@@ -34,7 +35,8 @@
         "title": "I höjd med gammel-eken",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 1987,
-        "nextdate": "2017-05-15T18:00:00"
+        "nextdate": "2017-05-15T18:00:00",
+        "added": "2017-02-15T16:00:00"
     }, {
         "id": 3,
         "area": "Malmö",
@@ -52,7 +54,8 @@
         "broker": [{"id": 3, "img":"staff3.png", "name":"Hannah af Schmildt", "phone": "044-223454", "email": "hannah@dhyr.se"}],
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 2012,
-        "nextdate": "2017-06-05T15:00:00"
+        "nextdate": "2017-06-05T15:00:00",
+        "added": "2017-03-17T16:00:00"
     }, {
         "id": 4,
         "area": "Stockholm",
@@ -70,7 +73,8 @@
         "title": "Den välslipade lärlingen",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 1878,
-        "nextdate": "2017-05-12T16:00:00"
+        "nextdate": "2017-05-12T16:00:00",
+        "added": "2017-03-19T16:00:00"
     }, {
         "id": 5,
         "area": "Stockholm",
@@ -88,7 +92,8 @@
         "title": "Arkitekten och soldaten",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 1989,
-        "nextdate": "2017-05-22T17:00:00"
+        "nextdate": "2017-05-22T17:00:00",
+        "added": "2017-03-28T16:00:00"
     }, {
         "id": 6,
         "area": "Stockholm",
@@ -106,7 +111,8 @@
         "title": "En vacker bolagsinvestering",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 2001,
-        "nextdate": "2017-05-15T17:30:00"
+        "nextdate": "2017-05-15T17:30:00",
+        "added": "2017-03-21T16:00:00"
     }, {
         "id": 7,
         "area": "Malmö",
@@ -124,7 +130,8 @@
         "title": "I höjd med gammel-eken",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 1987,
-        "nextdate": "2017-05-07T12:45:00"
+        "nextdate": "2017-05-07T12:45:00",
+        "added": "2017-04-21T16:00:00"
     }, {
         "id": 8,
         "area": "Malmö",
@@ -143,7 +150,8 @@
         "title": "En ljus och charmig fristad",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 2012,
-        "nextdate": "2017-05-13T15:30:00"
+        "nextdate": "2017-05-13T15:30:00",
+        "added": "2017-04-22T16:00:00"
     }, {
         "id": 9,
         "area": "Stockholm",
