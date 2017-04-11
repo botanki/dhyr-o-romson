@@ -13,7 +13,7 @@ var rest_service_1 = require("../../services/rest.service");
 var BrokerMasterComponent = (function () {
     function BrokerMasterComponent(restService) {
         this.restService = restService;
-        this.currentBroker = "ATeam";
+        this.currentBrokers = "ATeam";
         this.brokers = {};
     }
     BrokerMasterComponent.prototype.ngOnInit = function () {
@@ -36,5 +36,3 @@ BrokerMasterComponent = __decorate([
 ], BrokerMasterComponent);
 exports.BrokerMasterComponent = BrokerMasterComponent;
 //# sourceMappingURL=broker-master.component.js.map
-
-
