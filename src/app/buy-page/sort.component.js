@@ -6,17 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var SortComponent = (function () {
+    function SortComponent() {
     }
-    return AppComponent;
+    return SortComponent;
 }());
-AppComponent = __decorate([
+SortComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "\n\t\t<modal></modal>\n\t\t<navigation></navigation>\n\t    <router-outlet></router-outlet>\n        <footer></footer>\n\t",
-        styleUrls: ['./app.css']
+        selector: 'sort',
+        templateUrl: './sort.html',
+        styleUrls: ['./sort.css']
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], SortComponent);
+exports.SortComponent = SortComponent;
+//# sourceMappingURL=sort.component.js.map

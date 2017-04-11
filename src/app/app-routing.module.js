@@ -13,7 +13,6 @@ var buy_page_component_1 = require("./buy-page/buy-page.component");
 var estate_master_component_1 = require("./buy-page/estates/estate-master.component");
 var estate_detail_component_1 = require("./buy-page/estates/estate-detail.component");
 var about_us_component_1 = require("./about-us/about-us.component");
-var contact_us_component_1 = require("./contact-us/contact-us.component");
 var pagenotfound_component_1 = require("./pagenotfound.component");
 var routes = [
     {
@@ -44,10 +43,6 @@ var routes = [
     {
         path: 'about-us',
         component: about_us_component_1.AboutUsComponent
-    },
-    {
-        path: 'contact-us',
-        component: contact_us_component_1.ContactUsComponent
     },
     {
         path: '**',

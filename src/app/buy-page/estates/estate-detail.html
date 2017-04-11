@@ -1,31 +1,46 @@
 <img class="img-fluid" src="../images/estates/{{estate.img_detail}}" alt="{{estate.address}}">
 
 <div class='container'>
-    <div class="row estate-wrapper">
+    <div class="row">
         <nav class="breadcrumb">
             <a class="breadcrumb-item" routerLink="/front-page">Home</a>
             <a class="breadcrumb-item" routerLink="/buy-page">Köp Bostad</a>
             <a class="breadcrumb-item active" routerLink="/estate/{{estate.id}}">{{estate.address}}</a>
-        </nav>
+        </nav>     
+    </div>
+
         <div class='row'>
             <div class="col-sm-12 col-md-3">
                 <div class="card">
-                    <div class="card-block slim-card">
+                    <div class="card-block">
                         <h3 class="card-title">{{estate.address}}</h3>
                         <h3 class="card-title">{{estate.area }}</h3>
                         <p class="card-text">Rum {{estate.rooms}} rum och kök</p>
                         <p class="card-text">Boarea {{estate.space}} kvm</p>
                         <p class="card-text">Byggnadsår {{estate.year}} kvm </p>
                         <p class="card-text">Föreslagen budstart {{estate.price | number:'4.0-2'}} kr</p>
-                        <a (click)="backClicked()" class=" btn btn-primary buttons drop-shadow">Gå Tillbaks</a>
-
+                        <div class="next-content">
+                            <div class="next-heading">
+                                <h5>Nästa Visning: <br>
+                                    <span>
+                                        {{estate.nextdate | date:'dd MMM HH:mm' }}
+                                    </span>
+                                </h5>
+                            </div>
+                            <div class="next-contact">
+                                <a (click)="globalMem.openModal()">Anmäl Intresse</a>
+                            </div>
+                        </div>
+                        <div class="back-arrow">
+                            <i class="fa fa-arrow-left" (click)="backClicked()" aria-hidden="true"><span class="more-estates">Se fler bostäder</span></i>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="card">
-                    <div class="card-block slim-card">
+                    <div class="card-block">
                         <h3 class="estate-title">{{estate.title}}</h3>
                         <p class="estate-body">{{estate.body}}</p>
                     </div>
@@ -34,25 +49,27 @@
 
             <div class="col-sm-12 col-md-3">
                 <div class="card">
-                    <div class="card-block slim-card">
-                       		 <div class="broker-body" *ngFor="let broker of estate.broker">
-	                       		 <img class="img-fluid broker-img" src="../images/brokers/{{broker.img}}">
-	                       		 <p>Ansvarig Mäklare:</p>
-	                       		 <p>{{broker.name}}</p>
-	                       		 <p>Tel: {{broker.phone}}</p>
-	                       		 <p>Kontakta: {{broker.email}}</p>
-                       		 </div>
+                    <div class="card-block">
+                        <div class="broker-body" *ngFor="let broker of estate.broker">
+                            <img class="img-fluid broker-img" src="../images/brokers/{{broker.img}}">
+                            <p>Ansvarig Mäklare:</p>
+                            <p>{{broker.name}}</p>
+                            <p>Tel: {{broker.phone}}</p>
+                            <p>Kontakta: {{broker.email}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-        </div>
-        <div class='row'>
-            <div class="col-sm-12">
+        
+         </div>
+
+         <div class='row'>
+            <div class="col-sm-12 col-md-12">
                 <img class="img-fluid" src="../images/estates/detail/{{estate.alt_1}}" alt="interior of {{estate.address}}">
                 <br><br>
                 <img class="img-fluid" src="../images/estates/detail/{{estate.alt_2}}" alt="interior of {{estate.address}}">
-            </div>
-        </div>
-    </div>
+            </div>        
+         </div>
+    
 </div>

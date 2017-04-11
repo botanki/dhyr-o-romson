@@ -6,17 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var FilterComponent = (function () {
+    function FilterComponent() {
     }
-    return AppComponent;
+    return FilterComponent;
 }());
-AppComponent = __decorate([
+FilterComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "\n\t\t<modal></modal>\n\t\t<navigation></navigation>\n\t    <router-outlet></router-outlet>\n        <footer></footer>\n\t",
-        styleUrls: ['./app.css']
+        selector: 'filter',
+        templateUrl: './filter.html',
+        styleUrls: ['./filter.css']
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], FilterComponent);
+exports.FilterComponent = FilterComponent;
+//# sourceMappingURL=filter.component.js.map

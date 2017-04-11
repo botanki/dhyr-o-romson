@@ -15,7 +15,8 @@
         "broker": [{"id": 1, "img":"staff1.png", "name":"Lotta Walthenius", "phone": "087-223454", "email": "lotta@dhyr.se"}],
         "title": "En vacker bolagsinvestering",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
-        "year": 2001
+        "year": 2001,
+        "nextdate": "2017-05-12T16:00:00"
     }, {
         "id": 2,
         "area": "Malmö",
@@ -32,7 +33,8 @@
         "broker": [{"id": 2, "img":"staff2.png", "name":"Hans Stotz", "phone": "087-223454", "email": "hans@dhyr.se"}],
         "title": "I höjd med gammel-eken",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
-        "year": 1987
+        "year": 1987,
+        "nextdate": "2017-05-15T18:00:00"
     }, {
         "id": 3,
         "area": "Malmö",
@@ -49,7 +51,8 @@
         "title": "Sockertoppad på tre plan",
         "broker": [{"id": 3, "img":"staff3.png", "name":"Hannah af Schmildt", "phone": "044-223454", "email": "hannah@dhyr.se"}],
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
-        "year": 2012
+        "year": 2012,
+        "nextdate": "2017-06-05T15:00:00"
     }, {
         "id": 4,
         "area": "Stockholm",
@@ -66,7 +69,8 @@
         "broker": [{"id": 4, "img":"staff4.png", "name":"Bitte Nielsen", "phone": "087-463572", "email": "bitte@dhyr.se"}],
         "title": "Den välslipade lärlingen",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
-        "year": 1878
+        "year": 1878,
+        "nextdate": "2017-05-12T16:00:00"
     }, {
         "id": 5,
         "area": "Stockholm",
@@ -83,7 +87,8 @@
         "broker": [{"id": 5, "img":"staff5.png", "name":"Bibbi Schultz", "phone": "037-223454", "email": "bibbi@dhyr.se"}],
         "title": "Arkitekten och soldaten",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
-        "year": 1989
+        "year": 1989,
+        "nextdate": "2017-05-22T17:00:00"
     }, {
         "id": 6,
         "area": "Stockholm",
@@ -100,7 +105,8 @@
         "broker": [{"id": 6, "img":"staff6.png", "name":"Scott Tycho", "phone": "087-223454", "email": "scott@dhyr.se"}],
         "title": "En vacker bolagsinvestering",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
-        "year": 2001
+        "year": 2001,
+        "nextdate": "2017-05-15T17:30:00"
     }, {
         "id": 7,
         "area": "Malmö",
@@ -117,7 +123,8 @@
         "broker": [{"id": 1, "img":"staff1.png", "name":"Lotta Walthenius", "phone": "087-223454", "email": "lotta@dhyr.se"}],
         "title": "I höjd med gammel-eken",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
-        "year": 1987
+        "year": 1987,
+        "nextdate": "2017-05-07T12:45:00"
     }, {
         "id": 8,
         "area": "Malmö",
@@ -135,7 +142,8 @@
         "broker": [{"id": 6, "img":"staff6.png", "name":"Scott Tycho", "phone": "087-223454", "email": "scott@dhyr.se"}],
         "title": "En ljus och charmig fristad",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
-        "year": 2012
+        "year": 2012,
+        "nextdate": "2017-05-13T15:30:00"
     }, {
         "id": 9,
         "area": "Stockholm",
@@ -152,7 +160,8 @@
         "broker": [{"id": 3, "img":"staff3.png", "name":"Hannah af Schmildt", "phone": "044-223454", "email": "hannah@dhyr.se"}],
         "title": "Välplanerad central tvårummare",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
-        "year": 1878
+        "year": 1878,
+        "nextdate": "2017-05-22T18:00:00"
     }, {
         "id": 10,
         "area": "Göteborg",
@@ -169,6 +178,7 @@
         "broker": [{"id": 4, "img":"staff4.png", "name":"Bitte Nielsen", "phone": "087-463572", "email": "bitte@dhyr.se"}],        
         "title": "Centralt belägen ljus och öppen våning",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis.",
-        "year": 1989
+        "year": 1989,
+        "nextdate": "2017-05-02T18:00:00"
     }]
 }

@@ -7,7 +7,6 @@ import { BuyPageComponent } from './buy-page/buy-page.component';
 import { EstateMasterComponent } from './buy-page/estates/estate-master.component';
 import { EstateDetailComponent } from './buy-page/estates/estate-detail.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PageNotFoundComponent } from './pagenotfound.component';
 
 const routes: Routes = [
@@ -39,10 +38,6 @@ const routes: Routes = [
 	{
 		path: 'about-us',
 		component: AboutUsComponent
-	},
-	{
-		path: 'contact-us',
-		component: ContactUsComponent
 	},
 	{
 		path: '**',
