@@ -12,50 +12,46 @@ var common_1 = require("@angular/common");
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var rest_service_1 = require("../../services/rest.service");
-var mem_service_1 = require("../../services/mem.service");
-var EstateDetailComponent = (function () {
-    function EstateDetailComponent(restService, route, memService, location) {
+var SaleGuideDetailComponent = (function () {
+    function SaleGuideDetailComponent(restService, route, location) {
         this.restService = restService;
         this.route = route;
-        this.memService = memService;
-        this.estate = {};
-        this.estates = {};
+        this.guide = {};
+        this.guides = {};
         this.location = location;
-        this.globalMem = this.memService.global();
     }
-    EstateDetailComponent.prototype.ngOnInit = function () {
+    SaleGuideDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.params.subscribe(function (routeParams) {
-            var Estates = _this.restService.newRestEntity("estates");
-            Estates.find('').then(function (estates) {
+            var Guides = _this.restService.newRestEntity("guides");
+            Guides.find('').then(function (guides) {
                 var id = routeParams.id;
-                for (var currentEstates in estates) {
-                    for (var _i = 0, _a = estates[currentEstates]; _i < _a.length; _i++) {
-                        var estate = _a[_i];
-                        if (estate.id == id) {
-                            _this.estate = estate;
+                for (var currentGuides in guides) {
+                    for (var _i = 0, _a = guides[currentGuides]; _i < _a.length; _i++) {
+                        var guide = _a[_i];
+                        if (guide.id == id) {
+                            _this.guide = guide;
                         }
                     }
                 }
             });
         });
     };
-    EstateDetailComponent.prototype.backClicked = function () {
+    SaleGuideDetailComponent.prototype.backClicked = function () {
         this.location.back();
     };
-    return EstateDetailComponent;
+    return SaleGuideDetailComponent;
 }());
-EstateDetailComponent = __decorate([
+SaleGuideDetailComponent = __decorate([
     core_1.Component({
-        selector: 'estate-detail',
-        templateUrl: './estate-detail.html',
-        styleUrls: ['./estate-detail.css'],
-        providers: [mem_service_1.MemService, rest_service_1.RestService, common_1.Location, { provide: common_1.LocationStrategy, useClass: common_1.PathLocationStrategy }]
+        selector: 'sale-guide-detail',
+        templateUrl: './sale-guide-detail.html',
+        styleUrls: ['./sale-guide-detail.css'],
+        providers: [rest_service_1.RestService, common_1.Location, { provide: common_1.LocationStrategy, useClass: common_1.PathLocationStrategy }]
     }),
     __metadata("design:paramtypes", [rest_service_1.RestService,
         router_1.ActivatedRoute,
-        mem_service_1.MemService,
         common_1.Location])
-], EstateDetailComponent);
-exports.EstateDetailComponent = EstateDetailComponent;
-//# sourceMappingURL=estate-detail.component.js.map
+], SaleGuideDetailComponent);
+exports.SaleGuideDetailComponent = SaleGuideDetailComponent;
+//# sourceMappingURL=sale-guide-detail.component.js.map

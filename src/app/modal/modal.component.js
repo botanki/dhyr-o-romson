@@ -25,23 +25,10 @@ var NgbdModalBasic = (function () {
         var _this = this;
         this.modalService.open(this.content).result.then(function (result) {
             _this.closeResult = "Closed with: " + result;
-        }, function (reason) {
-            _this.closeResult = "Dismissed " + _this.getDismissReason(reason);
-        });
+        }, function () { });
     };
     NgbdModalBasic.prototype.registerContent = function (content) {
         this.content = content;
-    };
-    NgbdModalBasic.prototype.getDismissReason = function (reason) {
-        if (reason === ng_bootstrap_1.ModalDismissReasons.ESC) {
-            return 'by pressing ESC';
-        }
-        else if (reason === ng_bootstrap_1.ModalDismissReasons.BACKDROP_CLICK) {
-            return 'by clicking on a backdrop';
-        }
-        else {
-            return "with: " + reason;
-        }
     };
     return NgbdModalBasic;
 }());

@@ -1,0 +1,64 @@
+.realtor-content {
+    padding: 40px 0 0;
+}
+
+.card {
+    font-family: 'EB Garamond', serif;
+}
+
+.wide-card {
+    border: 2px solid gray;
+    margin: 5px;
+}
+
+.card-title {
+    color: #BDBDBD;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.card-title:first-of-type {
+    color: #202B30;
+}
+
+.card-text {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.card-text > span {
+    font-family: 'Roboto', sans-serif;
+    color: #4FA9B8;
+    font-size: 24px;
+}
+
+.buttons {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background: #4FA9B8;
+    border-color: #4FA9B8;
+    border-radius: 0;
+    padding: 15px 25px;
+    margin-top: 8px;
+}
+
+.breaker {
+    width: 86%;
+    margin: 0 auto;
+    height: 1px;
+    background: #EFE9E5;
+    margin-top: 24px;
+}
+
+.info-title {
+    margin-right: 0px;
+    font-size: 10px;
+}
+
+.divider-line {
+    border-top: 1px solid black;
+}
+
+
+
+@media screen and (max-width: 500px) {}

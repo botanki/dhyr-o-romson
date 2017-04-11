@@ -27,22 +27,10 @@ export class NgbdModalBasic {
   open() {
     this.modalService.open(this.content).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
-    }, (reason) => {
-      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    });
+    },()=>{});
   }
 
   registerContent(content: any){
     this.content = content;
-  }
-
-  private getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
-    } else {
-      return  `with: ${reason}`;
-    }
   }
 }
