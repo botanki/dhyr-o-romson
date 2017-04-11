@@ -13,6 +13,8 @@ var app_component_1 = require("./app.component");
 var front_page_component_1 = require("./front-page/front-page.component");
 var navigation_component_1 = require("./navigation/navigation.component");
 var sell_page_component_1 = require("./sell-page/sell-page.component");
+var guide_detail_component_1 = require("./sell-page/sell-guide/guide-detail.component");
+var guide_master_component_1 = require("./sell-page/sell-guide/guide-master.component");
 var buy_page_component_1 = require("./buy-page/buy-page.component");
 var search_component_1 = require("./buy-page/search.component");
 var filter_component_1 = require("./buy-page/filter.component");
@@ -43,6 +45,8 @@ AppModule = __decorate([
             front_page_component_1.FrontPageComponent,
             navigation_component_1.NavigationComponent,
             sell_page_component_1.SellPageComponent,
+            guide_detail_component_1.GuideDetailComponent,
+            guide_master_component_1.GuideMasterComponent,
             buy_page_component_1.BuyPageComponent,
             search_component_1.SearchComponent,
             filter_component_1.FilterComponent,
