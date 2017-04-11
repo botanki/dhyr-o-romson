@@ -17,7 +17,7 @@ var NavigationComponent = (function () {
         this.isActive = false;
         this.sections = [
             { text: 'Köp Bostad', route: 'buy-page' },
-            { text: 'Sälj Bostad', route: 'sell-page' },
+            { text: 'Sälj Bostad', route: 'guide/1' },
             { text: 'Om Oss', route: 'about-us' }
         ];
         this.globalMem = this.memService.global();

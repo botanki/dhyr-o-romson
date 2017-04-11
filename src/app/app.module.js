@@ -9,6 +9,7 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
 var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
+var break_row_pipe_1 = require("./pipes/break-row.pipe");
 var app_component_1 = require("./app.component");
 var front_page_component_1 = require("./front-page/front-page.component");
 var navigation_component_1 = require("./navigation/navigation.component");
@@ -57,7 +58,8 @@ AppModule = __decorate([
             footer_component_1.FooterComponent,
             pagenotfound_component_1.PageNotFoundComponent,
             modal_component_1.NgbdModalBasic,
-            broker_master_component_1.BrokerMasterComponent
+            broker_master_component_1.BrokerMasterComponent,
+            break_row_pipe_1.BreakRowPipe
         ],
         bootstrap: [app_component_1.AppComponent]
     })

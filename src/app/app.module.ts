@@ -4,6 +4,8 @@ import { FormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { BreakRowPipe } from './pipes/break-row.pipe';
+
 import { AppComponent }  from './app.component';
 import { FrontPageComponent }  from './front-page/front-page.component';
 import { NavigationComponent }  from './navigation/navigation.component';
@@ -50,7 +52,8 @@ import { NgbdModalBasic } from './modal/modal.component';
 		FooterComponent,
 		PageNotFoundComponent,
 		NgbdModalBasic,
-		BrokerMasterComponent
+		BrokerMasterComponent,
+		BreakRowPipe
 	],
   bootstrap: [ AppComponent ]
 })
