@@ -7,10 +7,27 @@ a {
 	color: #202B30;
 }
 
+.list-title-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #4FA9B8;
+	border-radius: 5px;
+	padding: 10px;
+
+	margin-bottom: 30px;
+}
+
+.list-title {
+	text-transform: uppercase;
+	color: #fff;
+}
+
 .left-panel {
 	margin-top: 10vh;
 }
 
-.list-spacer {
-	margin-top: 5vh;
+.guide-list {
+	margin-top: 10px;
 }

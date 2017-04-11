@@ -2,7 +2,7 @@
    "SaleGuide":[
       {
          "id":1,
-         "title":"Säljguide – Vägen till en lyckad försäljning",
+         "title":"Vägen till en lyckad försäljning",
          "sub_title":"Att sälja din bostad är ofta ett stort beslut och en viktig affär som kräver en hel del förberedelse. Här har vi i sju enkla steg sammanfattat hur du kan lyckas med din försäljning.",
          "content":"Inför en bostadsaffär finns även många aspekter att ta hänsyn till. Är det rätt tidpunkt? Hur mycket är bostaden värd? Ska du sälja först och köpa sen eller tvärtom? En del väljer att sälja på egen hand, men det är mycket att hålla reda på och det kräver att du vet vad du gör om du ska få ut det mesta av din bostadsaffär. Därför är det bra att anlita en mäklare som kan hjälpa dig med allt från att värdera och marknadsföra din bostad till att hålla i visningar, hitta köpare och skriva kontrakt.",
          "second_title": "",
@@ -19,7 +19,7 @@
          "seventh_content": "",
          "eighth_title": "",
          "eighth_content": "",
-         "img":""
+         "img":"../../images/estates/detail/1_3.png"
       },
       {
          "id":2,
