@@ -15,9 +15,9 @@ export class NavigationComponent {
 
     sections = [
         { text: 'Köp Bostad', route: 'buy-page' },
-        { text: 'Sälj Bostad', route: 'sell-page' },
+        { text: 'Sälj Bostad', route: 'guide/1' },
         { text: 'Om Oss', route: 'about-us' }
-    ];   
+    ];
 
     constructor(
         private memService: MemService
