@@ -32,7 +32,7 @@ const routes: Routes = [
 	{
 		path: 'sell-page',
 		component:  GuideMasterComponent
-	}
+	},
 	{
 		path: 'buy-page',
 		component: BuyPageComponent
