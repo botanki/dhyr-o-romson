@@ -1,0 +1,7 @@
+<div class="left-panel">
+	<div *ngFor="let guide of guides[currentGuides]">
+        <a [routerLink]="['/guide', guide.id]">
+        	{{guide.title}}
+        </a>
+    </div>
+</div>
