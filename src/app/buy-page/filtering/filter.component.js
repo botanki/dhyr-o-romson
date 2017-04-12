@@ -16,9 +16,9 @@ var FilterComponent = (function () {
         this.areaOptions = [25, 50, 75, 100, 125, 150, 175, 200];
         //Pris (min)
         this.chosenPriceMin = 'Pris (min)';
-        this.priceMinOptions = [250000, 500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000];
+        this.priceMinOptions = [500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000];
         this.chosenPriceMax = 'Pris (max)';
-        this.priceMaxOptions = [250000, 500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000];
+        this.priceMaxOptions = [500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000];
     }
     FilterComponent.prototype.roomChoice = function (noOfRooms) {
         if (noOfRooms === 0) {

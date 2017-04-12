@@ -17,6 +17,14 @@ var EstateMasterComponent = (function () {
         this.memService = memService;
         this.currentEstates = "OnSale";
         this.estates = {};
+        this.sortHeader = 'Sortera Efter:';
+        this.viewMode = '-date_added';
+        this.dropdownTitle = 'Senaste inlagt';
+        this.options = [
+            { text: 'Nyaste', sorting: '-date_added' },
+            { text: 'Högst Pris', sorting: '-price' },
+            { text: 'Lägst Pris', sorting: 'price' }
+        ];
         this.localMem = memService.get(this);
     }
     EstateMasterComponent.prototype.ngOnInit = function () {
@@ -26,20 +34,13 @@ var EstateMasterComponent = (function () {
             _this.estates = data;
         });
     };
-    EstateMasterComponent.prototype.estateCategories = function () {
-        return Object.keys(this.estates);
-    };
-    EstateMasterComponent.prototype.chooseCategory = function (category) {
-        this.localMem.chosenCategory = category;
-    };
     return EstateMasterComponent;
 }());
 EstateMasterComponent = __decorate([
     core_1.Component({
         selector: 'estate-master',
         templateUrl: './estate-master.html',
-        styleUrls: ['./estate-master.css'],
-        providers: [rest_service_1.RestService, mem_service_1.MemService],
+        styleUrls: ['./estate-master.css']
     }),
     __metadata("design:paramtypes", [rest_service_1.RestService,
         mem_service_1.MemService])

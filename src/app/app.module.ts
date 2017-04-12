@@ -14,7 +14,6 @@ import { GuideMasterComponent } from './sell-page/sell-guide/guide-master.compon
 import { BuyPageComponent } from './buy-page/buy-page.component';
 import { SearchComponent } from './buy-page/filtering/search.component';
 import { FilterComponent } from './buy-page/filtering/filter.component';
-import { SortComponent } from './buy-page/filtering/sort.component';
 import { EstateMasterComponent } from './buy-page/estates/estate-master.component';
 import { EstateDetailComponent } from './buy-page/estates/estate-detail.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -48,7 +47,6 @@ import { AppRoutingModule } from './app-routing.module';
 		BuyPageComponent,
 		SearchComponent,
 		FilterComponent,
-		SortComponent,
 		EstateMasterComponent,
 		EstateDetailComponent,
 		AboutUsComponent,

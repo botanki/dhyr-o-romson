@@ -1,7 +1,3 @@
-.estate-content {
-    padding: 40px 0 0;
-}
-
 .card {
     font-family: 'EB Garamond', serif;
 }
@@ -48,5 +44,67 @@
     background: #EFE9E5;
     margin-top: 24px;
 }
+
+.small-print {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 14px 0px;
+}
+
+.img-no-card-padding {
+    padding: 0;
+}
+
+.img-styled { margin: 20px 0; }
+
+/* 
+
+    SORTING:
+
+*/ 
+
+.sort-header { 
+    padding-top: 20px;
+    padding-bottom: 6px;
+    }
+
+.btn-outline-secondary:hover{
+    color:black;
+}
+
+#dropdownMenu {
+    border:1px solid #CCCCCC;
+    background-color: #F5F5F5;
+    color:black;
+    // width:200px;
+    // text-align: left;
+}
+
+.dropdown-item:hover {
+    background-color:#CCCCCC;
+    color:black;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+    border-radius: 0;
+    width:100%;
+}
+
+.search-btn2 {
+    border-radius: 0;
+}
+
+.breaker-top {
+    width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    background: #EFE9E5;
+    margin-top: 24px;
+}
+
+
 
 @media screen and (max-width: 500px) {}

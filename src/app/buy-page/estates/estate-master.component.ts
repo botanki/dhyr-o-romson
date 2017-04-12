@@ -5,15 +5,24 @@ import { MemService } from '../../services/mem.service';
 @Component({
 	selector: 'estate-master',
 	templateUrl: './estate-master.html',
-	styleUrls: ['./estate-master.css'],
-  providers: [RestService, MemService],
+	styleUrls: ['./estate-master.css']
 })
 
 export class EstateMasterComponent implements OnInit {
-
+    
     currentEstates = "OnSale";
-    localMem: any;
     estates = {};
+    localMem: any;
+
+    sortHeader = 'Sortera Efter:';
+    viewMode = '-date_added';
+    dropdownTitle = 'Senaste inlagt';
+    options = [
+        { text: 'Nyaste', sorting: '-date_added' },
+        { text: 'Högst Pris', sorting: '-price' },
+        { text: 'Lägst Pris', sorting: 'price' }
+    ];
+
 
     constructor(
       private restService: RestService,
@@ -27,14 +36,7 @@ export class EstateMasterComponent implements OnInit {
       Estates.find('').then((data:any)=>{
         this.estates = data;
       });
-    }
 
-    estateCategories(){
-      return Object.keys(this.estates);
-    }
-
-    chooseCategory(category: string){
-      this.localMem.chosenCategory = category;
     }
 
 }

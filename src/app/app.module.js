@@ -18,7 +18,6 @@ var guide_master_component_1 = require("./sell-page/sell-guide/guide-master.comp
 var buy_page_component_1 = require("./buy-page/buy-page.component");
 var search_component_1 = require("./buy-page/filtering/search.component");
 var filter_component_1 = require("./buy-page/filtering/filter.component");
-var sort_component_1 = require("./buy-page/filtering/sort.component");
 var estate_master_component_1 = require("./buy-page/estates/estate-master.component");
 var estate_detail_component_1 = require("./buy-page/estates/estate-detail.component");
 var about_us_component_1 = require("./about-us/about-us.component");
@@ -54,7 +53,6 @@ AppModule = __decorate([
             buy_page_component_1.BuyPageComponent,
             search_component_1.SearchComponent,
             filter_component_1.FilterComponent,
-            sort_component_1.SortComponent,
             estate_master_component_1.EstateMasterComponent,
             estate_detail_component_1.EstateDetailComponent,
             about_us_component_1.AboutUsComponent,

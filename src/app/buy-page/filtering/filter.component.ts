@@ -35,7 +35,7 @@ export class FilterComponent {
 
 	//Pris (min)
 	chosenPriceMin:string = 'Pris (min)';
-	priceMinOptions:number[] = [250000, 500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000];
+	priceMinOptions:number[] = [500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000];
 
 	priceMinChoice(noOfPricesMin:number){
 		if(noOfPricesMin === 0){
@@ -48,7 +48,7 @@ export class FilterComponent {
 	}
 
 	chosenPriceMax:string = 'Pris (max)';
-	priceMaxOptions:number[] = [250000, 500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000];
+	priceMaxOptions:number[] = [500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000];
 
 	priceMaxChoice(noOfPricesMax:number){
 		if(noOfPricesMax === 0){

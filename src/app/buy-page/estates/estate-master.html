@@ -1,26 +1,44 @@
 <div class="container-fluid">
-    <div class="row estate-content" *ngFor="let estate of estates[currentEstates]">
-            <div class="col-xs-12 col-sm-12 offset-lg-1 col-lg-5 col-md-6">
-                <a [routerLink]="['/estate', estate.id]">
-                    <div class="card wide-card">
-                        <div class="card-block">
-                            <img class="img-fluid" src="../images/estates/{{estate.img_master}}" alt="{{estate.address}}">
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-12  col-md-5">
-                <div class="card wide-card">
-                    <div class="card-block">
-                        <h3 class="card-title">{{estate.address }}</h3>
-                        <h3 class="card-title">{{estate.area }}</h3>
-                        <p class="card-text">{{estate.rooms }} rum och kök</p>
-                        <p class="card-text">{{estate.space}} kvm </p>
-                        <p class="card-text">Budstart: <span>{{estate.price | number }} kr</span></p>
-                        <a [routerLink]="['/estate', estate.id]" class=" btn btn-primary buttons drop-shadow">Mer Info</a>
-                    </div>
+    <div class="row">
+        <div class="col-sm-12 offset-md-1 col-md-10 sort-header">{{sortHeader}}</div>
+    </div>
+    <div class='row'>
+        <div class="col-sm-12 offset-md-1 col-md-10">
+            <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-outline-secondary search-btn2" id="dropdownMenu" ngbDropdownToggle>{{dropdownTitle}}</button>
+                <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
+                    <button *ngFor="let option of options" class="dropdown-item" (click)="viewMode = option.sorting" (click)="dropdownTitle = option.text">{{option.text}}</button>
                 </div>
             </div>
+            <div class="breaker-top"></div>
+            
+        </div>
+    </div>
+
+
+    <div class="row estate-content" *ngFor="let estate of estates[currentEstates] | orderBy: [viewMode]">
+        <div class="col-xs-12 col-sm-12 offset-md-1 col-md-5">
+            <a [routerLink]="['/estate', estate.id]">
+                <div class="card wide-card">
+                    <div class="img-no-card-border">
+                        <img class="img-fluid img-styled" src="../images/estates/{{estate.img_master}}" alt="{{estate.address}}">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-5">
+            <div class="card wide-card">
+                <div class="card-block">
+                    <h3 class="card-title">{{estate.address }}</h3>
+                    <h3 class="card-title">{{estate.area }}</h3>
+                    <p class="card-text">{{estate.rooms }} rum och kök</p>
+                    <p class="card-text">{{estate.space}} kvm </p>
+                    <p class="card-text">Budstart: <span>{{estate.price | number }} kr</span></p>
+                    <div class="small-print">* Inlagd den {{estate.date_added | date:'dd MMM yyyy' }}</div>
+                    <a [routerLink]="['/estate', estate.id]" class=" btn btn-primary buttons drop-shadow">Mer Info</a>
+                </div>
+            </div>
+        </div>
 
         <div class="breaker hidden-sm-up"></div>
     </div>
