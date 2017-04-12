@@ -11,7 +11,7 @@ export class SortComponent {
 	chosenOption:string = 'Nyast';
 	sortOptions:string[] = ["Högst Pris", "Lägst Pris"];
 
-	sortChoice(noOfOptions:number){
+	sortChoice(noOfOptions:any){
 		if(noOfOptions === 0){
 			this.chosenOption = 'Nyast';
 		}

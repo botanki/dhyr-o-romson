@@ -1,19 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { RestService } from '../../services/rest.service';
+import { MemService } from '../../services/mem.service';
 
 @Component({
 	selector: 'estate-master',
 	templateUrl: './estate-master.html',
 	styleUrls: ['./estate-master.css'],
-  providers: [RestService],
+  providers: [RestService, MemService],
 })
 
-export class EstateMasterComponent  {
+export class EstateMasterComponent implements OnInit {
 
     currentEstates = "OnSale";
+    localMem: any;
     estates = {};
 
-    constructor(private restService: RestService){}
+    constructor(
+      private restService: RestService,
+      private memService: MemService
+    ){
+      this.localMem = memService.get(this);
+    }
 
     ngOnInit(){
       let Estates = this.restService.newRestEntity("estates");
@@ -21,4 +28,13 @@ export class EstateMasterComponent  {
         this.estates = data;
       });
     }
+
+    estateCategories(){
+      return Object.keys(this.estates);
+    }
+
+    chooseCategory(category: string){
+      this.localMem.chosenCategory = category;
+    }
+
 }

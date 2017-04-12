@@ -10,11 +10,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var rest_service_1 = require("../../services/rest.service");
+var mem_service_1 = require("../../services/mem.service");
 var EstateMasterComponent = (function () {
-    function EstateMasterComponent(restService) {
+    function EstateMasterComponent(restService, memService) {
         this.restService = restService;
+        this.memService = memService;
         this.currentEstates = "OnSale";
         this.estates = {};
+        this.localMem = memService.get(this);
     }
     EstateMasterComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -23,6 +26,12 @@ var EstateMasterComponent = (function () {
             _this.estates = data;
         });
     };
+    EstateMasterComponent.prototype.estateCategories = function () {
+        return Object.keys(this.estates);
+    };
+    EstateMasterComponent.prototype.chooseCategory = function (category) {
+        this.localMem.chosenCategory = category;
+    };
     return EstateMasterComponent;
 }());
 EstateMasterComponent = __decorate([
@@ -30,9 +39,10 @@ EstateMasterComponent = __decorate([
         selector: 'estate-master',
         templateUrl: './estate-master.html',
         styleUrls: ['./estate-master.css'],
-        providers: [rest_service_1.RestService],
+        providers: [rest_service_1.RestService, mem_service_1.MemService],
     }),
-    __metadata("design:paramtypes", [rest_service_1.RestService])
+    __metadata("design:paramtypes", [rest_service_1.RestService,
+        mem_service_1.MemService])
 ], EstateMasterComponent);
 exports.EstateMasterComponent = EstateMasterComponent;
 //# sourceMappingURL=estate-master.component.js.map

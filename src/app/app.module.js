@@ -9,7 +9,6 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
 var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
-var break_row_pipe_1 = require("./pipes/break-row.pipe");
 var app_component_1 = require("./app.component");
 var front_page_component_1 = require("./front-page/front-page.component");
 var navigation_component_1 = require("./navigation/navigation.component");
@@ -17,17 +16,21 @@ var sell_page_component_1 = require("./sell-page/sell-page.component");
 var guide_detail_component_1 = require("./sell-page/sell-guide/guide-detail.component");
 var guide_master_component_1 = require("./sell-page/sell-guide/guide-master.component");
 var buy_page_component_1 = require("./buy-page/buy-page.component");
-var search_component_1 = require("./buy-page/search.component");
-var filter_component_1 = require("./buy-page/filter.component");
-var sort_component_1 = require("./buy-page/sort.component");
+var search_component_1 = require("./buy-page/filtering/search.component");
+var filter_component_1 = require("./buy-page/filtering/filter.component");
+var sort_component_1 = require("./buy-page/filtering/sort.component");
 var estate_master_component_1 = require("./buy-page/estates/estate-master.component");
 var estate_detail_component_1 = require("./buy-page/estates/estate-detail.component");
 var about_us_component_1 = require("./about-us/about-us.component");
 var footer_component_1 = require("./footer/footer.component");
 var pagenotfound_component_1 = require("./pagenotfound.component");
 var broker_master_component_1 = require("./about-us/brokers/broker-master.component");
-var app_routing_module_1 = require("./app-routing.module");
 var modal_component_1 = require("./modal/modal.component");
+var rest_service_1 = require("./services/rest.service");
+var mem_service_1 = require("./services/mem.service");
+var break_row_pipe_1 = require("./pipes/break-row.pipe");
+var order_by_pipe_1 = require("./pipes/order-by.pipe");
+var app_routing_module_1 = require("./app-routing.module");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -59,9 +62,16 @@ AppModule = __decorate([
             pagenotfound_component_1.PageNotFoundComponent,
             modal_component_1.NgbdModalBasic,
             broker_master_component_1.BrokerMasterComponent,
-            break_row_pipe_1.BreakRowPipe
+            break_row_pipe_1.BreakRowPipe,
+            order_by_pipe_1.OrderByPipe
         ],
-        bootstrap: [app_component_1.AppComponent]
+        bootstrap: [
+            app_component_1.AppComponent
+        ],
+        providers: [
+            rest_service_1.RestService,
+            mem_service_1.MemService
+        ]
     })
 ], AppModule);
 exports.AppModule = AppModule;
