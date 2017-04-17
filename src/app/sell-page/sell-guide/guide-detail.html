@@ -1,36 +1,36 @@
 <div class="container">
 	<div class="row">
-		<div class="col-3">
+		<div class="col-xs-12 col-sm-5 col-lg-3">
 			<guide-master></guide-master>
 		</div>
-		<div class="offset-1 col-8 right-panel">
+		<div class="col-xs-12 col-sm-7 offset-lg-1 col-lg-8 right-panel">
     		<h2 class="headlines" [innerHTML]="guide.title | breakrow"></h2>
-    		<h6 [innerHTML]="guide.sub_title | breakrow"></h6>
-    		<p [innerHTML]="guide.content | breakrow"></p>
-    		<h5 [innerHTML]="guide.second_title | breakrow"></h5>
-    		<p [innerHTML]="guide.second_content | breakrow"></p>
-    		<h5 [innerHTML]="guide.third_title | breakrow"></h5>
-    		<p [innerHTML]="guide.third_content | breakrow"></p>
-    		<h5 [innerHTML]="guide.fourth_title | breakrow"></h5>
-    		<p [innerHTML]="guide.fourth_content | breakrow"></p>
-    		<h5 [innerHTML]="guide.fifth_title | breakrow"></h5>
-    		<p [innerHTML]="guide.fifth_content | breakrow"></p>
-    		<h5 [innerHTML]="guide.sixth_title | breakrow"></h5>
-    		<p [innerHTML]="guide.sixth_content | breakrow"></p>
-    		<h5 [innerHTML]="guide.seventh_title | breakrow"></h5>
-    		<p [innerHTML]="guide.seventh_content | breakrow"></p>
-    		<h5 [innerHTML]="guide.eighth_title | breakrow"></h5>
-    		<p [innerHTML]="guide.eighth_content | breakrow"></p>
-    		<h5 [innerHTML]="guide.ninth_title | breakrow"></h5>
-    		<p [innerHTML]="guide.ninth_content | breakrow"></p>
-    		<h5 [innerHTML]="guide.tenth_title | breakrow"></h5>
-    		<p [innerHTML]="guide.tenth_content | breakrow"></p>
-    		<h5 [innerHTML]="guide.eleventh_title | breakrow"></h5>
-    		<p [innerHTML]="guide.eleventh_content | breakrow"></p>
-    		<h5 [innerHTML]="guide.twelfth_title | breakrow"></h5>
-    		<p [innerHTML]="guide.twelfth_content | breakrow"></p>
-    		<h5 [innerHTML]="guide.thirteenth_title | breakrow"></h5>
-    		<p [innerHTML]="guide.thirteenth_content | breakrow"></p>
+    		<h5 class="sell-subtitle" [innerHTML]="guide.sub_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.second_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.second_content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.third_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.third_content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.fourth_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.fourth_content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.fifth_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.fifth_content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.sixth_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.sixth_content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.seventh_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.seventh_content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.eighth_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.eighth_content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.ninth_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.ninth_content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.tenth_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.tenth_content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.eleventh_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.eleventh_content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.twelfth_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.twelfth_content | breakrow"></p>
+    		<h5 class="guide-subtitle" [innerHTML]="guide.thirteenth_title | breakrow"></h5>
+    		<p class="sell-content" [innerHTML]="guide.thirteenth_content | breakrow"></p>
     		<img src="{{guide.img}}">
         </div>
 	</div>

@@ -15,3 +15,19 @@ a {
 	margin-top: 10vh;
 	margin-bottom: 10vh;
 }
+
+
+.sell-subtitle {
+    font-family: 'EB Garamond', serif;
+}
+
+.guide-subtitle {
+    font-family: 'EB Garamond', serif;
+    color: #4FA9B8;
+}
+
+
+.sell-content {
+    font-size: 0.9em;
+    color: #BDBDBD;
+}
