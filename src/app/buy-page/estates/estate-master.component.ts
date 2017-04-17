@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RestService } from '../../services/rest.service';
 import { MemService } from '../../services/mem.service';
-import { Estate } from '../../classes/estate';
 
 @Component({
 	selector: 'estate-master',

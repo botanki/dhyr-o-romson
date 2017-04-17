@@ -5,7 +5,7 @@ export class Estate {
     type: string;
     rooms: number;
     space: number;
-    monthly Rental: number;
+    monthly_Rental: number;
     price: number;
     img_master: string;
     img_detail: string;
@@ -15,7 +15,7 @@ export class Estate {
     title: string;
     body: string;
     year: number;
-    next_date: date;
-    date_added: date;
+    next_date: string;
+    date_added: string;
     on_sale: boolean;
 }

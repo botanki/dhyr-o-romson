@@ -1,7 +1,6 @@
 "use strict";
 var Estate = (function () {
     function Estate() {
-        this.monthly = Rental;
     }
     return Estate;
 }());
