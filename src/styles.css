@@ -8,8 +8,16 @@ body {
 	overflow-x: hidden;
 }
 
+
+
 .headlines {
 	font-family: 'EB Garamond', serif;
+}
+
+.modal-backdrop.show {
+    opacity: 0.8;
+
+
 }
 
 // OUR COLOR-SCHEME:
