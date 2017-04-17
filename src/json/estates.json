@@ -17,7 +17,8 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 2001,
         "next_date": "2017-05-12T16:00:00",
-        "date_added": "2017-04-10T16:00:00"
+        "date_added": "2017-04-10T16:00:00",
+        "on_sale": true
     }, {
         "id": 2,
         "area": "Malmö",
@@ -36,7 +37,8 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 1987,
         "next_date": "2017-05-15T18:00:00",
-        "date_added": "2017-02-15T16:00:00"
+        "date_added": "2017-02-15T16:00:00",
+        "on_sale": true
     }, {
         "id": 3,
         "area": "Malmö",
@@ -55,7 +57,8 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 2012,
         "next_date": "2017-06-05T15:00:00",
-        "date_added": "2017-03-17T16:00:00"
+        "date_added": "2017-03-17T16:00:00",
+        "on_sale": true
     }, {
         "id": 4,
         "area": "Stockholm",
@@ -74,7 +77,8 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 1878,
         "next_date": "2017-05-12T16:00:00",
-        "date_added": "2017-03-19T16:00:00"
+        "date_added": "2017-03-19T16:00:00",
+        "on_sale": true
     }, {
         "id": 5,
         "area": "Stockholm",
@@ -93,7 +97,8 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 1989,
         "next_date": "2017-05-22T17:00:00",
-        "date_added": "2017-03-28T16:00:00"
+        "date_added": "2017-03-28T16:00:00",
+        "on_sale": true
     }, {
         "id": 6,
         "area": "Stockholm",
@@ -112,7 +117,8 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 2001,
         "next_date": "2017-05-15T17:30:00",
-        "date_added": "2017-03-21T16:00:00"
+        "date_added": "2017-03-21T16:00:00",
+        "on_sale": true
     }, {
         "id": 7,
         "area": "Malmö",
@@ -131,7 +137,8 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 1987,
         "next_date": "2017-05-07T12:45:00",
-        "date_added": "2017-04-01T16:00:00"
+        "date_added": "2017-04-01T16:00:00",
+        "on_sale": true
     }, {
         "id": 8,
         "area": "Malmö",
@@ -151,7 +158,8 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 2012,
         "next_date": "2017-05-13T15:30:00",
-        "date_added": "2017-04-10T16:00:00"
+        "date_added": "2017-04-10T16:00:00",
+        "on_sale": true
     }, {
         "id": 9,
         "area": "Stockholm",
@@ -170,7 +178,8 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis. ",
         "year": 1878,
         "next_date": "2017-05-22T18:00:00",
-        "date_added": "2017-04-11T16:00:00"
+        "date_added": "2017-04-11T16:00:00",
+        "on_sale": true
     }, {
         "id": 10,
         "area": "Göteborg",
@@ -189,6 +198,7 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non porttitor massa. Fusce suscipit pulvinar libero, sed molestie lectus hendrerit nec. Curabitur hendrerit eget nunc a vulputate. Praesent sit amet tortor pharetra, vestibulum dolor id, mattis neque. Cras quis rhoncus ligula. Maecenas quis congue nisi. In nulla nunc, mattis tempus purus id, sagittis egestas lorem. Curabitur at volutpat elit, quis hendrerit tellus. Morbi lacus arcu, euismod a vulputate quis, placerat eu augue. Quisque faucibus, augue et porttitor sagittis, metus nunc lobortis tortor, efficitur pulvinar eros elit vitae turpis. Ut sit amet massa sagittis, blandit velit vel, dictum ligula. Fusce velit quam, mollis  non auctor at, maximus vel nunc. Nullam vestibulum ultricies aliquam. Nulla tristique vulputate mollis.",
         "year": 1989,
         "next_date": "2017-05-02T18:00:00",
-        "date_added": "2017-03-15T16:00:00"
+        "date_added": "2017-03-15T16:00:00",
+        "on_sale": true
     }]
 }
