@@ -23,6 +23,9 @@ export class EstateMasterComponent implements OnInit {
         { text: 'Lägst Pris', sorting: 'price' }
     ];
 
+    saleTag = "Såld";
+    tags = ['rum och kök', 'kvm', 'Budstart:', '* Inlagd den', 'Mer Info']
+
 
     constructor(
       private restService: RestService,

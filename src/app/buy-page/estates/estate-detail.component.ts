@@ -14,9 +14,25 @@ import { MemService } from '../../services/mem.service';
 export class EstateDetailComponent  {
 
     estate = {};
-    estates = {}
     location: Location;
     globalMem: any;
+    breadcrumbs = ['Hem', 'Köp Bostad']
+    tags = [
+      'Rum', 
+      'rum och kök', 
+      'Boarea', 
+      'kvm', 
+      'Byggnadsår', 
+      'Föreslagen budstart', 
+      'kr',
+      'Nästa Visning:',
+      'Anmäl Intresse',
+      'Se fler bostäder',
+      'Ansvarig Mäklare:',
+      'Tel: ',
+      'Kontakta:'
+      ]
+    sale = "Såld";
 
     constructor(
       private restService: RestService,

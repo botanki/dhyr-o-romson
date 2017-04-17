@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var SearchComponent = (function () {
     function SearchComponent() {
+        this.header = 'Sök på bostadstyp, adress, område, ort, nyckelord';
     }
     return SearchComponent;
 }());

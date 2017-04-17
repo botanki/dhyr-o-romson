@@ -10,6 +10,11 @@ import { MemService } from '../services/mem.service';
   providers: [MemService]
 })
 export class NgbdModalBasic {
+
+  title = 'Kontakta oss';
+  body = 'Vill du komma i kontakt med någon av våra mäklare, eller har du en annan fråga? Fyll i ditt ärende i kontaktformuläret så hör vi av oss till dig. Du kan även ringa oss på 08-55551300 mellan kl 8-20 alla dagar i veckan.';
+  send = 'Skicka';
+  cancel = 'Avbryt';
   closeResult: string;
   globalMem: any;
   content: any;

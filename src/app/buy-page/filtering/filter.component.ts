@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
 })
 
 export class FilterComponent {
+
+	header = 'Filtera:';
+
 	// Rum (min)
+	title1 = 'Rum (min)'
+	def1 = 'rum'
 	chosenRoom:string = 'Rum (min)';
 	roomOptions:number[] = [1,2,3,4,5,6];
 
@@ -21,6 +26,7 @@ export class FilterComponent {
 	}
 
 	// Boarea (min)
+	def2 = 'kvm'
 	chosenArea:string = 'Boarea (min)';
 	areaOptions:number[] = [25,50,75,100,125,150,175,200];
 
@@ -34,6 +40,8 @@ export class FilterComponent {
 	}
 
 	//Pris (min)
+	title3 = 'Pris (min)'
+	def3 = 'kr'
 	chosenPriceMin:string = 'Pris (min)';
 	priceMinOptions:number[] = [500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000];
 
@@ -47,6 +55,8 @@ export class FilterComponent {
 		}
 	}
 
+	//Pris (max)
+	title4 = 'Pris (max)'
 	chosenPriceMax:string = 'Pris (max)';
 	priceMaxOptions:number[] = [500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000];
 

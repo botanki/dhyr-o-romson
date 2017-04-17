@@ -1,15 +1,15 @@
 <div class="container-fluid filter-color">
   <div class="row filter-me">
     <div class="col-12">
-      Filtera:
+      {{header}}
     </div>
     <!-- Rum (min) -->
     <div class="col-6 col-sm-3 filter-space">
       <div ngbDropdown class="d-inline-block search-btn btn-space">
         <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenRoom}}</button>
         <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
-          <button (click)="roomChoice(0)" class="dropdown-item">Rum (min)</button>
-          <button *ngFor="let room of roomOptions" (click)="roomChoice(room)" class="dropdown-item">{{room}} rum</button>
+          <button (click)="roomChoice(0)" class="dropdown-item">{{title1}}</button>
+          <button *ngFor="let room of roomOptions" (click)="roomChoice(room)" class="dropdown-item">{{room}} {{def1}}</button>
         </div>
       </div>
     </div>
@@ -18,8 +18,8 @@
       <div ngbDropdown class="d-inline-block search-btn btn-space">
         <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenArea}}</button>
         <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
-          <button (click)="areaChoice(0)" class="dropdown-item">Boarea (min)</button>
-          <button *ngFor="let area of areaOptions" (click)="areaChoice(area)" class="dropdown-item">{{area}} kvm</button>
+          <button (click)="areaChoice(0)" class="dropdown-item">{{title2}}</button>
+          <button *ngFor="let area of areaOptions" (click)="areaChoice(area)" class="dropdown-item">{{area}} {{def2}}</button>
         </div>
       </div>
     </div>
@@ -27,8 +27,8 @@
       <div ngbDropdown class="d-inline-block search-btn btn-space">
         <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenPriceMin}}</button>
         <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
-          <button (click)="priceMinChoice(0)" class="dropdown-item">Pris (min)</button>
-          <button *ngFor="let priceMin of priceMinOptions" (click)="priceMinChoice(priceMin)" class="dropdown-item">{{priceMin | number}} kr</button>
+          <button (click)="priceMinChoice(0)" class="dropdown-item">{{title3}}</button>
+          <button *ngFor="let priceMin of priceMinOptions" (click)="priceMinChoice(priceMin)" class="dropdown-item">{{priceMin | number}} {{def3}}</button>
         </div>
       </div>
     </div>
@@ -36,8 +36,8 @@
       <div ngbDropdown class="d-inline-block search-btn btn-space">
         <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenPriceMax}}</button>
         <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
-          <button (click)="priceMaxChoice(0)" class="dropdown-item">Pris (max)</button>
-          <button *ngFor="let priceMax of priceMaxOptions" (click)="priceMaxChoice(priceMax)" class="dropdown-item">{{priceMax | number}} kr</button>
+          <button (click)="priceMaxChoice(0)" class="dropdown-item">{{title4}}</button>
+          <button *ngFor="let priceMax of priceMaxOptions" (click)="priceMaxChoice(priceMax)" class="dropdown-item">{{priceMax | number}} {{def3}}</button>
         </div>
       </div>
     </div>

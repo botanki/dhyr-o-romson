@@ -1,6 +1,6 @@
 <div class="left-panel">
 	<div class="list-title-box">
-		<h5 class="list-title">Säljguide</h5>
+		<h5 class="list-title">{{title}}</h5>
 	</div>
 	<div class="guide-list" *ngFor="let guide of guides[currentGuides]">
         <a [routerLink]="['/guide', guide.id]">

@@ -117,3 +117,14 @@ a:not([href]):not([tabindex]) {
     color: #fff;
     text-decoration: none;
 }
+
+
+@media screen and (max-width: 768px) {
+    .sold-button {
+        top: -200px;
+        left: 30px;
+    }
+}
+
+
+   

@@ -13,6 +13,7 @@ var rest_service_1 = require("../../services/rest.service");
 var GuideMasterComponent = (function () {
     function GuideMasterComponent(restService) {
         this.restService = restService;
+        this.title = 'Säljguide';
         this.currentGuides = "SaleGuide";
         this.guides = {};
     }

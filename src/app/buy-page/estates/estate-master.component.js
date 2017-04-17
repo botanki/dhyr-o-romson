@@ -25,6 +25,8 @@ var EstateMasterComponent = (function () {
             { text: 'Högst Pris', sorting: '-price' },
             { text: 'Lägst Pris', sorting: 'price' }
         ];
+        this.saleTag = "Såld";
+        this.tags = ['rum och kök', 'kvm', 'Budstart:', '* Inlagd den', 'Mer Info'];
         this.localMem = memService.get(this);
     }
     EstateMasterComponent.prototype.ngOnInit = function () {

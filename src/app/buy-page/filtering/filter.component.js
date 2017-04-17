@@ -8,15 +8,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var FilterComponent = (function () {
     function FilterComponent() {
+        this.header = 'Filtera:';
         // Rum (min)
+        this.title1 = 'Rum (min)';
+        this.def1 = 'rum';
         this.chosenRoom = 'Rum (min)';
         this.roomOptions = [1, 2, 3, 4, 5, 6];
         // Boarea (min)
+        this.def2 = 'kvm';
         this.chosenArea = 'Boarea (min)';
         this.areaOptions = [25, 50, 75, 100, 125, 150, 175, 200];
         //Pris (min)
+        this.title3 = 'Pris (min)';
+        this.def3 = 'kr';
         this.chosenPriceMin = 'Pris (min)';
         this.priceMinOptions = [500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000];
+        //Pris (max)
+        this.title4 = 'Pris (max)';
         this.chosenPriceMax = 'Pris (max)';
         this.priceMaxOptions = [500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000];
     }

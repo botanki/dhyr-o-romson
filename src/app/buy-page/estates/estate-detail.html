@@ -4,8 +4,8 @@
 <div class='container'>
     <div class="row">
         <nav class="breadcrumb">
-            <a class="breadcrumb-item" routerLink="/front-page">Home</a>
-            <a class="breadcrumb-item" routerLink="/buy-page">Köp Bostad</a>
+            <a class="breadcrumb-item" routerLink="/front-page">{{breadcrumbs[0]}}</a>
+            <a class="breadcrumb-item" routerLink="/buy-page">{{breadcrumbs[1]}}</a>
             <a class="breadcrumb-item active" routerLink="/estate/{{estate.id}}">{{estate.address}}</a>
         </nav>     
     </div>
@@ -14,30 +14,26 @@
             <div class="col-sm-12 col-md-3">
                 <div class="card">
                     <div class="card-block">
-                        <div *ngIf="!estate.on_sale">
-                            <button class="sold-button">SÅLD</button>
-                        </div>
-
                         <h3 class="card-title">{{estate.address}}</h3>
                         <h3 class="card-title">{{estate.area }}</h3>
-                        <p class="card-text">Rum {{estate.rooms}} rum och kök</p>
-                        <p class="card-text">Boarea {{estate.space}} kvm</p>
-                        <p class="card-text">Byggnadsår {{estate.year}} kvm </p>
-                        <p class="card-text">Föreslagen budstart {{estate.price | number:'4.0-2'}} kr</p>
+                        <p class="card-text">{{tags[0]}} {{estate.rooms}} {{tags[1]}}</p>
+                        <p class="card-text">{{tags[2]}} {{estate.space}} {{tags[3]}}</p>
+                        <p class="card-text">{{tags[4]}} {{estate.year}} </p>
+                        <p class="card-text">{{tags[5]}} {{estate.price | number:'4.0-2'}} {{tags[6]}}</p>
                         <div class="next-content">
                             <div class="next-heading">
-                                <h5>Nästa Visning: <br>
+                                <h5>{{tags[7]}} <br>
                                     <span>
                                         {{estate.next_date | date:'dd MMM HH:mm' }}
                                     </span>
                                 </h5>
                             </div>
                             <div class="next-contact">
-                                <a (click)="globalMem.openModal()">Anmäl Intresse</a>
+                                <a (click)="globalMem.openModal()">{{tags[8]}}</a>
                             </div>
                         </div>
                         <div class="back-arrow">
-                            <i class="fa fa-arrow-left" (click)="backClicked()" aria-hidden="true"><span class="more-estates">Se fler bostäder</span></i>
+                            <i class="fa fa-arrow-left" (click)="backClicked()" aria-hidden="true"><span class="more-estates">{{tags[9]}}</span></i>
                         </div>
                     </div>
                 </div>
@@ -47,6 +43,9 @@
                 <div class="card">
                     <div class="card-block">
                         <h3 class="estate-title">{{estate.title}}</h3>
+                        <div *ngIf="!estate.on_sale">
+                            <button class="sold-button">{{sale | uppercase }}</button>
+                        </div>
                         <p class="estate-body">{{estate.body}}</p>
                     </div>
                 </div>
@@ -57,16 +56,14 @@
                     <div class="card-block">
                         <div class="broker-body" *ngFor="let broker of estate.broker">
                             <img class="img-fluid broker-img" src="../images/brokers/{{broker.img}}">
-                            <p>Ansvarig Mäklare:</p>
+                            <p>{{tags[10]}}</p>
                             <p>{{broker.name}}</p>
-                            <p>Tel: {{broker.phone}}</p>
-                            <p>Kontakta: {{broker.email}}</p>
+                            <p>{{tags[11]}} {{broker.phone}}</p>
+                            <p>{{tags[12]}} {{broker.email}}</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-        
          </div>
 
          <div class='row'>
@@ -76,5 +73,4 @@
                 <img class="img-fluid" src="../images/estates/detail/{{estate.alt_2}}" alt="interior of {{estate.address}}">
             </div>        
          </div>
-    
 </div>

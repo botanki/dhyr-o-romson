@@ -4,17 +4,14 @@
   
   
     <div class="modal-header">
-      <h2 class="modal-title">Kontakta oss</h2>
+      <h2 class="modal-title">{{title}}</h2>
     </div>
     
 
     
     <div class="modal-body">
       
-        <p class="modal-ingress">Vill du komma i kontakt med någon
-        av våra mäklare, eller har du en annan fråga?
-        Fyll i ditt ärende i kontaktformuläret så hör vi av oss till dig.
-        du kan även ringa oss på 08-55551300 mellan kl 8-20 alla dagar i veckan.</p>
+        <p class="modal-ingress">{{body}}</p>
       
       <div class="form-group">
 
@@ -49,8 +46,8 @@
        <div class="form-group">
           <div class="col-sm-12">
             <textarea class="form-control" rows="5" id="errand" placeholder="Ärende*"></textarea>
-            <button type="submit" class="btn btn-info">Skicka</button>
-            <button type="button" class="btn btn-secondary" (click)="c('Close click')">Avbryt</button>
+            <button type="submit" class="btn btn-info">{{send}}</button>
+            <button type="button" class="btn btn-secondary" (click)="c('Close click')">{{cancel}}</button>
           </div>  
         </div>     
     </div>

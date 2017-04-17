@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class SearchComponent {
+
+    header = 'Sök på bostadstyp, adress, område, ort, nyckelord'
 }

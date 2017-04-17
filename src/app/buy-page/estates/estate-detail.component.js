@@ -19,7 +19,23 @@ var EstateDetailComponent = (function () {
         this.route = route;
         this.memService = memService;
         this.estate = {};
-        this.estates = {};
+        this.breadcrumbs = ['Hem', 'Köp Bostad'];
+        this.tags = [
+            'Rum',
+            'rum och kök',
+            'Boarea',
+            'kvm',
+            'Byggnadsår',
+            'Föreslagen budstart',
+            'kr',
+            'Nästa Visning:',
+            'Anmäl Intresse',
+            'Se fler bostäder',
+            'Ansvarig Mäklare:',
+            'Tel: ',
+            'Kontakta:'
+        ];
+        this.sale = "Såld";
         this.location = location;
         this.globalMem = this.memService.global();
     }

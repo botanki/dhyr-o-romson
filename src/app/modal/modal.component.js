@@ -16,6 +16,10 @@ var NgbdModalBasic = (function () {
         var _this = this;
         this.modalService = modalService;
         this.memService = memService;
+        this.title = 'Kontakta oss';
+        this.body = 'Vill du komma i kontakt med någon av våra mäklare, eller har du en annan fråga? Fyll i ditt ärende i kontaktformuläret så hör vi av oss till dig. Du kan även ringa oss på 08-55551300 mellan kl 8-20 alla dagar i veckan.';
+        this.send = 'Skicka';
+        this.cancel = 'Avbryt';
         this.globalMem = this.memService.global();
         this.globalMem.openModal = function () {
             _this.open();
