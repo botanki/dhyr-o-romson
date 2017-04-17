@@ -37,5 +37,15 @@ input {
 	width: 100%;
 }
 
+.shut-down {
+	position: absolute;
+	top: 0;
+	right: 18px;
+	color: #fff;
+	background: none;
+	border: 0;
+	font-size: 20px;
+}
+
 
 
