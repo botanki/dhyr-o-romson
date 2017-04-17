@@ -23,6 +23,9 @@
                     <div class="img-no-card-border">
                         <img class="img-fluid img-styled" src="../images/estates/{{estate.img_master}}" alt="{{estate.address}}">
                     </div>
+                    <div *ngIf="!estate.on_sale">
+                        <button class="sold-button">SÅLD</button>
+                    </div>
                 </div>
             </a>
         </div>

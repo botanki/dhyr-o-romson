@@ -1,5 +1,6 @@
 <img class="img-fluid" src="../images/estates/{{estate.img_detail}}" alt="{{estate.address}}">
 
+
 <div class='container'>
     <div class="row">
         <nav class="breadcrumb">
@@ -13,6 +14,10 @@
             <div class="col-sm-12 col-md-3">
                 <div class="card">
                     <div class="card-block">
+                        <div *ngIf="!estate.on_sale">
+                            <button class="sold-button">SÅLD</button>
+                        </div>
+
                         <h3 class="card-title">{{estate.address}}</h3>
                         <h3 class="card-title">{{estate.area }}</h3>
                         <p class="card-text">Rum {{estate.rooms}} rum och kök</p>

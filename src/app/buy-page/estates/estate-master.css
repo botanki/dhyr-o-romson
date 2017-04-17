@@ -105,6 +105,24 @@
     margin-top: 24px;
 }
 
+.sold-button {
+    border: 0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: #F17E19;
+    opacity: 0.9;
+    color: #fff;
+}
 
 
-@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 500px) {
+    .sold-button {
+    width: 70px;
+    height: 70px;
+}
+}

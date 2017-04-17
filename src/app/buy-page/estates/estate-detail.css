@@ -99,6 +99,20 @@
     padding-left: 10px;
 }
 
+.sold-button {
+    border: 0;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: -96px;
+    right: 30px;
+    background: #F17E19;
+    opacity: 0.9;
+    color: #fff;
+    font-size: 22px;
+}
+
 a:not([href]):not([tabindex]) {
     color: #fff;
     text-decoration: none;
