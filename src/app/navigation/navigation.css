@@ -16,7 +16,7 @@ img:focus, i:focus, button:focus, li:focus { outline: none; border: 0; }
 
 .links-content {
     margin: 0 auto;
-    width: 400px;
+    
 }
 
 .nav-link {
@@ -35,7 +35,6 @@ img:focus, i:focus, button:focus, li:focus { outline: none; border: 0; }
 
 .icon-content {
     margin: 0;
-    width: 180px;
 }
 
 .search-icon {
