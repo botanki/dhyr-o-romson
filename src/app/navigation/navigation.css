@@ -16,6 +16,7 @@ img:focus, i:focus, button:focus, li:focus { outline: none; border: 0; }
 
 .links-content {
     margin: 0 auto;
+    width: 500px;
     
 }
 
@@ -59,4 +60,12 @@ img:focus, i:focus, button:focus, li:focus { outline: none; border: 0; }
         padding-left: 0;
         margin: 4px auto;
     }
+}
+
+@media screen and (min-width: 991px) {
+
+    .links-content {
+        width: 500px;
+    }
+
 }

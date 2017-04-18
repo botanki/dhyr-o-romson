@@ -21,7 +21,7 @@ var EstateMasterComponent = (function () {
         this.viewMode = '-date_added';
         this.dropdownTitle = 'Senaste inlagt';
         this.options = [
-            { text: 'Nyaste', sorting: '-date_added' },
+            { text: 'Senaste inlagt', sorting: '-date_added' },
             { text: 'Högst Pris', sorting: '-price' },
             { text: 'Lägst Pris', sorting: 'price' }
         ];
