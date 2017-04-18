@@ -16,6 +16,11 @@ var BrokerMasterComponent = (function () {
         this.currentBrokers = "ATeam";
         this.brokers = {};
         this._odd = false;
+        this.tags = [
+            'Ansvarig Mäklare:',
+            'Tel: ',
+            'Kontakta:'
+        ];
     }
     BrokerMasterComponent.prototype.ngOnInit = function () {
         var _this = this;

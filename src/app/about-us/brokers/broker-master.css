@@ -1,63 +1,28 @@
-.about-us-background {
-    width: 100%;
-}
-
-.broker-content {
-    padding: 40px 0 0;
-    
-}
-
 .card {
     font-family: 'EB Garamond', serif;
+    border: 0;
 }
 
-.wide-card {
-    margin: 5px;
-}
-
-.card-title {
-    color: #BDBDBD;
-    font-size: 36px;
-    margin-bottom: 8px;
-}
-
-.card-title:first-of-type {
-    color: #202B30;
-}
-
-.card-text {
-    font-size: 22px;
-    margin-bottom: 6px;
-}
-
-.card-text > span {
+.broker-info {
     font-family: 'Roboto', sans-serif;
+    line-height: 8px;
+    color: #BDBDBD;
+}
+
+.broker-about {
     color: #4FA9B8;
-    font-size: 24px;
 }
 
-
-.breaker {
-    width: 86%;
-    margin: 0 auto;
-    height: 1px;
-    background: #EFE9E5;
-    margin-top: 24px;
+.broker-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    color: #BDBDBD;
 }
 
-.info-title {
-    margin-right: 0px;
-    font-size: 10px;
+.broker-body > p {
+    margin-bottom: 0;
 }
 
-.divider-line {
-    border-top: 1px solid black;
+.broker-img {
+    padding-bottom: 20px;
 }
-
-.about-us-text {
-    margin-top: 10px;
-}
-
-
-
-@media screen and (max-width: 500px) {}

@@ -14,6 +14,12 @@ export class BrokerMasterComponent  {
     brokers = {};
     _odd = false;
 
+    tags = [
+      'Ansvarig Mäklare:',
+      'Tel: ',
+      'Kontakta:'
+      ]
+
     constructor(private restService: RestService){}
 
     ngOnInit(){
