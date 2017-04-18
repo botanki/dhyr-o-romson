@@ -1,20 +1,48 @@
-<div class="container-fluid">
-    <div class="row broker-content" *ngFor="let broker of brokers[currentBrokers]">
-            <div class="col-xs-12 col-sm-12  col-md-5">
+<div class="container-fluid col-md-12">
+<img class="about-us-background" src="../images/headers/about.png">
+
+
+<div class="about-us-text container-fluid col-md-6">
+    <div class="">
+        <h1 class="offset-md-4">Om oss</h1>
+        <p>Hög servicenivå är det som särskiljer oss. Vi tror att förmågan att se hela kundens boendesituation är avgörande för en lyckad bostadsaffär. Vår styrka är att kunna hantera varje kunds unika behov, det är också det som gör jobbet som mäklare intressant.
+
+        Hos Dhyr o Romson möter du kunskap och erfarenhet som omfattar allt från gårdar till bostadsrätter i stan, villor, tomter, fritidshus och nyproduktion. Vårt arbetssätt, där mäklarna samarbetar i team, ger dig ett försprång på marknaden.</p>
+    </div>
+</div>
+    
+
+
+
+
+    <div class="row broker-content col-md-12" *ngFor="let broker of brokers[currentBrokers]; let odd = odd">
+
+
+            <div *ngIf="!odd" class="col-md-6">
                 <div class="card wide-card">
                     <div class="card-block">
-                        
-                        <img src="../images/brokers/{{broker.img}}">
-                        <h3 class="card-title">{{broker.name }}</h3>
-                        <div class="divider-line"></div>
-                        <h3 class="card-title">{{broker.phone }}</h3>
-                        <h3 class="card-title">{{broker.email}}</h3>
-                        <h3 class="info-title">{{broker.about}}</h3>
+                        <img class="col-sm-4 offset-md-3" src="../images/brokers/{{broker.img}}">
+                            <h3 class="card-title offset-md-3">{{broker.name}}</h3>
+                            <div class="divider-line"></div>
+                            <h3 class="card-title offset-md-3">{{broker.phone}}</h3>
+                            <h3 class="card-title offset-md-3">{{broker.email}}</h3>
+                            <p class="info-title col-md-9 offset-md-2">{{broker.about}}</p>
                         
                     </div>
                 </div>
             </div>
+            <div *ngIf="odd" class="col-xs-12 col-sm-12 col-md-6 offset-md-7">
+                <div class="card wide-card">
+                    <div class="card-block">
+                        <img class="col-sm-4 offset-md-3" src="../images/brokers/{{broker.img}}">
+                        <h3 class="card-title offset-md-3">{{broker.name }}</h3>
+                        <div class="divider-line"></div>
+                        <h3 class="card-title offset-md-3">{{broker.phone }}</h3>
+                        <h3 class="card-title offset-md-3">{{broker.email}}</h3>
+                        <p class="info-title col-md-9 offset-md-2">{{broker.about}}</p>
+                    </div>
+
+        </div>
     </div>
-</div>
 
 

@@ -1,3 +1,7 @@
+.about-us-background {
+    width: 100%;
+}
+
 .broker-content {
     padding: 40px 0 0;
     
@@ -8,7 +12,6 @@
 }
 
 .wide-card {
-    border: 2px solid gray;
     margin: 5px;
 }
 
@@ -33,15 +36,6 @@
     font-size: 24px;
 }
 
-.buttons {
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    background: #4FA9B8;
-    border-color: #4FA9B8;
-    border-radius: 0;
-    padding: 15px 25px;
-    margin-top: 8px;
-}
 
 .breaker {
     width: 86%;
@@ -58,6 +52,10 @@
 
 .divider-line {
     border-top: 1px solid black;
+}
+
+.about-us-text {
+    margin-top: 10px;
 }
 
 

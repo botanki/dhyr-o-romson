@@ -15,6 +15,7 @@ var BrokerMasterComponent = (function () {
         this.restService = restService;
         this.currentBrokers = "ATeam";
         this.brokers = {};
+        this._odd = false;
     }
     BrokerMasterComponent.prototype.ngOnInit = function () {
         var _this = this;

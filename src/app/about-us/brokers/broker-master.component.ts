@@ -12,6 +12,7 @@ export class BrokerMasterComponent  {
 
     currentBrokers = "ATeam";
     brokers = {};
+    _odd = false;
 
     constructor(private restService: RestService){}
 
@@ -21,4 +22,5 @@ export class BrokerMasterComponent  {
         this.brokers = data;
       });
     }
+
 }
