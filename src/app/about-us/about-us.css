@@ -1,0 +1,14 @@
+.card {
+    font-family: 'EB Garamond', serif;
+    border: 0;
+}
+
+.estate-title {
+    padding-bottom: 8px;
+}
+
+.estate-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    color: #BDBDBD;
+}
