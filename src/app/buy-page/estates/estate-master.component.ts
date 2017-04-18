@@ -18,7 +18,7 @@ export class EstateMasterComponent implements OnInit {
     viewMode = '-date_added';
     dropdownTitle = 'Senaste inlagt';
     options = [
-        { text: 'Nyaste', sorting: '-date_added' },
+        { text: 'Senaste inlagt', sorting: '-date_added' },
         { text: 'Högst Pris', sorting: '-price' },
         { text: 'Lägst Pris', sorting: 'price' }
     ];
