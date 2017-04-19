@@ -25,4 +25,4 @@ PhonePipe = __decorate([
     })
 ], PhonePipe);
 exports.PhonePipe = PhonePipe;
-//# sourceMappingURL=PhonePipe.pipe.js.map
+//# sourceMappingURL=phone-format.pipe.js.map
