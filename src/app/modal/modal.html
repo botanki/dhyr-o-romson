@@ -1,55 +1,56 @@
 <template #content let-c="close" let-d="dismiss">
 
   <button type="button" class="shut-down" (click)="c('Close click')">x</button>
-  
-  
+
+
     <div class="modal-header">
       <h2 class="modal-title">{{title}}</h2>
+      <<p>{{modal.firstname}}</p>
     </div>
-    
 
-    
+
+
     <div class="modal-body">
-      
+
         <p class="modal-ingress">{{body}}</p>
-      
+
       <div class="form-group">
 
 
         <div class="col-sm-12">
-            <input type="text" class="form-control" 
-            id="firstname" placeholder="Förnamn*"/>
+            <input type="text" class="form-control" ng-module="modal.firstname"
+            id="firstname" placeholder="name"/>
         </div>
       </div>
-      
+
       <div class="form-group">
         <div class="col-sm-12">
-            <input type="text" class="form-control" 
-            id="lastname" placeholder="Efternamn*"/>
+            <input type="text" class="form-control" ng-module="modal.lastname"
+            id="lastname" placeholder="lastname"/>
         </div>
       </div>
-      
+
       <div class="form-group">
         <div class="col-sm-12">
-            <input type="tel" class="form-control"
-                id="phonenumber" placeholder="Telefonnummer"/>
-        </div>             
+            <input type="tel" class="form-control" ng-module="modal.phonenumber"
+                id="phonenumber" placeholder="phonenumber"/>
+        </div>
       </div>
-      
+
       <div class="form-group">
         <div class="col-sm-12">
-            <input type="email" class="form-control"
-                id="email" placeholder="E-post*"/>
-        </div>             
+            <input type="email" class="form-control" ng-module="modal.email"
+                id="email" placeholder="email"/>
+        </div>
       </div>
-      
+
        <div class="form-group">
           <div class="col-sm-12">
-            <textarea class="form-control" rows="5" id="errand" placeholder="Ärende*"></textarea>
+            <textarea class="form-control" rows="5" id="errand" placeholder="Ärende*" ng-module="module.errand" placeholder="{{modal.errand}}"></textarea>
             <button type="submit" class="btn btn-info">{{send}}</button>
             <button type="button" class="btn btn-secondary" (click)="c('Close click')">{{cancel}}</button>
-          </div>  
-        </div>     
+          </div>
+        </div>
     </div>
 
 </template>
