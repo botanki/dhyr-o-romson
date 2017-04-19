@@ -19,7 +19,7 @@
                         <p class="card-text">{{tags[0]}} <span>{{estate.rooms}} {{tags[1]}}</span></p>
                         <p class="card-text">{{tags[2]}} <span>{{estate.space}} {{tags[3]}}</span></p>
                         <p class="card-text">{{tags[4]}} <span>{{estate.year}}</span></p>
-                        <p class="card-text">{{tags[13]}} <span>{{estate.date_added | date:'dd MMM yyyy'}}</span></p>
+                        <p class="card-text">{{tags[13]}} <span>{{estate.date_added | swedate: '-'}}</span></p>
                         <div class="breaker"></div>
                         <p class="card-text">{{tags[5]}}</p>
                         <h3 class="pricing">{{estate.price | number:'4.0-2'}} {{tags[6]}}</h3>
@@ -27,7 +27,8 @@
                             <div class="next-heading">
                                 <h5>{{tags[7]}} <br>
                                     <span>
-                                        {{estate.next_date | date:'dd MMM HH:mm' }}
+                                        <!-- {{estate.next_date | date:'dd MMM HH:mm' | swemonth }} -->
+                                        {{estate.next_date | swedate: '+'}}
                                     </span>
                                 </h5>
                             </div>

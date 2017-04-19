@@ -30,7 +30,7 @@ export class EstateDetailComponent  {
       'Se fler bostäder',
       'Ansvarig Mäklare:',
       'Tel: ',
-      'Kontakta:'
+      'Kontakta:',
       'Tilllagd:'
       ]
     sale = "Såld";
