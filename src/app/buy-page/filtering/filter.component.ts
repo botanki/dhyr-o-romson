@@ -26,6 +26,7 @@ export class FilterComponent {
 	}
 
 	// Boarea (min)
+	title2 = 'Boarea (min)'
 	def2 = 'kvm'
 	chosenArea:string = 'Boarea (min)';
 	areaOptions:number[] = [25,50,75,100,125,150,175,200];

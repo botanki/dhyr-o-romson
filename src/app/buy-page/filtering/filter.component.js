@@ -15,6 +15,7 @@ var FilterComponent = (function () {
         this.chosenRoom = 'Rum (min)';
         this.roomOptions = [1, 2, 3, 4, 5, 6];
         // Boarea (min)
+        this.title2 = 'Boarea (min)';
         this.def2 = 'kvm';
         this.chosenArea = 'Boarea (min)';
         this.areaOptions = [25, 50, 75, 100, 125, 150, 175, 200];
