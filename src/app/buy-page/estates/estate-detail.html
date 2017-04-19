@@ -11,15 +11,18 @@
     </div>
 
         <div class='row'>
-            <div class="col-sm-12 col-md-3">
+            <div class="col-sm-12 col-md-4">
                 <div class="card">
                     <div class="card-block">
                         <h3 class="card-title">{{estate.address}}</h3>
                         <h3 class="card-title">{{estate.area }}</h3>
-                        <p class="card-text">{{tags[0]}} {{estate.rooms}} {{tags[1]}}</p>
-                        <p class="card-text">{{tags[2]}} {{estate.space}} {{tags[3]}}</p>
-                        <p class="card-text">{{tags[4]}} {{estate.year}} </p>
-                        <p class="card-text">{{tags[5]}} {{estate.price | number:'4.0-2'}} {{tags[6]}}</p>
+                        <p class="card-text">{{tags[0]}} <span>{{estate.rooms}} {{tags[1]}}</span></p>
+                        <p class="card-text">{{tags[2]}} <span>{{estate.space}} {{tags[3]}}</span></p>
+                        <p class="card-text">{{tags[4]}} <span>{{estate.year}}</span></p>
+                        <p class="card-text">{{tags[13]}} <span>{{estate.date_added | date:'dd MMM yyyy'}}</span></p>
+                        <div class="breaker"></div>
+                        <p class="card-text">{{tags[5]}}</p>
+                        <h3 class="pricing">{{estate.price | number:'4.0-2'}} {{tags[6]}}</h3>
                         <div class="next-content">
                             <div class="next-heading">
                                 <h5>{{tags[7]}} <br>
@@ -39,7 +42,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-5">
                 <div class="card">
                     <div class="card-block">
                         <h3 class="estate-title">{{estate.title}}</h3>
