@@ -29,6 +29,7 @@ var rest_service_1 = require("./services/rest.service");
 var mem_service_1 = require("./services/mem.service");
 var break_row_pipe_1 = require("./pipes/break-row.pipe");
 var order_by_pipe_1 = require("./pipes/order-by.pipe");
+var spacing_currency_pipe_1 = require("./pipes/spacing-currency.pipe");
 var app_routing_module_1 = require("./app-routing.module");
 var AppModule = (function () {
     function AppModule() {
@@ -61,7 +62,8 @@ AppModule = __decorate([
             modal_component_1.NgbdModalBasic,
             broker_master_component_1.BrokerMasterComponent,
             break_row_pipe_1.BreakRowPipe,
-            order_by_pipe_1.OrderByPipe
+            order_by_pipe_1.OrderByPipe,
+            spacing_currency_pipe_1.SpacingCurrencyPipe
         ],
         bootstrap: [
             app_component_1.AppComponent
