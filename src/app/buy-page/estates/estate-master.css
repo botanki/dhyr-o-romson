@@ -57,11 +57,12 @@
 
 .img-styled { margin: 20px 0; }
 
-.date-posted {
-    font-size: 16px;
+.date-posted > span {
     font-family: 'Roboto', sans-serif;
-    color: #4FA9B8;
-
+    color: #202B30; 
+    background: #EFE9E5;
+    font-size: 12px;
+    padding: 7px;
 }
 
 /* 
