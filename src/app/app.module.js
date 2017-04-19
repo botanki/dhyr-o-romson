@@ -27,6 +27,7 @@ var broker_master_component_1 = require("./about-us/brokers/broker-master.compon
 var modal_component_1 = require("./modal/modal.component");
 var rest_service_1 = require("./services/rest.service");
 var mem_service_1 = require("./services/mem.service");
+//import classes here?
 var break_row_pipe_1 = require("./pipes/break-row.pipe");
 var order_by_pipe_1 = require("./pipes/order-by.pipe");
 var app_routing_module_1 = require("./app-routing.module");
