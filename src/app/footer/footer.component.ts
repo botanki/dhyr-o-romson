@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class FooterComponent  {
     company = 'Dhyr & Rumson';
     image = 'logo_footer.png';
-    contact = { phone: '0768-9087670', address: 'Almbackgatan 16 Malmö', email: 'info@dhyrrumson.se' }
+    contact = { phone: '076-890 87 67', address: 'Almbackgatan 16 Malmö', email: 'info@dhyrrumson.se' }
 
     links = [
     { name: 'facebook', url: 'http://www.facebook.com/dhyrandrumson', iconname: 'facebook-square'},
