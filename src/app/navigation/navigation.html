@@ -3,17 +3,19 @@
          aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>
  </button>
- <img class="navbar-brand logo-big" routerLink="/front-page" src="../images/big_logo.png">
+ <img class="navbar-brand logo-big" (click)="closeNav()" routerLink="/front-page" src="../images/big_logo.png">
 
 
  <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="exCollapsingNavbar2">
     <div class="navbar-nav mr-auto links-content">
-        <a *ngFor="let section of sections" class="nav-item nav-link" routerLink="/{{section.route}}" routerLinkActive="active">{{section.text}}</a>
+        
+        <a *ngFor="let section of sections" class="nav-item nav-link" (click)="closeNav()" routerLink="/{{section.route}}" routerLinkActive="active">{{section.text}}</a>
+
       </div>
 
     <div class="form-inline icon-content justify-content-center my-2 my-lg-0">
-        <i class="fa fa-search search-icon" routerLink="/buy-page" aria-hidden="false"></i>
-        <img class="navbar-brand contact-icon" (click)="globalMem.openModal()" src="../images/contact.png">
+        <i class="fa fa-search search-icon" (click)="closeNav()" routerLink="/buy-page" aria-hidden="false"></i>
+        <img class="navbar-brand contact-icon" (click)="closeNav()" (click)="globalMem.openModal()" src="../images/contact.png">
     </div>
   </div>
 </nav>
