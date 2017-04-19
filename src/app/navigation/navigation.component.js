@@ -22,6 +22,9 @@ var NavigationComponent = (function () {
         ];
         this.globalMem = this.memService.global();
     }
+    NavigationComponent.prototype.closeNav = function () {
+        this.isNavbarCollapsed = true;
+    };
     return NavigationComponent;
 }());
 NavigationComponent = __decorate([
