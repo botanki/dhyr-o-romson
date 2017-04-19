@@ -126,7 +126,7 @@ a:not([href]):not([tabindex]) {
     }
 }
 
-.img-fluid {
+.my-pictures {
     position: relative;
     float: left;
     width:  100%;
