@@ -27,4 +27,6 @@ RestService = __decorate([
     __metadata("design:paramtypes", [http_1.Http])
 ], RestService);
 exports.RestService = RestService;
+// om jag får tillbaka nåt betyder det att jag har gjort rätt
+// rest-router på backend. inject:a den där du vill använda den. sen kan du prata med backend
 //# sourceMappingURL=rest.service.js.map

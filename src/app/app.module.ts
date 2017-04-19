@@ -24,6 +24,8 @@ import { NgbdModalBasic } from './modal/modal.component';
 import { RestService } from './services/rest.service';
 import { MemService } from './services/mem.service';
 
+//import classes here?
+
 import { BreakRowPipe } from './pipes/break-row.pipe';
 import { OrderByPipe } from './pipes/order-by.pipe';
 import { SpacingCurrencyPipe } from './pipes/spacing-currency.pipe';
@@ -60,11 +62,11 @@ import { AppRoutingModule } from './app-routing.module';
 		OrderByPipe,
 		SpacingCurrencyPipe
 	],
-  	bootstrap: [ 
-  		AppComponent 
+  	bootstrap: [
+  		AppComponent
   	],
   	providers: [
-    	RestService, 
+    	RestService,
     	MemService
   	]
 })

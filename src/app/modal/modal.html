@@ -1,55 +1,55 @@
 <template #content let-c="close" let-d="dismiss">
 
   <button type="button" class="shut-down" (click)="c('Close click')">x</button>
-  
-  
+
+
     <div class="modal-header">
       <h2 class="modal-title">{{title}}</h2>
     </div>
-    
 
-    
+
+
     <div class="modal-body">
-      
+
         <p class="modal-ingress">{{body}}</p>
-      
+
       <div class="form-group">
 
 
         <div class="col-sm-12">
-            <input type="text" class="form-control" 
-            id="firstname" placeholder="Förnamn*"/>
+            <input type="text" class="form-control"
+            id="firstname" placeholder="Namn*"/>
         </div>
       </div>
-      
+
       <div class="form-group">
         <div class="col-sm-12">
-            <input type="text" class="form-control" 
+            <input type="text" class="form-control"
             id="lastname" placeholder="Efternamn*"/>
         </div>
       </div>
-      
+
       <div class="form-group">
         <div class="col-sm-12">
             <input type="tel" class="form-control"
                 id="phonenumber" placeholder="Telefonnummer"/>
-        </div>             
+        </div>
       </div>
-      
+
       <div class="form-group">
         <div class="col-sm-12">
             <input type="email" class="form-control"
                 id="email" placeholder="E-post*"/>
-        </div>             
+        </div>
       </div>
-      
+
        <div class="form-group">
           <div class="col-sm-12">
             <textarea class="form-control" rows="5" id="errand" placeholder="Ärende*"></textarea>
             <button type="submit" class="btn btn-info">{{send}}</button>
             <button type="button" class="btn btn-secondary" (click)="c('Close click')">{{cancel}}</button>
-          </div>  
-        </div>     
+          </div>
+        </div>
     </div>
 
 </template>

@@ -5,7 +5,7 @@ import { RestEntity } from "../shared/rest-entity.class";
 @Injectable()
 export class RestService {
 
-  constructor(private http: Http) { 
+  constructor(private http: Http) {
   }
 
   newRestEntity(entityName:string){
@@ -16,4 +16,6 @@ export class RestService {
 
 }
 
+// om jag får tillbaka nåt betyder det att jag har gjort rätt
+// rest-router på backend. inject:a den där du vill använda den. sen kan du prata med backend
 

@@ -24,4 +24,8 @@ export class NavigationComponent {
     ){
         this.globalMem = this.memService.global();
     }
+
+    closeNav(){
+        this.isNavbarCollapsed = true;
+    }
 }
