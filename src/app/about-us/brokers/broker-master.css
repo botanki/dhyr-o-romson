@@ -3,13 +3,9 @@
     border: 0;
 }
 
-.broker-info {
+.about-broker {
     font-family: 'Roboto', sans-serif;
-    line-height: 8px;
-    color: #BDBDBD;
-}
-
-.broker-about {
+    font-style: italic;
     color: #4FA9B8;
 }
 
