@@ -1,7 +1,7 @@
 import {Pipe} from '@angular/core';
 
 @Pipe({
-    name: 'phone'
+    name: 'phoneFormat'
 })
 export class PhonePipe{
     transform(val:any, args:any) {

@@ -21,7 +21,7 @@ var PhonePipe = (function () {
 }());
 PhonePipe = __decorate([
     core_1.Pipe({
-        name: 'phone'
+        name: 'phoneFormat'
     })
 ], PhonePipe);
 exports.PhonePipe = PhonePipe;

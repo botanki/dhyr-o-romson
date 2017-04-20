@@ -32,6 +32,7 @@ var break_row_pipe_1 = require("./pipes/break-row.pipe");
 var order_by_pipe_1 = require("./pipes/order-by.pipe");
 var spacing_currency_pipe_1 = require("./pipes/spacing-currency.pipe");
 var swedish_date_pipe_1 = require("./pipes/swedish-date.pipe");
+var phone_format_pipe_1 = require("./pipes/phone-format.pipe");
 var app_routing_module_1 = require("./app-routing.module");
 var AppModule = (function () {
     function AppModule() {
@@ -66,7 +67,8 @@ AppModule = __decorate([
             break_row_pipe_1.BreakRowPipe,
             order_by_pipe_1.OrderByPipe,
             spacing_currency_pipe_1.SpacingCurrencyPipe,
-            swedish_date_pipe_1.SwedishDatePipe
+            swedish_date_pipe_1.SwedishDatePipe,
+            phone_format_pipe_1.PhonePipe
         ],
         bootstrap: [
             app_component_1.AppComponent
