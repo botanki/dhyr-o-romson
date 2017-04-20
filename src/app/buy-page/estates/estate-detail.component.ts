@@ -18,19 +18,20 @@ export class EstateDetailComponent  {
     globalMem: any;
     breadcrumbs = ['Hem', 'Köp Bostad']
     tags = [
-      'Rum', 
+      'Rum:', 
       'rum och kök', 
-      'Boarea', 
+      'Boarea:', 
       'kvm', 
-      'Byggnadsår', 
-      'Föreslagen budstart', 
+      'Byggnadsår:', 
+      'Föreslagen budstart:', 
       'kr',
       'Nästa Visning:',
       'Anmäl Intresse',
       'Se fler bostäder',
       'Ansvarig Mäklare:',
       'Tel: ',
-      'Kontakta:'
+      'Kontakta:',
+      'Tilllagd:'
       ]
     sale = "Såld";
 

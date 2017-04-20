@@ -21,19 +21,20 @@ var EstateDetailComponent = (function () {
         this.estate = {};
         this.breadcrumbs = ['Hem', 'Köp Bostad'];
         this.tags = [
-            'Rum',
+            'Rum:',
             'rum och kök',
-            'Boarea',
+            'Boarea:',
             'kvm',
-            'Byggnadsår',
-            'Föreslagen budstart',
+            'Byggnadsår:',
+            'Föreslagen budstart:',
             'kr',
             'Nästa Visning:',
             'Anmäl Intresse',
             'Se fler bostäder',
             'Ansvarig Mäklare:',
             'Tel: ',
-            'Kontakta:'
+            'Kontakta:',
+            'Tilllagd:'
         ];
         this.sale = "Såld";
         this.location = location;

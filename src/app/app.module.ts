@@ -29,7 +29,7 @@ import { MemService } from './services/mem.service';
 import { BreakRowPipe } from './pipes/break-row.pipe';
 import { OrderByPipe } from './pipes/order-by.pipe';
 import { SpacingCurrencyPipe } from './pipes/spacing-currency.pipe';
-
+import { SwedishDatePipe } from './pipes/swedish-date.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -60,7 +60,8 @@ import { AppRoutingModule } from './app-routing.module';
 		BrokerMasterComponent,
 		BreakRowPipe,
 		OrderByPipe,
-		SpacingCurrencyPipe
+		SpacingCurrencyPipe,
+        SwedishDatePipe
 	],
   	bootstrap: [
   		AppComponent

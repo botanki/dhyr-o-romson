@@ -31,6 +31,7 @@ var mem_service_1 = require("./services/mem.service");
 var break_row_pipe_1 = require("./pipes/break-row.pipe");
 var order_by_pipe_1 = require("./pipes/order-by.pipe");
 var spacing_currency_pipe_1 = require("./pipes/spacing-currency.pipe");
+var swedish_date_pipe_1 = require("./pipes/swedish-date.pipe");
 var app_routing_module_1 = require("./app-routing.module");
 var AppModule = (function () {
     function AppModule() {
@@ -64,7 +65,8 @@ AppModule = __decorate([
             broker_master_component_1.BrokerMasterComponent,
             break_row_pipe_1.BreakRowPipe,
             order_by_pipe_1.OrderByPipe,
-            spacing_currency_pipe_1.SpacingCurrencyPipe
+            spacing_currency_pipe_1.SpacingCurrencyPipe,
+            swedish_date_pipe_1.SwedishDatePipe
         ],
         bootstrap: [
             app_component_1.AppComponent
