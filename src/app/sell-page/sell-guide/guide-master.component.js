@@ -15,11 +15,11 @@ var GuideMasterComponent = (function () {
         this.restService = restService;
         this.title = 'Säljguide';
         this.currentGuides = "SaleGuide";
-        this.guides = {};
+        this.guides = [];
     }
     GuideMasterComponent.prototype.ngOnInit = function () {
         var _this = this;
-        var Guides = this.restService.newRestEntity("guides");
+        var Guides = this.restService.newRestEntity("guide");
         Guides.find('').then(function (data) {
             _this.guides = data;
         });

@@ -16,21 +16,21 @@ var GuideDetailComponent = (function () {
     function GuideDetailComponent(restService, route, location) {
         this.restService = restService;
         this.route = route;
-        this.guide = {};
-        this.guides = {};
+        this.guide = [];
+        this.guides = [];
         this.location = location;
     }
     GuideDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.params.subscribe(function (routeParams) {
-            var Guides = _this.restService.newRestEntity("guides");
+            var Guides = _this.restService.newRestEntity("guide");
             Guides.find('').then(function (guides) {
                 var id = routeParams.id;
-                for (var currentGuides in guides) {
-                    for (var _i = 0, _a = guides[currentGuides]; _i < _a.length; _i++) {
-                        var guide = _a[_i];
-                        if (guide.id == id) {
-                            _this.guide = guide;
+                for (var guide in guides) {
+                    for (var _i = 0, guides_1 = guides; _i < guides_1.length; _i++) {
+                        var guide_1 = guides_1[_i];
+                        if (guide_1.id == id) {
+                            _this.guide = guide_1;
                         }
                     }
                 }

@@ -12,8 +12,8 @@ import { RestService } from '../../services/rest.service';
 
 export class GuideDetailComponent implements OnInit {
 
-    guide = {};
-    guides = {}
+    guide = [];
+    guides = [];
     location: Location;
 
     constructor(
@@ -25,11 +25,11 @@ export class GuideDetailComponent implements OnInit {
 
     ngOnInit(){
       this.route.params.subscribe((routeParams:any)=>{
-        let Guides = this.restService.newRestEntity("guides");
+        let Guides = this.restService.newRestEntity("guide");
         Guides.find('').then((guides:any)=>{
           let id = routeParams.id;
-          for(let currentGuides in guides){
-            for(let guide of guides[currentGuides]){
+          for(let guide in guides){
+            for(let guide of guides){
               if(guide.id == id){
                 this.guide = guide;
               }

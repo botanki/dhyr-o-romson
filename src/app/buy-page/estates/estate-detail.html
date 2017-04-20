@@ -7,7 +7,7 @@
             <a class="breadcrumb-item" routerLink="/front-page">{{breadcrumbs[0]}}</a>
             <a class="breadcrumb-item" routerLink="/buy-page">{{breadcrumbs[1]}}</a>
             <a class="breadcrumb-item active" routerLink="/estate/{{estate.id}}">{{estate.address}}</a>
-        </nav>     
+        </nav>
     </div>
 
         <div class='row'>
@@ -58,7 +58,7 @@
                 <div class="card">
                     <div class="card-block">
                         <div class="broker-body" *ngFor="let broker of estate.broker">
-                            <img class="img-fluid broker-img" src="../images/brokers/{{broker.img}}">
+                            <img class="img-fluid broker-img" src="/images/brokers/{{broker.img}}">
                             <p>{{tags[10]}}</p>
                             <p>{{broker.name}}</p>
                             <p>{{tags[11]}} {{broker.phone}}</p>
@@ -71,9 +71,9 @@
 
          <div class='row'>
             <div class="col-sm-12 col-md-12">
-                <img class="img-fluid my-pictures" src="../images/estates/detail/{{estate.alt_1}}" alt="interior of {{estate.address}}">
+                <img class="img-fluid my-pictures" src="/images/estates/detail/{{estate.alt_1}}" alt="interior of {{estate.address}}">
                 <br><br>
-                <img class="img-fluid my-pictures" src="../images/estates/detail/{{estate.alt_2}}" alt="interior of {{estate.address}}">
-            </div>        
+                <img class="img-fluid my-pictures" src="/images/estates/detail/{{estate.alt_2}}" alt="interior of {{estate.address}}">
+            </div>
          </div>
 </div>

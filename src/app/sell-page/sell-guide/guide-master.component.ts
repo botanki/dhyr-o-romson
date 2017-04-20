@@ -11,12 +11,12 @@ import { RestService } from '../../services/rest.service';
 export class GuideMasterComponent implements OnInit {
     title = 'Säljguide';
     currentGuides = "SaleGuide";
-    guides = {};
+    guides = [];
 
     constructor(private restService: RestService){}
 
     ngOnInit(){
-      let Guides = this.restService.newRestEntity("guides");
+      let Guides = this.restService.newRestEntity("guide");
       Guides.find('').then((data:any)=>{
         this.guides = data;
       });

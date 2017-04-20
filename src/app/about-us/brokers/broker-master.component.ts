@@ -11,8 +11,7 @@ import { RestService } from '../../services/rest.service';
 
 export class BrokerMasterComponent  {
 
-    currentBrokers = "ATeam";
-    brokers = {};
+    brokers = [];
     _odd = false;
 
     tags = [
@@ -24,7 +23,7 @@ export class BrokerMasterComponent  {
     constructor(private restService: RestService){}
 
     ngOnInit(){
-      let Brokers = this.restService.newRestEntity("brokers");
+      let Brokers = this.restService.newRestEntity("broker");
       Brokers.find('').then((data:any)=>{
         this.brokers = data;
       });

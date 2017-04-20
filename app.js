@@ -6,10 +6,9 @@ require('mongoosefromclass')(mongoose);
 
 //fake JSON
 
-var brokers = require('./data/broker-data.json');
-// var estates = require('./data/estate-data.json');
-// var guides = require('./data/guides.json');
-
+var brokerData = require('./data/broker-data.json');
+var estateData = require('./data/estate-data.json');
+var guideData = require('./data/guide-data.json');
 
 //make some things global
 global.mongoose = mongoose;
@@ -21,13 +20,13 @@ mongoose.Promise = Promise;
 //läser in moduler
 global.Restrouter = require('./modules/restrouter.class');
 global.Broker = require('./modules/broker.class');
-// global.Estate = require('./modules/estate.class');
-// global.Guide = require('./modules/guide.class');
+global.Estate = require('./modules/estate.class');
+global.Guide = require('./modules/guide.class');
 
 //bygger mongoosemodeller av moduler
 global.Broker = mongoose.fromClass(global.Broker);
-// global.Estate = mongoose.fromClass(global.Estate);
-// global.Guide = mongoose.fromClass(global.Guide);
+global.Estate = mongoose.fromClass(global.Estate);
+global.Guide = mongoose.fromClass(global.Guide);
 
 // Create a new express server, store in the variable app
 var app = express();
@@ -42,8 +41,8 @@ app.use((req, res, next)=>{
 
 // Create restroutes to selected classes/mongoose models
 new Restrouter(app, Broker);
-// new Restrouter(app, Estate);
-// new Restrouter(app, Guide);
+new Restrouter(app, Estate);
+new Restrouter(app, Guide);
 
 // Point to folders where we have static files
 // (our frontend code)
@@ -70,7 +69,7 @@ function onceConnected(){
 	  console.log('I hope you started me using npm start...');
 	});
 
-	// createFakeDataFromJSON();
+	createFakeDataFromJSON();
 }
 
 
@@ -91,20 +90,35 @@ function createFakeDataFromJSON() {
 		});
 	}
 
-	// Estate.count(function(err, count) {
- //        if (count === 0) {
- //            createDeafultEstates();
- //        }
- //    });
+	Estate.count(function(err, count) {
+        if (count === 0) {
+            createDeafultEstates();
+        }
+    });
 
-	// function createDeafultEstates() {
-	// 	thingsLeftToSave += estateData.length;
+	function createDeafultEstates() {
+		thingsLeftToSave += estateData.length;
 
-	// 	estateData.forEach(function(estate) {
-	// 		new Estate(estate).save(function(err, estates) {
-	// 		});
-	// 	});
-	// }
+		estateData.forEach(function(estate) {
+			new Estate(estate).save(function(err, estates) {
+			});
+		});
+	}
+
+	Guide.count(function(err, count) {
+        if (count === 0) {
+            createDeafultGuides();
+        }
+    });
+
+	function createDeafultGuides() {
+		thingsLeftToSave += guideData.length;
+
+		guideData.forEach(function(guide) {
+			new Guide(guide).save(function(err, guides) {
+			});
+		});
+	}
 
 	var thingsLeftToSave = 0;
 }

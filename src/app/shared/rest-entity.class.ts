@@ -11,10 +11,10 @@ export class RestEntity {
 
   constructor(entityName: string){
     // Mocking with json
-    this.baseUrl = '../json/' + entityName + '.json';
+    // this.baseUrl = '../json/' + entityName + '.json';
 
     // Real backend/REST api
-    // this.baseUrl = '/rest/' + entityName + '/';
+    this.baseUrl = '/rest/' + entityName + '/';
   }
 
   httpRequest(type:string, idOrQuery:string, requestBody:any){

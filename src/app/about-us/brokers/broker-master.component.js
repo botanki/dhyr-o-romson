@@ -13,8 +13,7 @@ var rest_service_1 = require("../../services/rest.service");
 var BrokerMasterComponent = (function () {
     function BrokerMasterComponent(restService) {
         this.restService = restService;
-        this.currentBrokers = "ATeam";
-        this.brokers = {};
+        this.brokers = [];
         this._odd = false;
         this.tags = [
             'Ansvarig Mäklare:',
@@ -24,7 +23,7 @@ var BrokerMasterComponent = (function () {
     }
     BrokerMasterComponent.prototype.ngOnInit = function () {
         var _this = this;
-        var Brokers = this.restService.newRestEntity("brokers");
+        var Brokers = this.restService.newRestEntity("broker");
         Brokers.find('').then(function (data) {
             _this.brokers = data;
         });

@@ -15,8 +15,7 @@ var EstateMasterComponent = (function () {
     function EstateMasterComponent(restService, memService) {
         this.restService = restService;
         this.memService = memService;
-        this.currentEstates = "OnSale";
-        this.estates = {};
+        this.estates = [];
         this.sortHeader = 'Sortera Efter:';
         this.viewMode = '-date_added';
         this.dropdownTitle = 'Senaste inlagt';
@@ -31,7 +30,7 @@ var EstateMasterComponent = (function () {
     }
     EstateMasterComponent.prototype.ngOnInit = function () {
         var _this = this;
-        var Estates = this.restService.newRestEntity("estates");
+        var Estates = this.restService.newRestEntity("estate");
         Estates.find('').then(function (data) {
             _this.estates = data;
         });

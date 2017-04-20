@@ -18,7 +18,7 @@ var EstateDetailComponent = (function () {
         this.restService = restService;
         this.route = route;
         this.memService = memService;
-        this.estate = {};
+        this.estate = [];
         this.breadcrumbs = ['Hem', 'Köp Bostad'];
         this.tags = [
             'Rum:',
@@ -43,14 +43,14 @@ var EstateDetailComponent = (function () {
     EstateDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.params.subscribe(function (routeParams) {
-            var Estates = _this.restService.newRestEntity("estates");
+            var Estates = _this.restService.newRestEntity("estate");
             Estates.find('').then(function (estates) {
                 var id = routeParams.id;
-                for (var currentEstates in estates) {
-                    for (var _i = 0, _a = estates[currentEstates]; _i < _a.length; _i++) {
-                        var estate = _a[_i];
-                        if (estate.id == id) {
-                            _this.estate = estate;
+                for (var estate in estates) {
+                    for (var _i = 0, estates_1 = estates; _i < estates_1.length; _i++) {
+                        var estate_1 = estates_1[_i];
+                        if (estate_1.id == id) {
+                            _this.estate = estate_1;
                         }
                     }
                 }

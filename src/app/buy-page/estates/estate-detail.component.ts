@@ -13,17 +13,17 @@ import { MemService } from '../../services/mem.service';
 
 export class EstateDetailComponent  {
 
-    estate = {};
+    estate = [];
     location: Location;
     globalMem: any;
     breadcrumbs = ['Hem', 'Köp Bostad']
     tags = [
-      'Rum:', 
-      'rum och kök', 
-      'Boarea:', 
-      'kvm', 
-      'Byggnadsår:', 
-      'Föreslagen budstart:', 
+      'Rum:',
+      'rum och kök',
+      'Boarea:',
+      'kvm',
+      'Byggnadsår:',
+      'Föreslagen budstart:',
       'kr',
       'Nästa Visning:',
       'Anmäl Intresse',
@@ -48,11 +48,11 @@ export class EstateDetailComponent  {
 
     ngOnInit(){
       this.route.params.subscribe((routeParams:any)=>{
-        let Estates = this.restService.newRestEntity("estates");
-        Estates.find('').then((estates:any)=>{ 
+        let Estates = this.restService.newRestEntity("estate");
+        Estates.find('').then((estates:any)=>{
           let id = routeParams.id;
-          for(let currentEstates in estates){
-            for(let estate of estates[currentEstates]){
+          for(let estate in estates){
+            for(let estate of estates){
               if(estate.id == id){
                 this.estate = estate;
               }

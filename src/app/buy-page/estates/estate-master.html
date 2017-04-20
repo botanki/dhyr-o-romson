@@ -10,17 +10,17 @@
                     <button *ngFor="let option of options" class="dropdown-item" (click)="viewMode = option.sorting" (click)="dropdownTitle = option.text">{{option.text}}</button>
                 </div>
             </div>
-            <div class="breaker-top"></div>   
+            <div class="breaker-top"></div>
         </div>
     </div>
 
 
-    <div class="row estate-content" *ngFor="let estate of estates[currentEstates] | orderBy: [viewMode]">
+    <div class="row estate-content" *ngFor="let estate of estates | orderBy: [viewMode]">
         <div class="col-xs-12 col-sm-12 offset-md-1 col-md-5">
             <a [routerLink]="['/estate', estate.id]">
                 <div class="card wide-card">
                     <div class="img-no-card-border">
-                        <img class="img-fluid img-styled" src="../images/estates/{{estate.img_master}}" alt="{{estate.address}}">
+                        <img class="img-fluid img-styled" src="images/estates/{{estate.img_master}}" alt="{{estate.address}}">
                     </div>
                     <div *ngIf="!estate.on_sale">
                         <button class="sold-button">{{saleTag}}</button>

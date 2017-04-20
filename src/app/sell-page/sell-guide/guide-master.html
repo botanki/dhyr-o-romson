@@ -2,7 +2,7 @@
 	<div class="list-title-box">
 		<h5 class="list-title">{{title}}</h5>
 	</div>
-	<div class="guide-list" *ngFor="let guide of guides[currentGuides]">
+	<div class="guide-list" *ngFor="let guide of guides">
         <a [routerLink]="['/guide', guide.id]">
         	{{guide.title}}
         </a>

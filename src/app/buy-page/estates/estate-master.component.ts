@@ -9,9 +9,8 @@ import { MemService } from '../../services/mem.service';
 })
 
 export class EstateMasterComponent implements OnInit {
-    
-    currentEstates = "OnSale";
-    estates = {};
+
+    estates = [];
     localMem: any;
 
     sortHeader = 'Sortera Efter:';
@@ -35,7 +34,7 @@ export class EstateMasterComponent implements OnInit {
     }
 
     ngOnInit(){
-      let Estates = this.restService.newRestEntity("estates");
+      let Estates = this.restService.newRestEntity("estate");
       Estates.find('').then((data:any)=>{
         this.estates = data;
       });
