@@ -29,12 +29,12 @@ global.Estate = mongoose.fromClass(global.Estate);
 var app = express();
 
 // Never cache request starting with "/rest/"
-// app.use((req, res, next)=>{
-// 	if(req.url.indexOf('/rest/') >= 0) {
-// 		res.set("Cache-Control", "no-store, must-revalidate");
-// 	}
-// 	next();
-// });
+app.use((req, res, next)=>{
+	if(req.url.indexOf('/rest/') >= 0) {
+		res.set("Cache-Control", "no-store, must-revalidate");
+	}
+	next();
+});
 
 // Create restroutes to selected classes/mongoose models
 new Restrouter(app, Broker);
