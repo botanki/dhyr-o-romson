@@ -5,9 +5,11 @@ var mongoose = require('mongoose');
 require('mongoosefromclass')(mongoose);
 
 //fake JSON
-var brokerData = require('./data/broker-data.json');
-// var estateData = require('./data/estate-data.json');
-// //var guides = require('./data/guides.json');
+
+var brokers = require('./data/brokers.json');
+// var estates = require('./data/estates.json');
+// var guides = require('./data/guides.json');
+
 
 //make some things global
 global.mongoose = mongoose;
@@ -20,10 +22,12 @@ mongoose.Promise = Promise;
 global.Restrouter = require('./modules/restrouter.class');
 global.Broker = require('./modules/broker.class');
 // global.Estate = require('./modules/estate.class');
+// global.Guide = require('./modules/guide.class');
 
 //bygger mongoosemodeller av moduler
 global.Broker = mongoose.fromClass(global.Broker);
 // global.Estate = mongoose.fromClass(global.Estate);
+// global.Guide = mongoose.fromClass(global.Guide);
 
 // Create a new express server, store in the variable app
 var app = express();
@@ -39,7 +43,7 @@ app.use((req, res, next)=>{
 // Create restroutes to selected classes/mongoose models
 new Restrouter(app, Broker);
 // new Restrouter(app, Estate);
-//new Restrouter(app, Guide);
+// new Restrouter(app, Guide);
 
 // Point to folders where we have static files
 // (our frontend code)

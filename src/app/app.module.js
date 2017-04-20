@@ -68,7 +68,7 @@ AppModule = __decorate([
             order_by_pipe_1.OrderByPipe,
             spacing_currency_pipe_1.SpacingCurrencyPipe,
             swedish_date_pipe_1.SwedishDatePipe,
-            phone_format_pipe_1.PhonePipe
+            phone_format_pipe_1.PhoneFormatPipe
         ],
         bootstrap: [
             app_component_1.AppComponent
