@@ -1,4 +1,4 @@
-module.exports = class Estate {
+module.exports = class Estate extends Broker {
 
 	schema() {
 		return {
@@ -14,10 +14,10 @@ module.exports = class Estate {
 			img_detail: {type: String},
 			alt_1: {type: String},
 			alt_2: {type: String},
-			// brokers:[{
-			// 	type: mongoose.Schema.Types.ObjectId,
-			// 	ref: 'Broker'
-			// }],
+			brokers:[{
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'Broker'
+			}],
 			title: {type: String},
 			body: {type: String},
 			year: {type: Number},
@@ -27,8 +27,8 @@ module.exports = class Estate {
 		};
 	}
 
-	// populate(){
-	// 	return 'brokers';
-	// }
+	populate(){
+		return 'brokers';
+	}
 
 };
