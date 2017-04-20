@@ -10,7 +10,7 @@ var FooterComponent = (function () {
     function FooterComponent() {
         this.company = 'Dhyr & Rumson';
         this.image = 'logo_footer.png';
-        this.contact = { phone: '076-890 87 67', address: 'Almbackgatan 16 Malmö', email: 'info@dhyrrumson.se' };
+        this.contact = { phone: '0768908767', address: 'Almbackgatan 16 Malmö', email: 'info@dhyrrumson.se' };
         this.links = [
             { name: 'facebook', url: 'http://www.facebook.com/dhyrandrumson', iconname: 'facebook-square' },
             { name: 'twitter', url: 'http://www.twitter.com/dhyrandrumson', iconname: 'twitter-square' },
