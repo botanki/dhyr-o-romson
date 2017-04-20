@@ -6,8 +6,8 @@ require('mongoosefromclass')(mongoose);
 
 //fake JSON
 
-var brokers = require('./data/brokers.json');
-// var estates = require('./data/estates.json');
+var brokers = require('./data/broker-data.json');
+// var estates = require('./data/estate-data.json');
 // var guides = require('./data/guides.json');
 
 
