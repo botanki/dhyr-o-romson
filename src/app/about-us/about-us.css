@@ -13,6 +13,13 @@
     color: #BDBDBD;
 }
 
+.contact-icon {
+    margin: 0;
+    display: inline-block;
+    width: 32px;
+    cursor: pointer;
+}
+
 img {
 	padding-bottom: 20px;
 }
