@@ -37,7 +37,7 @@
                     <h3 class="card-title">{{estate.area }}</h3>
                     <p class="card-text">{{estate.rooms }} {{tags[0]}}</p>
                     <p class="card-text">{{estate.space}} {{tags[1]}}</p>
-                    <p class="card-text">{{tags[2]}} <span>{{estate.price | number }} kr</span></p>
+                    <p class="card-text">{{tags[2]}} <span>{{estate.price | spacingCurrency }} kr</span></p>
                     <a [routerLink]="['/estate', estate.id]" class=" btn btn-primary buttons drop-shadow">{{tags[4]}}</a>
                 </div>
             </div>

@@ -28,6 +28,7 @@ import { MemService } from './services/mem.service';
 
 import { BreakRowPipe } from './pipes/break-row.pipe';
 import { OrderByPipe } from './pipes/order-by.pipe';
+import { SpacingCurrencyPipe } from './pipes/spacing-currency.pipe';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -58,7 +59,8 @@ import { AppRoutingModule } from './app-routing.module';
 		NgbdModalBasic,
 		BrokerMasterComponent,
 		BreakRowPipe,
-		OrderByPipe
+		OrderByPipe,
+		SpacingCurrencyPipe
 	],
   	bootstrap: [
   		AppComponent
