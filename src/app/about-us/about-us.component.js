@@ -13,6 +13,8 @@ var mem_service_1 = require("../services/mem.service");
 var AboutUsComponent = (function () {
     function AboutUsComponent(memService) {
         this.memService = memService;
+        this.isNavbarCollapsed = true;
+        this.isActive = false;
         this.globalMem = this.memService.global();
     }
     AboutUsComponent.prototype.closeNav = function () {

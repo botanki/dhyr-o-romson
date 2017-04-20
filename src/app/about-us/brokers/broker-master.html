@@ -2,7 +2,7 @@
         <img class="img-fluid broker-img" src="../images/brokers/{{broker.img}}">
         <p>{{tags[0]}}</p>
         <p>{{broker.name}}</p>
-        <p>{{tags[1]}}{{broker.phone}}</p>
+        <p>{{tags[1]}}{{broker.phone | phoneFormat}}</p>
         <p>{{tags[2]}} {{broker.email}}</p>
         <p class="about-broker">"{{broker.about}}"</p>
         <br/>

@@ -10,6 +10,10 @@ import { MemService } from '../services/mem.service';
 
 export class AboutUsComponent  {
 
+	isNavbarCollapsed = true;
+    isActive = false;
+    globalMem: any;
+
 	constructor(
         private memService: MemService
     ){
