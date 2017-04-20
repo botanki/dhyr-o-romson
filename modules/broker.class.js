@@ -5,9 +5,9 @@ module.exports = class Broker {
 			id: {type: Number},
 			img: {type: String},
 			name: {type: String},
-			phone: {type: Number},
+			phone: {type: String},
 			email: {type: String},
 			about: {type: String}
 		};
 	}
-}
+};

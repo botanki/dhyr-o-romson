@@ -11,7 +11,7 @@ export class RestEntity {
 
   constructor(entityName: string){
     // Mocking with json
-    this.baseUrl = './data/' + entityName + '.json';
+    this.baseUrl = '../json/' + entityName + '.json';
 
     // Real backend/REST api
     // this.baseUrl = '/rest/' + entityName + '/';

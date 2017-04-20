@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RestService } from '../../services/rest.service';
 
+
 @Component({
 	selector: 'broker-master',
 	templateUrl: './broker-master.html',
