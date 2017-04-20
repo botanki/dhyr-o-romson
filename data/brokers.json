@@ -1,0 +1,49 @@
+{
+    "ATeam":
+
+
+    [{
+        "id": 1,
+        "img": "staff1.png",
+        "name": "Lotta Walthenius",
+        "phone": "087 - 22 34 54",
+        "email": "lotta@dhyr.se",
+        "about": "Blanda olika stilar, och blanda oansenliga prylar med sånt från fina gatan. Det ska alltså vara kontraster både i arbetslivet och hemmiljön."
+    }, {
+        "id": 2,
+        "img": "staff2.png",
+        "name": "Hans Stotz",
+        "phone": "087 - 22 34 54",
+        "email": "hans@dhyr.se",
+        "about": "Hans har nog landat helt rätt som spindeln i nätet på vårt kontor. Framförallt som ansvarig för stylingen innan fotograferingar och visningar."
+
+    }, {
+        "id": 3,
+        "img": "staff3.png",
+        "name": "Hannah af Schmildt",
+        "phone": "044 - 22 34 54",
+        "email": "hannah@dhyr.se",
+        "about": "För att var relativt ung har hon redan imponerande erfarenhet. Intresset för att skapa schyst inredning för sig själv och andra är nog miljöbetingat hemifrån, påstår hon."
+    }, {
+        "id": 4,
+        "img": "staff4.png",
+        "name": "Bitte Nielsen",
+        "phone": "087 - 46 35 72",
+        "email": "bitte@dhyr.se",
+        "about": "Bitte är vår egen husfluga, som ska surra runt med filmkameran i högsta hugg för att fånga alla hem till salu i vackra vinklar."
+    }, {
+        "id": 5,
+        "img": "staff5.png",
+        "name": "Bibbi Schultz",
+        "phone": "037 - 22 34 54",
+        "email": "bibbi@dhyr.se",
+        "about": "Sedan våren 2014 driver Bibbi sin egen skrivlåda som frilansande copywriter med olika typer av reklamuppdrag – stort och smått, hårt och mjukt."
+    }, {
+        "id": 6,
+        "img": "staff6.png",
+        "name": "Scott Tycho",
+        "phone": "087 - 22 34 54",
+        "email": "scott@dhyr.se",
+        "about": "Det började egentligen med popkonserter; musiken är ett stort intresse och med kameran i hand får Scott två konster att mötas."
+    }]
+}

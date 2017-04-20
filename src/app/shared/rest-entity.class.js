@@ -6,7 +6,7 @@ require("rxjs/add/observable/throw");
 var RestEntity = (function () {
     function RestEntity(entityName) {
         // Mocking with json
-        this.baseUrl = './json/' + entityName + '.json';
+        this.baseUrl = './data/' + entityName + '.json';
         // Real backend/REST api
         // this.baseUrl = '/rest/' + entityName + '/';
     }
