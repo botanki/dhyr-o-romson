@@ -21,4 +21,9 @@ export class GuideMasterComponent implements OnInit {
         this.guides = data;
       });
     }
+
+    getPager(){
+      let currentUrl = window.location.href;
+      return currentUrl[currentUrl.length - 1];
+    }
 }

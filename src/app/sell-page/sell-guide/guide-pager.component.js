@@ -24,6 +24,10 @@ var GuidePagerComponent = (function () {
             _this.guides = data;
         });
     };
+    GuidePagerComponent.prototype.getPager = function () {
+        var currentUrl = window.location.href;
+        return currentUrl[currentUrl.length - 1];
+    };
     return GuidePagerComponent;
 }());
 GuidePagerComponent = __decorate([

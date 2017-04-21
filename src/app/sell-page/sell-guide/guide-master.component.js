@@ -24,6 +24,10 @@ var GuideMasterComponent = (function () {
             _this.guides = data;
         });
     };
+    GuideMasterComponent.prototype.getPager = function () {
+        var currentUrl = window.location.href;
+        return currentUrl[currentUrl.length - 1];
+    };
     return GuideMasterComponent;
 }());
 GuideMasterComponent = __decorate([

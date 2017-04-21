@@ -5,15 +5,11 @@
         </div>
     </div>
     <div class='row'>
-        <div class="hidden-md-down col-lg-4 ">
+        <div class="col-xs-12 col-lg-4 ">
             <guide-master></guide-master>
         </div>
-        <div class="hidden-lg-up col-12 ">
-            <guide-pager></guide-pager>
-        </div>
-
         <div class="col-md-12 col-lg-8">
-            <h2 class="headlines" [innerHTML]="guide.title | breakrow"></h2>
+            <h2 class="headlines" [innerHTML]="guide.id + '. ' + guide.title | breakrow"></h2>
             <h5 class="sell-subtitle" [innerHTML]="guide.sub_title | breakrow"></h5>
             <p class="sell-content" [innerHTML]="guide.content | breakrow"></p>
             <h5 class="guide-subtitle" [innerHTML]="guide.second_title | breakrow"></h5>
@@ -41,7 +37,7 @@
             <h5 class="guide-subtitle" [innerHTML]="guide.thirteenth_title | breakrow"></h5>
             <p class="sell-content" [innerHTML]="guide.thirteenth_content | breakrow"></p>
             <img src="{{guide.img}}">
+            <guide-pager></guide-pager>  
         </div>
     </div>
-
 </div>

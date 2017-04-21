@@ -6,7 +6,11 @@ img {
 	display: inline-block;
 }
 
-a { color: #4FA9B8; }
+a {
+	font-size: 14px;
+	color: #4FA9B8;
+	padding: 0px 10px;
+}
 
 
 .list-title {
@@ -17,8 +21,8 @@ a { color: #4FA9B8; }
 }
 
 .line-vertical {
-	width: 2px;
-	background: #95989A;
+	width: 1px;
+	background: #BDBDBD;
 	height: 100%;
 }
 
@@ -35,4 +39,39 @@ a { color: #4FA9B8; }
 blockquote {
   border-left: 1px solid #ccc;
   padding: 0.5em 10px;
+}
+
+.guide-pager {
+	width: 100%;
+	text-align: center;
+}
+
+
+.pager-area {
+	font-size: 14px;
+	color: #4FA9B8;
+}
+
+.pager-title {
+	text-transform: uppercase;
+	color: #4FA9B8;
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+.divider {
+	height: 1px;
+	width: 100%;
+	background: #BDBDBD;
+	margin: 16px 0 30px;
+}
+
+.pager-list {
+	display: inline-block;
+}
+
+.pager-list > li {
+	font-size: 14px;
+	color: #4FA9B8;
+	cursor: pointer;
 }

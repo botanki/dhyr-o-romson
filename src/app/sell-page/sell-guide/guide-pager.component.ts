@@ -16,9 +16,16 @@ export class GuidePagerComponent implements OnInit {
     constructor(private restService: RestService){}
 
     ngOnInit(){
+      
       let Guides = this.restService.newRestEntity("guide");
       Guides.find('').then((data:any)=>{
         this.guides = data;
       });
     }
+
+    getPager(){
+      let currentUrl = window.location.href;
+      return currentUrl[currentUrl.length - 1];
+    }
+
 }

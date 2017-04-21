@@ -1,10 +1,27 @@
-<div class='guide-pager'>
-	<h5 class="list-title">{{title}}</h5>
-	<div class="pager-area">sida<span class="guide-list" *ngFor="let guide of guides | orderBy: [viewMode]">
-	    <a [routerLink]="['/guide', guide.id]">
-	        {{guide.id}}
-	    </a>
-	</span></div>
-	
-	<div class="divider"></div>
+<div class="row">
+    <div class="divider"></div>
+    <div class='col-6 left-prev'>
+        <div class="prev-area">
+
+            <span class="guide-list" *ngFor="let guide of guides | orderBy: [viewMode]">
+    			<div *ngIf="guide.id == getPager() -1">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                <a [routerLink]="['/guide', getPager() -1]">Del {{guide.id}}:"{{guide.title}}"</a>
+    			</div>
+			</span>
+        </div>
+    </div>
+
+    <div class="col-6 right-next">
+        <div class="next-area">
+            <span class="guide-list" *ngFor="let guide of guides | orderBy: [viewMode]">
+				<div *ngIf="guide.id == getPager() /1 + 1">
+					<a [routerLink]="['/guide', getPager() /1 + 1]">Del {{guide.id}}: "{{guide.title}}"</a>
+					<i class="fa fa-arrow-right" aria-hidden="true"></i>
+				</div>
+			</span>
+        </div>
+    </div>
+    <br/>
+    <br/>
 </div>
