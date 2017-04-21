@@ -21,7 +21,7 @@
 	},
 	{
 	"id":2,
-	"title":"Steg 1. Anlita en mäklare och värdera bostaden",
+	"title":"Anlita en mäklare",
 	"sub_title":"En försäljningsprocess börjar vanligtvis med att du väljer den mäklare som du vill anlita. På ert första möte går ni igenom din boendesituation, dina önskemål och tittar närmare på och gör en värdering av din bostad.",
 	"content":"",
 	"second_title":"Att välja och anlita en mäklare",
@@ -42,7 +42,7 @@
 	},
 	{
 	"id":3,
-	"title":"Steg 2. Skriva avtal och förbereda din försäljning",
+	"title":"Skriva avtal",
 	"sub_title":"För att mäklaren ska kunna arbeta med försäljningen av din bostad behöver ni skriva ett avtal, ett så kallat förmedlingsuppdrag. När det är påskrivet och klart är det dags att börja förbereda försäljningen.",
 	"content":"",
 	"second_title":"Du och mäklaren skriver avtal – förmedlingsuppdrag",
@@ -63,7 +63,7 @@
 	},
 	{
 	"id":4,
-	"title":"Steg 3. Marknadsföring av din bostad",
+	"title":"Marknadsföring",
 	"sub_title":"Nu är det snart dags att lägga ut din bostad till försäljning och börja med marknadsföringen. Det som behöver göras är att skapa material till visningen (en objektbeskrivning). Material till svenskfast.se, hemnet.se och eventuella annonser till dagspress. När all faktainsamling är klar är det dags för fotografering.",
 	"content":"",
 	"second_title":"Fotografering",
@@ -84,7 +84,7 @@
 	},
 	{
 	"id":5,
-	"title":"Steg 4. Visning och budgivning",
+	"title":"Budgivning",
 	"sub_title":"När din bostad marknadsförs i olika kanaler är det dags att hitta köpare till din bostad och matcha din bostad mot intressenter. Vi gör en gedigen genomgång av vårt kundregister och ordnar med visningar och drar igång med budgivningen.",
 	"content":"Med våra mäklares goda lokalkännedom har vi koll på köparna och vet vad köparna vill ha. Vi har koll på flyttströmmar och har daglig kontakt med människor som söker en ny bostad. För att hitta potentiella köpare av din bostad gör vi en grundlig genomgång av vårt gedigna kundregister och tar kontakt med de kunder som efterfrågar din typ av bostad.",
 	"second_title":"Visningen",
@@ -104,7 +104,7 @@
 	"img": ""
 },{
 	"id": 6,
-	"title": "Steg 5. Skriva kontrakt och få tillträde",
+	"title": "Skriva kontrakt",
 	"sub-title": "Bostadsaffären är i hamn först när du som säljer och köparen undertecknat ett skriftligt köpekontrakt. Efter det får köparen tillträde till bostaden. Men vad ingår egentligen i köpet, och vad innebär undersökningsplikt, upplysningsplikt och dolda fel? Och när får du handpenningen? ",
 	"content": "",
 	"second_title": "Skriva kontrakt - ett så kallat köpekontrakt",
@@ -134,7 +134,7 @@
 	"img": ""
 },{
 	"id": 7,
-	"title": "Steg 6. Efter försäljning är det dags att deklarera",
+	"title": "Efter försäljning",
 	"sub-title": "Har du sålt din bostad med oss på Svensk Fastighetsförmedling hjälper din mäklare dig gärna med kapitalvinstberäkningen inför din deklaration (gäller ej för näringsfastigheter som lantbruk eller kommersiella fastigheter). Har du andra frågor eller behöver hjälp med något så finns din mäklare där – även efter försäljningen.",
 	"content": "",
 	"second_title": "Hjälp med kapitalvinstberäkning ",
@@ -164,7 +164,7 @@
 	"img": ""
 },{
 	"id": 8,
-	"title": "Steg 7. Dags att flytta till ny bostad",
+	"title": "Ekonomi",
 	"sub-title": "Att flytta till en ny bostad är oftast en rolig process, men få ser fram emot packning, flytt och flyttstädning. Tänk på att bostaden ska vara utflyttad och avstädad inför tillträdet. Här är några saker som du bör tänka på vid en flytt. Framförhållning och god planering gör flyttprocessen både trevligare och smidigare.",
 	"content": "",
 	"second_title": "Tips när du ska flytta till en ny bostad",

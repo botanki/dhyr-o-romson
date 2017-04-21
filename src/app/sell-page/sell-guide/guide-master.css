@@ -1,36 +1,38 @@
+/*  Get rid of blue border in focus mode */ 
+button:focus, li:focus { outline: none; border: 0; }
+
 img {
 	width: 100%;
 	display: inline-block;
 }
 
-a {
-	color: #202B30;
-}
+a { color: #4FA9B8; }
 
-.list-title-box {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	background-color: #4FA9B8;
-	border-radius: 5px;
-	padding: 10px;
-}
 
 .list-title {
 	text-transform: uppercase;
-	color: #fff;
-	margin-top: 5px;
+	color: #4FA9B8;
+	font-size: 26px;
+	margin-bottom: 20px;
 }
 
-.left-panel {
-	margin-top: 10vh;
+.line-vertical {
+	width: 2px;
+	background: #95989A;
+	height: 100%;
 }
 
 .guide-list {
-	font-size: 0.9em;
-	background: #F5F5F5;
-	margin-top: 10px;
-	padding: 10px;
-	border-radius: 5px;
+	font-size: 15px;
+	color: #4FA9B8;
+	padding: 6px 0 0 10px;
+	cursor: pointer;
+	list-style: none;
+}
+
+.guide-list:first-of-type { padding: 0 0 0 10px; }
+
+blockquote {
+  border-left: 1px solid #ccc;
+  padding: 0.5em 10px;
 }

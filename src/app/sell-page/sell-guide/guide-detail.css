@@ -1,3 +1,7 @@
+.spacer {
+	margin-top: 12vh;
+}
+
 img {
 	width: 100%;
 	display: inline-block;
@@ -7,12 +11,8 @@ a {
 	color: #202B30;
 }
 
-.list-spacer {
-	margin-top: 5vh;
-}
 
 .right-panel {
-	margin-top: 10vh;
 	margin-bottom: 10vh;
 }
 
