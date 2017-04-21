@@ -10,30 +10,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var rest_service_1 = require("../../services/rest.service");
-var GuideMasterComponent = (function () {
-    function GuideMasterComponent(restService) {
+var GuidePagerComponent = (function () {
+    function GuidePagerComponent(restService) {
         this.restService = restService;
         this.title = 'Vår SäljGuide';
         this.viewMode = 'id';
         this.guides = [];
     }
-    GuideMasterComponent.prototype.ngOnInit = function () {
+    GuidePagerComponent.prototype.ngOnInit = function () {
         var _this = this;
         var Guides = this.restService.newRestEntity("guide");
         Guides.find('').then(function (data) {
             _this.guides = data;
         });
     };
-    return GuideMasterComponent;
+    return GuidePagerComponent;
 }());
-GuideMasterComponent = __decorate([
+GuidePagerComponent = __decorate([
     core_1.Component({
-        selector: 'guide-master',
-        templateUrl: './guide-master.html',
-        styleUrls: ['./guide-master.css'],
+        selector: 'guide-pager',
+        templateUrl: './guide-pager.html',
+        styleUrls: ['./guide-pager.css'],
         providers: [rest_service_1.RestService],
     }),
     __metadata("design:paramtypes", [rest_service_1.RestService])
-], GuideMasterComponent);
-exports.GuideMasterComponent = GuideMasterComponent;
-//# sourceMappingURL=guide-master.component.js.map
+], GuidePagerComponent);
+exports.GuidePagerComponent = GuidePagerComponent;
+//# sourceMappingURL=guide-pager.component.js.map

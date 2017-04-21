@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { RestService } from '../../services/rest.service';
 
 @Component({
-	selector: 'guide-master',
-	templateUrl: './guide-master.html',
-	styleUrls: ['./guide-master.css'],
-  	providers: [ RestService ],
+    selector: 'guide-pager',
+    templateUrl: './guide-pager.html',
+    styleUrls: ['./guide-pager.css'],
+      providers: [ RestService ],
 })
 
-export class GuideMasterComponent implements OnInit {
+export class GuidePagerComponent implements OnInit {
     title = 'Vår SäljGuide';
     viewMode = 'id';
     guides = [];

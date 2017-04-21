@@ -11,6 +11,7 @@ import { NavigationComponent }  from './navigation/navigation.component';
 import { SellPageComponent } from './sell-page/sell-page.component';
 import { GuideDetailComponent } from './sell-page/sell-guide/guide-detail.component';
 import { GuideMasterComponent } from './sell-page/sell-guide/guide-master.component';
+import { GuidePagerComponent } from './sell-page/sell-guide/guide-pager.component';
 import { BuyPageComponent } from './buy-page/buy-page.component';
 import { SearchComponent } from './buy-page/filtering/search.component';
 import { FilterComponent } from './buy-page/filtering/filter.component';
@@ -49,6 +50,7 @@ import { AppRoutingModule } from './app-routing.module';
 		SellPageComponent,
 		GuideDetailComponent,
 		GuideMasterComponent,
+        GuidePagerComponent,
 		BuyPageComponent,
 		SearchComponent,
 		FilterComponent,

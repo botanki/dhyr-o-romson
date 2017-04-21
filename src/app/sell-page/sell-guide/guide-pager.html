@@ -1,0 +1,10 @@
+<div class='guide-pager'>
+	<h5 class="list-title">{{title}}</h5>
+	<div class="pager-area">sida<span class="guide-list" *ngFor="let guide of guides | orderBy: [viewMode]">
+	    <a [routerLink]="['/guide', guide.id]">
+	        {{guide.id}}
+	    </a>
+	</span></div>
+	
+	<div class="divider"></div>
+</div>
