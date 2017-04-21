@@ -10,7 +10,7 @@ import { RestService } from '../../services/rest.service';
 
 export class GuideMasterComponent implements OnInit {
     title = 'Säljguide';
-    currentGuides = "SaleGuide";
+    viewMode = 'id';
     guides = [];
 
     constructor(private restService: RestService){}

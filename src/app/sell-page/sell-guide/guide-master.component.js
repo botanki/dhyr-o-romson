@@ -14,7 +14,7 @@ var GuideMasterComponent = (function () {
     function GuideMasterComponent(restService) {
         this.restService = restService;
         this.title = 'Säljguide';
-        this.currentGuides = "SaleGuide";
+        this.viewMode = 'id';
         this.guides = [];
     }
     GuideMasterComponent.prototype.ngOnInit = function () {
