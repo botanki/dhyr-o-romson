@@ -1,72 +1,3 @@
-<!-- SEARCH AREA -->
-
-<div class="container-fluid search-color">
-    <div class="row">
-        <div class="col-12">
-            <div class="search-box">
-                <p class="search-text">{{searchHeader}}</p>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Sök">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- FILTER AREA -->
-
-<div class="container-fluid filter-color">
-    <div class="row filter-me">
-        <div class="col-12">
-            {{filterHeader}}
-        </div>
-        <!-- Rum (min) -->
-        <div class="col-6 col-sm-3 filter-space">
-            <div ngbDropdown class="d-inline-block search-btn btn-space">
-                <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenRoom}}</button>
-                <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
-                    <button (click)="roomChoice(0)" class="dropdown-item">{{title1}}</button>
-                    <button *ngFor="let room of roomOptions" (click)="roomChoice(room)" class="dropdown-item">{{room}} {{def1}}</button>
-                </div>
-            </div>
-        </div>
-        <!-- Rum (min) -->
-        <div class="col-6 col-sm-3 filter-space">
-            <div ngbDropdown class="d-inline-block search-btn btn-space">
-                <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenArea}}</button>
-                <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
-                    <button (click)="areaChoice(0)" class="dropdown-item">{{title2}}</button>
-                    <button *ngFor="let area of areaOptions" (click)="areaChoice(area)" class="dropdown-item">{{area}} {{def2}}</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-3 filter-space">
-            <div ngbDropdown class="d-inline-block search-btn btn-space">
-                <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenPriceMin}}</button>
-                <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
-                    <button (click)="priceMinChoice(0)" class="dropdown-item">{{title3}}</button>
-                    <button *ngFor="let priceMin of priceMinOptions" (click)="priceMinChoice(priceMin)" class="dropdown-item">{{priceMin | number}} {{def3}}</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-3 filter-space">
-            <div ngbDropdown class="d-inline-block search-btn btn-space">
-                <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenPriceMax}}</button>
-                <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
-                    <button (click)="priceMaxChoice(0)" class="dropdown-item">{{title4}}</button>
-                    <button *ngFor="let priceMax of priceMaxOptions" (click)="priceMaxChoice(priceMax)" class="dropdown-item">{{priceMax | number}} {{def3}}</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- SORT AREA -->
-
-
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12 offset-md-1 col-md-10 sort-header">{{sortHeader}}</div>
@@ -82,38 +13,35 @@
             <div class="breaker-top"></div>
         </div>
     </div>
-</div>
 
 
-<!-- ESTATE MASTER-VIEW -->
-
-
-<div class="row estate-content" *ngFor="let estate of estates | orderBy: [viewMode]">
-    <div class="col-xs-12 col-sm-12 offset-md-1 col-md-5">
-        <a [routerLink]="['/estate', estate.id]">
+    <div class="row estate-content" *ngFor="let estate of estates | orderBy: [viewMode]">
+        <div class="col-xs-12 col-sm-12 offset-md-1 col-md-5">
+            <a [routerLink]="['/estate', estate.id]">
+                <div class="card wide-card">
+                    <div class="img-no-card-border">
+                        <img class="img-fluid img-styled" src="images/estates/{{estate.img_master}}" alt="{{estate.address}}">
+                    </div>
+                    <div *ngIf="!estate.on_sale">
+                        <button class="sold-button">{{saleTag}}</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-5">
             <div class="card wide-card">
-                <div class="img-no-card-border">
-                    <img class="img-fluid img-styled" src="images/estates/{{estate.img_master}}" alt="{{estate.address}}">
+                <div class="card-block">
+                    <p class="card-text date-posted"><span>{{tags[3]}} {{estate.date_added | swedate: '-' }}</span></p>
+                    <h3 class="card-title">{{estate.address }}</h3>
+                    <h3 class="card-title">{{estate.area }}</h3>
+                    <p class="card-text">{{estate.rooms }} {{tags[0]}}</p>
+                    <p class="card-text">{{estate.space}} {{tags[1]}}</p>
+                    <p class="card-text">{{tags[2]}} <span>{{estate.price | spacingCurrency }} kr</span></p>
+                    <a [routerLink]="['/estate', estate.id]" class=" btn btn-primary buttons drop-shadow">{{tags[4]}}</a>
                 </div>
-                <div *ngIf="!estate.on_sale">
-                    <button class="sold-button">{{saleTag}}</button>
-                </div>
-            </div>
-        </a>
-    </div>
-    <div class="col-xs-12 col-sm-12  col-md-5">
-        <div class="card wide-card">
-            <div class="card-block">
-                <p class="card-text date-posted"><span>{{tags[3]}} {{estate.date_added | swedate: '-' }}</span></p>
-                <h3 class="card-title">{{estate.address }}</h3>
-                <h3 class="card-title">{{estate.area }}</h3>
-                <p class="card-text">{{estate.rooms }} {{tags[0]}}</p>
-                <p class="card-text">{{estate.space}} {{tags[1]}}</p>
-                <p class="card-text">{{tags[2]}} <span>{{estate.price | spacingCurrency }} kr</span></p>
-                <a [routerLink]="['/estate', estate.id]" class=" btn btn-primary buttons drop-shadow">{{tags[4]}}</a>
             </div>
         </div>
-    </div>
 
-    <div class="breaker hidden-sm-up"></div>
+        <div class="breaker hidden-sm-up"></div>
+    </div>
 </div>
