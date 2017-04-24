@@ -15,6 +15,26 @@ var EstateMasterComponent = (function () {
     function EstateMasterComponent(restService, memService) {
         this.restService = restService;
         this.memService = memService;
+        // SEARCH VARIABLES 
+        this.searchHeader = 'Sök på bostadstyp, adress, område, ort, nyckelord';
+        // FILTER VARIABLES
+        this.filterHeader = 'Filtera:';
+        this.title1 = 'Rum (min)';
+        this.def1 = 'rum';
+        this.chosenRoom = 'Rum (min)';
+        this.roomOptions = [1, 2, 3, 4, 5, 6];
+        this.title2 = 'Boarea (min)';
+        this.def2 = 'kvm';
+        this.chosenArea = 'Boarea (min)';
+        this.areaOptions = [25, 50, 75, 100, 125, 150, 175, 200];
+        this.title3 = 'Pris (min)';
+        this.def3 = 'kr';
+        this.chosenPriceMin = 'Pris (min)';
+        this.priceMinOptions = [500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000];
+        this.title4 = 'Pris (max)';
+        this.chosenPriceMax = 'Pris (max)';
+        this.priceMaxOptions = [500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000];
+        // ESTATE-VIEW VARIABLES
         this.estates = [];
         this.sortHeader = 'Sortera Efter:';
         this.viewMode = '-date_added';
@@ -28,6 +48,38 @@ var EstateMasterComponent = (function () {
         this.tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd den', 'Mer Info'];
         this.localMem = memService.get(this);
     }
+    EstateMasterComponent.prototype.roomChoice = function (noOfRooms) {
+        if (noOfRooms === 0) {
+            this.chosenRoom = 'Rum (min)';
+        }
+        else {
+            this.chosenRoom = noOfRooms + ' rum';
+        }
+    };
+    EstateMasterComponent.prototype.areaChoice = function (noOfAreas) {
+        if (noOfAreas === 0) {
+            this.chosenArea = 'Boarea (min)';
+        }
+        else {
+            this.chosenArea = noOfAreas + ' kvm';
+        }
+    };
+    EstateMasterComponent.prototype.priceMinChoice = function (noOfPricesMin) {
+        if (noOfPricesMin === 0) {
+            this.chosenPriceMin = 'Pris (min)';
+        }
+        else {
+            this.chosenPriceMin = noOfPricesMin + ' kr';
+        }
+    };
+    EstateMasterComponent.prototype.priceMaxChoice = function (noOfPricesMax) {
+        if (noOfPricesMax === 0) {
+            this.chosenPriceMax = 'Pris (min)';
+        }
+        else {
+            this.chosenPriceMax = noOfPricesMax + ' kr';
+        }
+    };
     EstateMasterComponent.prototype.ngOnInit = function () {
         var _this = this;
         var Estates = this.restService.newRestEntity("estate");
