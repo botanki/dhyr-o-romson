@@ -16,16 +16,18 @@
     color: #202B30;
 }
 
+.blued {
+    font-family: 'Roboto', sans-serif;
+    color: #4FA9B8;
+    font-size: 24px;
+}
+
+
 .card-text {
     font-size: 22px;
     margin-bottom: 6px;
 }
 
-.card-text > span {
-    font-family: 'Roboto', sans-serif;
-    color: #4FA9B8;
-    font-size: 24px;
-}
 
 .buttons {
     font-family: 'Roboto', sans-serif;
@@ -84,8 +86,6 @@
     border:1px solid #CCCCCC;
     background-color: #F5F5F5;
     color:black;
-    // width:200px;
-    // text-align: left;
 }
 
 .dropdown-item:hover {

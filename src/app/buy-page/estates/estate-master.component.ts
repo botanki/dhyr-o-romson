@@ -23,7 +23,7 @@ export class EstateMasterComponent implements OnInit {
     ];
 
     saleTag = "Såld";
-    tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd den', 'Mer Info']
+    tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd: ', 'Mer Info']
 
 
     constructor(

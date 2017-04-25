@@ -25,7 +25,7 @@ var EstateMasterComponent = (function () {
             { text: 'Lägst Pris', sorting: 'price' }
         ];
         this.saleTag = "Såld";
-        this.tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd den', 'Mer Info'];
+        this.tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd: ', 'Mer Info'];
         this.localMem = memService.get(this);
         // Set sort option when we "return" to this page
         this.dropdownTitle = this.localMem.currentSortOptionLabel || 'Senaste inlagt';
