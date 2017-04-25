@@ -1,9 +1,24 @@
-<div class="broker-body" *ngFor="let broker of brokers;">
-        <img class="img-fluid broker-img" src="images/brokers/{{broker.img}}">
-        <p>{{tags[0]}}</p>
-        <p>{{broker.name}}</p>
-        <p>{{tags[1]}}{{broker.phone | phoneFormat}}</p>
-        <p>{{tags[2]}} {{broker.email}}</p>
-        <p class="about-broker">"{{broker.about}}"</p>
+<div class="col-12 col-sm-6 float-left" *ngFor="let broker of brokers;">
+	<div class="row justify-content-center">
+        <div class="col-12">
+        	<img class="broker-img" src="images/brokers/{{broker.img}}">
+        </div>
+        <div class="col-12">
+        	<span>{{tags[0]}}</span>
+        </div>
+        <div class="col-12">
+        	<span>{{broker.name}}</span>
+        </div>
+        <div class="col-12">
+        	<span>{{tags[1]}}{{broker.phone | phoneFormat}}</span>
+        </div>
+        <div class="col-12">
+        	<p>{{tags[2]}} {{broker.email}}</p>
+        </div>
+        <div class="col-12">
+        	<p class="about-broker">"{{broker.about}}"</p>
+        </div>
+
         <br/>
+    </div>
 </div>
