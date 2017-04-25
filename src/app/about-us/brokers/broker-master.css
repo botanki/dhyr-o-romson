@@ -3,10 +3,26 @@
     border: 0;
 }
 
+span {
+    font-size: 15px;
+}
+
+.smaller {
+    font-size: 14px;
+}
+
+.shaper {
+    height: 220px;
+}
+
 .about-broker {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    color: #4FA9B8;
+    font-size: 13px;
+    padding: 20px;
+    background: #f7f7f7;
+    width: 100%;
+    margin: 20px 0;
 }
 
 .broker-body {
@@ -21,4 +37,18 @@
 
 .broker-img {
     width: 100%
+}
+
+
+@media screen and (max-width: 991px) {
+    
+    .about-broker {
+        font-size: 15px;
+    }
+
+    .shaper {
+        height: 158px;
+    }
+    
+
 }

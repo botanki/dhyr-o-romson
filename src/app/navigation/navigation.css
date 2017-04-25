@@ -22,7 +22,8 @@ img:focus, i:focus, button:focus, li:focus { outline: none; border: 0; }
 .nav-link {
     color: #EFE9E5; 
     font-weight: 400;
-    text-align: center;
+    // text-align: center;
+    margin: 0 auto;
     font-size: 18px;
 }
 

@@ -1,5 +1,5 @@
-<div class="col-12 col-sm-6 float-left" *ngFor="let broker of brokers;">
-	<div class="row justify-content-center">
+<div class="col-xs-12 col-lg-6 float-left" *ngFor="let broker of brokers;">
+	<div class="row">
         <div class="col-12">
         	<img class="broker-img" src="images/brokers/{{broker.img}}">
         </div>
@@ -13,12 +13,13 @@
         	<span>{{tags[1]}}{{broker.phone | phoneFormat}}</span>
         </div>
         <div class="col-12">
-        	<p>{{tags[2]}} {{broker.email}}</p>
+        	<span class="smaller">{{tags[2]}} {{broker.email}}</span>
         </div>
         <div class="col-12">
-        	<p class="about-broker">"{{broker.about}}"</p>
+            <div class="shaper">
+        	   <p class="about-broker">"{{broker.about}}"</p>
+            </div>
         </div>
-
         <br/>
     </div>
 </div>
