@@ -13,7 +13,6 @@ var rest_service_1 = require("../../services/rest.service");
 var mem_service_1 = require("../../services/mem.service");
 var EstateMasterComponent = (function () {
     function EstateMasterComponent(restService, memService) {
-        var _this = this;
         this.restService = restService;
         this.memService = memService;
         this.estates = [];
@@ -28,11 +27,9 @@ var EstateMasterComponent = (function () {
         this.saleTag = "Såld";
         this.tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd den', 'Mer Info'];
         this.localMem = memService.get(this);
-        this.global = memService.global();
-        this.global.estateMasterUpdate = function (data) {
-            // update my estate property to change what estates I show
-            _this.estates = data;
-        };
+        // Set sort option when we "return" to this page
+        this.dropdownTitle = this.localMem.currentSortOptionLabel || 'Senaste inlagt';
+        this.viewMode = this.localMem.currentSortOption || '-date_added';
     }
     EstateMasterComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -40,6 +37,10 @@ var EstateMasterComponent = (function () {
         Estates.find('').then(function (data) {
             _this.estates = data;
         });
+    };
+    EstateMasterComponent.prototype.saveSortOption = function (label, choice) {
+        this.localMem.currentSortOptionLabel = label;
+        this.localMem.currentSortOption = choice;
     };
     return EstateMasterComponent;
 }());

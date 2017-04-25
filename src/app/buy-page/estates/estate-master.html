@@ -7,7 +7,7 @@
             <div ngbDropdown class="d-inline-block">
                 <button class="btn btn-outline-secondary search-btn2" id="dropdownMenu" ngbDropdownToggle>{{dropdownTitle}}</button>
                 <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
-                    <button *ngFor="let option of options" class="dropdown-item" (click)="viewMode = option.sorting" (click)="dropdownTitle = option.text">{{option.text}}</button>
+                    <button *ngFor="let option of options" class="dropdown-item" (click)="viewMode = option.sorting" (click)="dropdownTitle = option.text;saveSortOption(option.text,option.sorting)">{{option.text}}</button>
                 </div>
             </div>
             <div class="breaker-top"></div>
