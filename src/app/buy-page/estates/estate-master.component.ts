@@ -9,7 +9,7 @@ import { MemService } from '../../services/mem.service';
 })
 
 export class EstateMasterComponent implements OnInit {
-    global: any;
+
     estates = [];
     localMem: any;
 
@@ -31,11 +31,10 @@ export class EstateMasterComponent implements OnInit {
       private memService: MemService
     ){
       this.localMem = memService.get(this);
-      this.global = memService.global();
-      this.global.estateMasterUpdate = (data)=>{
-      	// update my estate property to change what estates I show
-      	this.estates = data;
-      }
+
+      // Set sort option when we "return" to this page
+      this.dropdownTitle = this.localMem.currentSortOptionLabel || 'Senaste inlagt';
+      this.viewMode = this.localMem.currentSortOption || '-date_added';
     }
 
     ngOnInit(){
@@ -44,6 +43,11 @@ export class EstateMasterComponent implements OnInit {
         this.estates = data;
       });
 
+    }
+
+    saveSortOption(label,choice){
+      this.localMem.currentSortOptionLabel = label;
+      this.localMem.currentSortOption = choice;
     }
 
 }
