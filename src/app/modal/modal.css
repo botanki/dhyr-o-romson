@@ -30,6 +30,13 @@ p {
 
 }
 
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-family: 'EB Garamond', serif;
+    color: #fafafa;
+}
+
 button {
 	border-radius: 0;
 	margin-right: 6px;
@@ -44,6 +51,14 @@ button {
 input {
 	width: 100%;
 }
+
+.form-control > input:text {
+    border-radius: 0;
+    font-family: 'roboto', sans-serif;
+    background: #4FA9B8;
+    color: #fafafa;
+}
+
 
 .shut-down {
 	position: absolute;

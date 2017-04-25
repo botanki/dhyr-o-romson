@@ -15,6 +15,10 @@ var AboutUsComponent = (function () {
         this.memService = memService;
         this.isNavbarCollapsed = true;
         this.isActive = false;
+        this.headline1 = "Om oss";
+        this.headline2 = "Kontakt";
+        this.maintext1 = "Hög servicenivå är det som särskiljer oss. Vi tror att förmågan att se hela kundens boendesituation är avgörande för en lyckad bostadsaffär. Vår styrka är att kunna hantera varje kunds unika behov, det är också det som gör jobbet som mäklare intressant. Hos Dhyr o Romson möter du kunskap och erfarenhet som omfattar allt från gårdar till bostadsrätter i stan, villor, tomter, fritidshus och nyproduktion. Vårt arbetssätt, där mäklarna samarbetar i team, ger dig ett försprång på marknaden. Hög servicenivå är det som särskiljer oss. Vi tror att förmågan att se hela kundens boendesituation är avgörande för en lyckad bostadsaffär. Vår styrka är att kunna hantera varje kunds unika behov, det är också det som gör jobbet som mäklare intressant. Hos Dhyr o Romson möter du kunskap och erfarenhet som omfattar allt från gårdar till bostadsrätter i stan, villor, tomter, fritidshus och nyproduktion. Vårt arbetssätt, där mäklarna samarbetar i team, ger dig ett försprång på marknaden.";
+        this.maintext2 = "Vi tror att förmågan att se hela kundens boendesituation är avgörande för en lyckad bostadsaffär. Vår styrka är att kunna hantera varje kunds unika behov, det är också det som gör jobbet.";
         this.globalMem = this.memService.global();
     }
     AboutUsComponent.prototype.closeNav = function () {
