@@ -31,6 +31,11 @@ export class EstateMasterComponent implements OnInit {
       private memService: MemService
     ){
       this.localMem = memService.get(this);
+      this.global = memService.global();
+      this.global.estateMasterUpdate = (data)=>{
+      	// update my estate property to change what estates I show
+      	this.estates = data;
+      }
     }
 
     ngOnInit(){

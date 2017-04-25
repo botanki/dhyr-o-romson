@@ -8,7 +8,7 @@ var RestEntity = (function () {
         // Mocking with json
         // this.baseUrl = '../json/' + entityName + '.json';
         // Real backend/REST api
-        this.baseUrl = '/rest/' + entityName + '/';
+        this.baseUrl = '/rest/' + entityName;
     }
     RestEntity.prototype.httpRequest = function (type, idOrQuery, requestBody) {
         var url = this.baseUrl + '/' + idOrQuery;
