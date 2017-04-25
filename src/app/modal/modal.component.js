@@ -45,10 +45,6 @@ var NgbdModalBasic = (function () {
     NgbdModalBasic.prototype.registerContent = function (content) {
         this.content = content;
     };
-    NgbdModalBasic.prototype.ngOnChanges = function () {
-        console.log(this.formdata, "CHanges");
-        // changes.prop contains the old and the new value...
-    };
     NgbdModalBasic.prototype.sendContactInfo = function () {
         // Send
         var _observable = this.http.post("/register-contact-info", this.formdata);

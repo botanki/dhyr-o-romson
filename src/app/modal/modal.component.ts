@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule }  from '@angular/forms'; // <-- NgModel lives here
 
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
@@ -11,7 +11,7 @@ import {Http} from "@angular/http";
   styleUrls: ['./modal.css'],
   providers: [MemService]
 })
-export class NgbdModalBasic implements OnChanges {
+export class NgbdModalBasic {
 
   disableSubmit = true;
   formdata = {
@@ -50,11 +50,6 @@ export class NgbdModalBasic implements OnChanges {
 
   registerContent(content: any){
     this.content = content;
-  }
-
-  ngOnChanges() {
-    console.log(this.formdata,"CHanges");
-    // changes.prop contains the old and the new value...
   }
 
   sendContactInfo(){
