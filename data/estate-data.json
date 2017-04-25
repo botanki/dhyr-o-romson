@@ -159,7 +159,7 @@
     "year": 2012,
     "next_date": "2017-05-13T15:30:00",
     "date_added": "2017-04-10T16:00:00",
-    "on_sale": true
+    "on_sale": false
 }, {
     "id": 9,
     "area": "Stockholm",
