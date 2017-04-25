@@ -1,6 +1,7 @@
 // Npm modules
 var express = require('express');
 var mongoose = require('mongoose');
+var bodyParser = require('body-parser');
 
 require('mongoosefromclass')(mongoose);
 
@@ -31,6 +32,9 @@ global.Guide = mongoose.fromClass(global.Guide);
 // Create a new express server, store in the variable app
 var app = express();
 
+// Use body-parser to be able to get req.body on Express routes
+app.use(bodyParser.json())
+
 // Never cache request starting with "/rest/"
 app.use((req, res, next)=>{
 	if(req.url.indexOf('/rest/') >= 0) {
@@ -51,6 +55,9 @@ app.use(express.static('./'));
 
 // Other routes go here
 // ...
+
+let ContactInfoMailSender = require('./modules/mail-sender.class');
+new ContactInfoMailSender(app);
 
 // If no other route rule fulfilled then return index.html
 app.get('*',(req,res)=>{

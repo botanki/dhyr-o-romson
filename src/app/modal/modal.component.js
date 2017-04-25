@@ -11,11 +11,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
 var mem_service_1 = require("../services/mem.service");
+var http_1 = require("@angular/http");
 var NgbdModalBasic = (function () {
-    function NgbdModalBasic(modalService, memService) {
+    function NgbdModalBasic(modalService, memService, http) {
         var _this = this;
         this.modalService = modalService;
         this.memService = memService;
+        this.http = http;
+        this.disableSubmit = true;
+        this.formdata = {
+            firstname: '',
+            lastname: '',
+            phonenumber: '',
+            email: '',
+            errand: ''
+        };
         this.title = 'Kontakta oss';
         this.body = 'Vill du komma i kontakt med någon av våra mäklare, eller har du en annan fråga? Fyll i ditt ärende i kontaktformuläret så hör vi av oss till dig. Du kan även ringa oss på 08-55551300 mellan kl 8-20 alla dagar i veckan.';
         this.send = 'Skicka';
@@ -27,12 +37,37 @@ var NgbdModalBasic = (function () {
     }
     NgbdModalBasic.prototype.open = function () {
         var _this = this;
+        this.resetFormData();
         this.modalService.open(this.content).result.then(function (result) {
             _this.closeResult = "Closed with: " + result;
         }, function () { });
     };
     NgbdModalBasic.prototype.registerContent = function (content) {
         this.content = content;
+    };
+    NgbdModalBasic.prototype.ngOnChanges = function () {
+        console.log(this.formdata, "CHanges");
+        // changes.prop contains the old and the new value...
+    };
+    NgbdModalBasic.prototype.sendContactInfo = function () {
+        // Send
+        var _observable = this.http.post("/register-contact-info", this.formdata);
+        _observable.subscribe();
+    };
+    NgbdModalBasic.prototype.resetFormData = function () {
+        for (var key in this.formdata) {
+            this.formdata[key] = '';
+        }
+    };
+    NgbdModalBasic.prototype.checkFields = function () {
+        var everyThingFilledIn = true;
+        for (var key in this.formdata) {
+            if (key == "phonenumber") {
+                continue;
+            }
+            everyThingFilledIn = everyThingFilledIn && this.formdata[key] !== '';
+        }
+        this.disableSubmit = !everyThingFilledIn;
     };
     return NgbdModalBasic;
 }());
@@ -44,7 +79,8 @@ NgbdModalBasic = __decorate([
         providers: [mem_service_1.MemService]
     }),
     __metadata("design:paramtypes", [ng_bootstrap_1.NgbModal,
-        mem_service_1.MemService])
+        mem_service_1.MemService,
+        http_1.Http])
 ], NgbdModalBasic);
 exports.NgbdModalBasic = NgbdModalBasic;
 //# sourceMappingURL=modal.component.js.map

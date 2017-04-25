@@ -17,36 +17,36 @@
 
 
         <div class="col-sm-12">
-            <input type="text" class="form-control"
+            <input [(ngModel)]="formdata.firstname" (keyup)="checkFields()" type="text" class="form-control"
             id="firstname" placeholder="Namn*"/>
         </div>
       </div>
 
       <div class="form-group">
         <div class="col-sm-12">
-            <input type="text" class="form-control"
+            <input  [(ngModel)]="formdata.lastname" (keyup)="checkFields()" type="text" class="form-control"
             id="lastname" placeholder="Efternamn*"/>
         </div>
       </div>
 
       <div class="form-group">
         <div class="col-sm-12">
-            <input type="tel" class="form-control"
+            <input [(ngModel)]="formdata.phonenumber" (keyup)="checkFields()" type="tel" class="form-control"
                 id="phonenumber" placeholder="Telefonnummer"/>
         </div>
       </div>
 
       <div class="form-group">
         <div class="col-sm-12">
-            <input type="email" class="form-control"
+            <input [(ngModel)]="formdata.email"  (keyup)="checkFields()" type="email" class="form-control"
                 id="email" placeholder="E-post*"/>
         </div>
       </div>
 
        <div class="form-group">
           <div class="col-sm-12">
-            <textarea class="form-control" rows="5" id="errand" placeholder="Ärende*"></textarea>
-            <button type="submit" class="btn btn-info">{{send}}</button>
+            <textarea  [(ngModel)]="formdata.errand" (keyup)="checkFields()" class="form-control" rows="5" id="errand" placeholder="Ärende*"></textarea>
+            <button [disabled]="disableSubmit" type="submit" (click)="sendContactInfo();c('Close on send')" class="btn btn-info">{{send}}</button>
             <button type="button" class="btn btn-secondary" (click)="c('Close click')">{{cancel}}</button>
           </div>
         </div>
