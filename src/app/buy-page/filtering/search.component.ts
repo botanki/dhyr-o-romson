@@ -6,16 +6,17 @@ import { MemService } from '../../services/mem.service';
 @Component({
 	selector: 'search',
 	templateUrl: './search.html',
-	styleUrls: [ './search.css' ]
+	styleUrls: [ './search.css' ],
 	providers: [ RestService, MemService ]
 })
 
 export class SearchComponent implements OnInit {
-
+    global: any;
 	estate = [];
 
 	searchPhrase = '';
-	searchFilters = {};
+	// searchFilters = {};
+    searchFilters: any;
 
 	constructor(
 		private restService: RestService,

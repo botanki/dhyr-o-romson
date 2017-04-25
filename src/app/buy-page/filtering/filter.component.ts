@@ -12,7 +12,7 @@ import { MemService } from '../../services/mem.service';
 export class FilterComponent {
 
 	header = 'Filtera:';
-
+	global: any;
 	// Rum (min)
 	title1 = 'Rum (min)'
 	def1 = 'rum'
@@ -82,7 +82,7 @@ export class FilterComponent {
 		this.filterUpdate();
 	}
 
-	filterUpdate(){
+	filterUpdate():any{
 		let filters = {
 			chosenRoom: this.chosenRoom,
 			chosenArea: this.chosenArea,

@@ -9,7 +9,7 @@ import { MemService } from '../../services/mem.service';
 })
 
 export class EstateMasterComponent implements OnInit {
-
+    global: any;
     estates = [];
     localMem: any;
 

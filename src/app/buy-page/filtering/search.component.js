@@ -18,7 +18,6 @@ var SearchComponent = (function () {
         this.memService = memService;
         this.estate = [];
         this.searchPhrase = '';
-        this.searchFilters = {};
         this.global = this.memService.global();
         this.global.updateSearchFilters = function (filters) {
             _this.searchFilters = filters;
