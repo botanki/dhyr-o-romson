@@ -4,7 +4,6 @@ import { FormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-
 import { AppComponent }  from './app.component';
 import { FrontPageComponent }  from './front-page/front-page.component';
 import { NavigationComponent }  from './navigation/navigation.component';
