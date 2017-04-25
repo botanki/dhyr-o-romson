@@ -6,7 +6,7 @@ import { RestService } from '../../services/rest.service';
 	selector: 'broker-master',
 	templateUrl: './broker-master.html',
 	styleUrls: ['./broker-master.css'],
-  providers: [RestService],
+	providers: [RestService],
 })
 
 export class BrokerMasterComponent  {
@@ -15,18 +15,18 @@ export class BrokerMasterComponent  {
     _odd = false;
 
     tags = [
-      'Ansvarig Mäklare:',
-      'Tel: ',
-      'Kontakta:'
-      ]
+		'Ansvarig Mäklare:',
+		'Tel: ',
+		'Kontakta:'
+	]
 
     constructor(private restService: RestService){}
 
     ngOnInit(){
-      let Brokers = this.restService.newRestEntity("broker");
-      Brokers.find('').then((data:any)=>{
-        this.brokers = data;
-      });
+		let Brokers = this.restService.newRestEntity("broker");
+		Brokers.find('').then((data:any)=>{
+			this.brokers = data;
+		});
     }
 
 }

@@ -14,7 +14,7 @@ export class RestEntity {
     // this.baseUrl = '../json/' + entityName + '.json';
 
     // Real backend/REST api
-    this.baseUrl = '/rest/' + entityName + '/';
+    this.baseUrl = '/rest/' + entityName;
   }
 
   httpRequest(type:string, idOrQuery:string, requestBody:any){

@@ -13,6 +13,7 @@ var rest_service_1 = require("../../services/rest.service");
 var mem_service_1 = require("../../services/mem.service");
 var EstateMasterComponent = (function () {
     function EstateMasterComponent(restService, memService) {
+        var _this = this;
         this.restService = restService;
         this.memService = memService;
         this.estates = [];
@@ -27,6 +28,11 @@ var EstateMasterComponent = (function () {
         this.saleTag = "Såld";
         this.tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd den', 'Mer Info'];
         this.localMem = memService.get(this);
+        this.global = memService.global();
+        this.global.estateMasterUpdate = function (data) {
+            // update my estate property to change what estates I show
+            _this.estates = data;
+        };
     }
     EstateMasterComponent.prototype.ngOnInit = function () {
         var _this = this;

@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { MemService } from '../../services/mem.service';
+
 
 @Component({
 	selector: 'filter',
 	templateUrl: './filter.html',
-	styleUrls: ['./filter.css']
+	styleUrls: ['./filter.css'],
+	providers: [MemService]
 })
 
 export class FilterComponent {
@@ -16,6 +19,10 @@ export class FilterComponent {
 	chosenRoom:string = 'Rum (min)';
 	roomOptions:number[] = [1,2,3,4,5,6];
 
+	constructor(private memService: MemService){
+		this.global = this.memService.global();
+	}
+
 	roomChoice(noOfRooms:number){
 		if(noOfRooms === 0){
 			this.chosenRoom = 'Rum (min)';
@@ -23,6 +30,7 @@ export class FilterComponent {
 		else {
 			this.chosenRoom = noOfRooms + ' rum';
 		}
+		this.filterUpdate();
 	}
 
 	// Boarea (min)
@@ -38,6 +46,7 @@ export class FilterComponent {
 		else {
 			this.chosenArea = noOfAreas + ' kvm';
 		}
+		this.filterUpdate();
 	}
 
 	//Pris (min)
@@ -54,6 +63,7 @@ export class FilterComponent {
 		else {
 			this.chosenPriceMin = noOfPricesMin + ' kr';
 		}
+		this.filterUpdate();
 	}
 
 	//Pris (max)
@@ -63,11 +73,23 @@ export class FilterComponent {
 
 	priceMaxChoice(noOfPricesMax:number){
 		if(noOfPricesMax === 0){
-			this.chosenPriceMax = 'Pris (min)';
+			this.chosenPriceMax = 'Pris (max)';
 		}
 
 		else {
 			this.chosenPriceMax = noOfPricesMax + ' kr';
 		}
+		this.filterUpdate();
+	}
+
+	filterUpdate(){
+		let filters = {
+			chosenRoom: this.chosenRoom,
+			chosenArea: this.chosenArea,
+			chosenPriceMin: this.chosenPriceMin,
+			chosenPriceMax: this.chosenPriceMax
+		}
+		// New search
+		this.global.updateSearchFilters(filters);
 	}
 }
