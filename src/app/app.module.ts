@@ -41,8 +41,8 @@ import { AppRoutingModule } from './app-routing.module';
 		AppRoutingModule,
 		BrowserModule,
 		HttpModule,
-		NgbModule.forRoot(),
-		FormsModule
+		FormsModule,
+		NgbModule.forRoot()
 	],
 	declarations: [
 		AppComponent,

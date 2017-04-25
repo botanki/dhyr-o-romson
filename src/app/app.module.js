@@ -47,8 +47,13 @@ AppModule = __decorate([
             app_routing_module_1.AppRoutingModule,
             platform_browser_1.BrowserModule,
             http_1.HttpModule,
+<<<<<<< HEAD
             ng_bootstrap_1.NgbModule.forRoot(),
             forms_1.FormsModule
+=======
+            forms_1.FormsModule,
+            ng_bootstrap_1.NgbModule.forRoot()
+>>>>>>> 7a680582f00a38067397dc9f91cf09a6aa57fd16
         ],
         declarations: [
             app_component_1.AppComponent,
