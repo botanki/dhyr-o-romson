@@ -45,7 +45,7 @@
                 <div class="card">
                     <div class="card-block">
                         <h3 class="estate-title">{{estate.title}}</h3>
-                        <div *ngIf="!estate.on_sale">
+                        <div *ngIf="estate.on_sale">
                             <button class="sold-button">{{sale | uppercase }}</button>
                         </div>
                         <p class="estate-body">{{estate.body}}</p>

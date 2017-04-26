@@ -11,7 +11,7 @@ import { MemService } from '../../services/mem.service';
 
 export class FilterComponent {
 
-	header = 'Filtera:';
+	header = 'Filtrera:';
 	localMem: any;
 	global: any;
 

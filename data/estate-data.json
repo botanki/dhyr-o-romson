@@ -38,7 +38,7 @@
     "year": 1987,
     "next_date": "2017-05-15T18:00:00",
     "date_added": "2017-02-15T16:00:00",
-    "on_sale": true
+    "on_sale": false
 }, {
     "id": 3,
     "area": "Malmö",
@@ -58,7 +58,7 @@
     "year": 2012,
     "next_date": "2017-06-05T15:00:00",
     "date_added": "2017-03-17T16:00:00",
-    "on_sale": true
+    "on_sale": false
 }, {
     "id": 4,
     "area": "Stockholm",
@@ -98,7 +98,7 @@
     "year": 1989,
     "next_date": "2017-05-22T17:00:00",
     "date_added": "2017-03-28T16:00:00",
-    "on_sale": true
+    "on_sale": false
 }, {
     "id": 6,
     "area": "Stockholm",
@@ -118,7 +118,7 @@
     "year": 2001,
     "next_date": "2017-05-15T17:30:00",
     "date_added": "2017-03-21T16:00:00",
-    "on_sale": false
+    "on_sale": true
 }, {
     "id": 7,
     "area": "Malmö",
@@ -138,7 +138,7 @@
     "year": 1987,
     "next_date": "2017-05-07T12:45:00",
     "date_added": "2017-04-12T16:00:00",
-    "on_sale": true
+    "on_sale": false
 }, {
     "id": 8,
     "area": "Malmö",
@@ -179,7 +179,7 @@
     "year": 1878,
     "next_date": "2017-05-22T18:00:00",
     "date_added": "2017-04-11T16:00:00",
-    "on_sale": true
+    "on_sale": false
 }, {
     "id": 10,
     "area": "Göteborg",
@@ -199,7 +199,7 @@
     "year": 1989,
     "next_date": "2017-05-02T18:00:00",
     "date_added": "2017-03-15T16:00:00",
-    "on_sale": true
+    "on_sale": false
 },{
     "id": 11,
     "area": "Stockholm",
@@ -219,7 +219,7 @@
     "year": 1958,
     "next_date": "2017-05-23T18:00:00",
     "date_added": "2017-03-13T16:00:00",
-    "on_sale": true
+    "on_sale": false
 },{
     "id": 12,
     "area": "Göteborg",
@@ -239,7 +239,7 @@
     "year": 2006,
     "next_date": "2017-05-21T18:00:00",
     "date_added": "2017-04-13T16:00:00",
-    "on_sale": true
+    "on_sale": false
 },{
     "id": 13,
     "area": "Malmö",
@@ -259,7 +259,7 @@
     "year": 2009,
     "next_date": "2017-05-22T18:00:00",
     "date_added": "2017-02-14T16:00:00",
-    "on_sale": true
+    "on_sale": false
 },{
     "id": 14,
     "area": "Stockholm",
@@ -279,7 +279,7 @@
     "year": 2008,
     "next_date": "2017-05-19T18:00:00",
     "date_added": "2017-02-15T16:00:00",
-    "on_sale": true
+    "on_sale": false
 },{
     "id": 15,
     "area": "Göteborg",
@@ -299,7 +299,7 @@
     "year": 1978,
     "next_date": "2017-05-20T18:00:00",
     "date_added": "2017-04-16T16:00:00",
-    "on_sale": true
+    "on_sale": false
 },{
     "id": 16,
     "area": "Stockholm",
@@ -319,7 +319,7 @@
     "year": 1973,
     "next_date": "2017-05-23T18:00:00",
     "date_added": "2017-02-17T16:00:00",
-    "on_sale": true
+    "on_sale": false
 },{
     "id": 17,
     "area": "Göteborg",
@@ -339,7 +339,7 @@
     "year": 1943,
     "next_date": "2017-05-21T18:00:00",
     "date_added": "2017-02-18T16:00:00",
-    "on_sale": true
+    "on_sale": false
 },{
     "id": 18,
     "area": "Malmö",
@@ -359,7 +359,7 @@
     "year": 1968,
     "next_date": "2017-05-16T18:00:00",
     "date_added": "2017-04-19T16:00:00",
-    "on_sale": true
+    "on_sale": false
 },{
     "id": 19,
     "area": "Stockholm",
@@ -379,7 +379,7 @@
     "year": 1898,
     "next_date": "2017-05-19T18:00:00",
     "date_added": "2017-02-20T16:00:00",
-    "on_sale": true
+    "on_sale": false
 },{
     "id": 20,
     "area": "Malmö",
@@ -399,5 +399,5 @@
     "year": 1998,
     "next_date": "2017-05-20T18:00:00",
     "date_added": "2017-02-11T16:00:00",
-    "on_sale": true
+    "on_sale": false
 }]

@@ -13,7 +13,7 @@ var mem_service_1 = require("../../services/mem.service");
 var FilterComponent = (function () {
     function FilterComponent(memService) {
         this.memService = memService;
-        this.header = 'Filtera:';
+        this.header = 'Filtrera:';
         // Rum (min)
         this.title1 = 'Rum (min)';
         this.def1 = 'rum';
