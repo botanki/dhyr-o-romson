@@ -299,7 +299,7 @@
     "year": 1978,
     "next_date": "2017-05-20T18:00:00",
     "date_added": "2017-04-16T16:00:00",
-    "on_sale": false
+    "on_sale": true
 },{
     "id": 16,
     "area": "Stockholm",

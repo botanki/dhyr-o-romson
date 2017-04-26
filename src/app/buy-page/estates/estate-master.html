@@ -35,7 +35,11 @@
                     <h3 class="card-title">{{estate.area }}</h3>
                     <p class="card-text">{{estate.rooms }} {{tags[0]}}</p>
                     <p class="card-text">{{estate.space}} {{tags[1]}}</p>
-                    <p class="card-text">{{tags[3]}} <strong>{{estate.date_added | swedate: '-' }}</strong></p>
+
+                    <p *ngIf="!estate.on_sale" class="card-text">{{tags[5]}} <strong>{{estate.date_added | dateCount }}</strong>{{tags[6]}}</p>
+
+                    <p *ngIf="estate.on_sale" class="card-text"><strong>{{tags[7]}}</strong></p>
+
                     <p class="card-text">{{tags[2]}} <span class="blued">{{estate.price | spacingCurrency }} kr</span></p>
                     <a [routerLink]="['/estate', estate.id]" class=" btn btn-primary buttons drop-shadow">{{tags[4]}}</a>
                 </div>

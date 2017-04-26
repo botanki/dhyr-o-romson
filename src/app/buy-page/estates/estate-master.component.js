@@ -26,7 +26,7 @@ var EstateMasterComponent = (function () {
             { text: 'Lägst Pris', sorting: 'price' }
         ];
         this.saleTag = "Såld";
-        this.tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd: ', 'Mer Info'];
+        this.tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd: ', 'Mer Info', 'Ute till försäljning i ', ' dagar', 'Ej längre till försäljning'];
         this.localMem = memService.get(this);
         this.global = memService.global();
         this.global.estateMasterUpdate = function (data) {
