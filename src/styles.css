@@ -21,6 +21,10 @@ input, textarea {
 
 }
 
+#dropdownMenu, .dropdown-item, .input[type=text] {
+	font-family: 'Roboto', sans-serif;
+}
+
 // OUR COLOR-SCHEME:
 
 /*
