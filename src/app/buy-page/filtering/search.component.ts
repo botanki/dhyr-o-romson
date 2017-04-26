@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 import { RestService } from '../../services/rest.service';
 import { MemService } from '../../services/mem.service';
@@ -10,8 +10,9 @@ import { MemService } from '../../services/mem.service';
 	providers: [ RestService, MemService ]
 })
 
-export class SearchComponent implements OnInit {
+export class SearchComponent {
     global: any;
+    localMem: any;
 	estate = [];
 
 	searchPhrase = '';
@@ -22,17 +23,15 @@ export class SearchComponent implements OnInit {
 		private restService: RestService,
 		private memService: MemService
 	){
-
+		this.localMem = memService.get(this);
 		this.global = this.memService.global();
 		this.global.updateSearchFilters = (filters)=>{
 			this.searchFilters = filters;
 			this.searchFromForm();
 		}
+		this.searchPhrase = this.localMem.searchPhrase || '';
 	}
 
-	ngOnInit(){
-
-	}
 
 	filtersToMongo(){
 		if(!this.searchFilters){
@@ -57,6 +56,7 @@ export class SearchComponent implements OnInit {
 	}
 
 	searchFromForm(){
+		this.localMem.searchPhrase = this.searchPhrase;
 		this.search(this.searchPhrase);
 	}
 

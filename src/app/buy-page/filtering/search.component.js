@@ -19,14 +19,14 @@ var SearchComponent = (function () {
         this.memService = memService;
         this.estate = [];
         this.searchPhrase = '';
+        this.localMem = memService.get(this);
         this.global = this.memService.global();
         this.global.updateSearchFilters = function (filters) {
             _this.searchFilters = filters;
             _this.searchFromForm();
         };
+        this.searchPhrase = this.localMem.searchPhrase || '';
     }
-    SearchComponent.prototype.ngOnInit = function () {
-    };
     SearchComponent.prototype.filtersToMongo = function () {
         if (!this.searchFilters) {
             this.searchFilters = {
@@ -49,6 +49,7 @@ var SearchComponent = (function () {
         });
     };
     SearchComponent.prototype.searchFromForm = function () {
+        this.localMem.searchPhrase = this.searchPhrase;
         this.search(this.searchPhrase);
     };
     SearchComponent.prototype.search = function (term) {

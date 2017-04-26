@@ -3,17 +3,19 @@
     <div class="col-12">
       {{header}}
     </div>
+
     <!-- Rum (min) -->
     <div class="col-6 col-sm-3 filter-space">
       <div ngbDropdown class="d-inline-block search-btn btn-space">
         <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenRoom}}</button>
         <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
           <button (click)="roomChoice(0)" class="dropdown-item">{{title1}}</button>
-          <button *ngFor="let room of roomOptions" (click)="roomChoice(room)" class="dropdown-item">{{room}} {{def1}}</button>
+          <button *ngFor="let room of roomOptions" (click)="roomChoice(room);saveFilterOption(room)" class="dropdown-item">{{room}} {{def1}}</button>
         </div>
       </div>
     </div>
-    <!-- Rum (min) -->
+
+    <!-- Boarea (min) -->
     <div class="col-6 col-sm-3 filter-space">
       <div ngbDropdown class="d-inline-block search-btn btn-space">
         <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenArea}}</button>
@@ -23,6 +25,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Pris (min) -->
     <div class="col-6 col-sm-3 filter-space">
       <div ngbDropdown class="d-inline-block search-btn btn-space">
         <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenPriceMin}}</button>
@@ -32,6 +36,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Pris (max) -->
     <div class="col-6 col-sm-3 filter-space">
       <div ngbDropdown class="d-inline-block search-btn btn-space">
         <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenPriceMax}}</button>

@@ -33,8 +33,21 @@ var FilterComponent = (function () {
         this.title4 = 'Pris (max)';
         this.chosenPriceMax = 'Pris (max)';
         this.priceMaxOptions = [500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000];
+        this.localMem = memService.get(this);
         this.global = this.memService.global();
+        this.setFiltersAndContentFromPreviousChoices();
+        /*this. = this.localMem.currentFilterOptionLabel || 'Rum (min)';
+        this.chosenRoom = this.localMem.currentFilterOption || 'Rum (min)';*/
     }
+    FilterComponent.prototype.setFiltersAndContentFromPreviousChoices = function () {
+        var f = this.localMem.filters;
+        //if(!f){ return; }
+        for (var key in f) {
+            this[key] = f[key];
+        }
+        // new search using correct filter settings
+        this.global.updateSearchFilters(f);
+    };
     FilterComponent.prototype.roomChoice = function (noOfRooms) {
         if (noOfRooms === 0) {
             this.chosenRoom = 'Rum (min)';
@@ -78,8 +91,14 @@ var FilterComponent = (function () {
             chosenPriceMin: this.chosenPriceMin,
             chosenPriceMax: this.chosenPriceMax
         };
+        // Store in localMem for retrieving after route change
+        this.localMem.filters = filters;
         // New search
         this.global.updateSearchFilters(filters);
+    };
+    FilterComponent.prototype.saveFilterOption = function (label, choice) {
+        this.localMem.currentFilterOptionLabel = label;
+        this.localMem.currentFilterOption = choice;
     };
     return FilterComponent;
 }());
