@@ -15,8 +15,8 @@ export class SearchComponent implements OnInit {
 	estate = [];
 
 	searchPhrase = '';
-	// searchFilters = {};
-    searchFilters: any;
+	searchFilters:any
+    //searchFilters: any;
 
 	constructor(
 		private restService: RestService,
@@ -35,6 +35,14 @@ export class SearchComponent implements OnInit {
 	}
 
 	filtersToMongo(){
+		if(!this.searchFilters){
+			this.searchFilters = {
+				chosenArea: 'x',
+				chosenRoom: 'x',
+				chosenPriceMin: 'x',
+				chosenPriceMax: 'x'
+			};
+		}
 		let s = this.searchFilters;
 		let query = [
 			isNaN(s.chosenArea.split(' ')[0]/1) ? undefined : {space: {$gte: s.chosenArea.split(' ')[0]/1}},

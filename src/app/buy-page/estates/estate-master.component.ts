@@ -5,13 +5,16 @@ import { MemService } from '../../services/mem.service';
 @Component({
 	selector: 'estate-master',
 	templateUrl: './estate-master.html',
-	styleUrls: ['./estate-master.css']
+	styleUrls: ['./estate-master.css'],
+	providers: [ RestService, MemService ]
 })
 
 export class EstateMasterComponent implements OnInit {
 
     estates = [];
     localMem: any;
+
+    global: any;
 
     sortHeader = 'Sortera Efter:';
     viewMode = '-date_added';
@@ -31,6 +34,12 @@ export class EstateMasterComponent implements OnInit {
       private memService: MemService
     ){
       this.localMem = memService.get(this);
+
+      this.global = memService.global();
+      this.global.estateMasterUpdate = (data) => {
+      	//update my estate property to change waht estates I show
+      	this.estates = data;
+      }
 
       // Set sort option when we "return" to this page
       this.dropdownTitle = this.localMem.currentSortOptionLabel || 'Senaste inlagt';

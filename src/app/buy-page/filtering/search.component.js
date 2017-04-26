@@ -12,6 +12,7 @@ var core_1 = require("@angular/core");
 var rest_service_1 = require("../../services/rest.service");
 var mem_service_1 = require("../../services/mem.service");
 var SearchComponent = (function () {
+    //searchFilters: any;
     function SearchComponent(restService, memService) {
         var _this = this;
         this.restService = restService;
@@ -27,6 +28,14 @@ var SearchComponent = (function () {
     SearchComponent.prototype.ngOnInit = function () {
     };
     SearchComponent.prototype.filtersToMongo = function () {
+        if (!this.searchFilters) {
+            this.searchFilters = {
+                chosenArea: 'x',
+                chosenRoom: 'x',
+                chosenPriceMin: 'x',
+                chosenPriceMax: 'x'
+            };
+        }
         var s = this.searchFilters;
         var query = [
             isNaN(s.chosenArea.split(' ')[0] / 1) ? undefined : { space: { $gte: s.chosenArea.split(' ')[0] / 1 } },

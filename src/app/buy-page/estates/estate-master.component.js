@@ -13,6 +13,7 @@ var rest_service_1 = require("../../services/rest.service");
 var mem_service_1 = require("../../services/mem.service");
 var EstateMasterComponent = (function () {
     function EstateMasterComponent(restService, memService) {
+        var _this = this;
         this.restService = restService;
         this.memService = memService;
         this.estates = [];
@@ -27,6 +28,11 @@ var EstateMasterComponent = (function () {
         this.saleTag = "Såld";
         this.tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd: ', 'Mer Info'];
         this.localMem = memService.get(this);
+        this.global = memService.global();
+        this.global.estateMasterUpdate = function (data) {
+            //update my estate property to change waht estates I show
+            _this.estates = data;
+        };
         // Set sort option when we "return" to this page
         this.dropdownTitle = this.localMem.currentSortOptionLabel || 'Senaste inlagt';
         this.viewMode = this.localMem.currentSortOption || '-date_added';
@@ -48,7 +54,8 @@ EstateMasterComponent = __decorate([
     core_1.Component({
         selector: 'estate-master',
         templateUrl: './estate-master.html',
-        styleUrls: ['./estate-master.css']
+        styleUrls: ['./estate-master.css'],
+        providers: [rest_service_1.RestService, mem_service_1.MemService]
     }),
     __metadata("design:paramtypes", [rest_service_1.RestService,
         mem_service_1.MemService])
