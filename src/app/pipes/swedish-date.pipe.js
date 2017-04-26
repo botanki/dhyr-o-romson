@@ -14,7 +14,7 @@ var SwedishDatePipe = (function () {
             return value;
         }
         if (value) {
-            var sweNames = ['Januari', 'Februari', 'Mars', 'April', 'Maj', 'Juni', 'Juli', 'Augusti', 'September', 'Oktober', 'November', 'December'];
+            var sweNames = ['januari', 'februari', 'mars', 'april', 'maj', 'juni', 'juli', 'augusti', 'september', 'oktober', 'november', 'december'];
             var year = value.slice(0, 4);
             var monthNumber = value.slice(5, 7);
             monthNumber = monthNumber.replace('0', '');
