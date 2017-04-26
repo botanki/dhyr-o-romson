@@ -9,7 +9,7 @@ export class SwedishDatePipe implements PipeTransform {
         if (!value) {  return value; }
 
         if (value) {
-            let sweNames = ['Januari', 'Februari', 'Mars', 'April', 'Maj', 'Juni', 'Juli', 'Augusti', 'September', 'Oktober', 'November', 'December'];
+            let sweNames = ['januari', 'februari', 'mars', 'april', 'maj', 'juni', 'juli', 'augusti', 'september', 'oktober', 'november', 'december'];
             let year = value.slice(0, 4);
             let monthNumber = value.slice(5, 7);
             monthNumber = monthNumber.replace('0', '');
