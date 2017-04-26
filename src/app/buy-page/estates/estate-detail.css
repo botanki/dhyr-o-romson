@@ -20,7 +20,7 @@
 }
 
 .breadcrumb-item {
-    color: #BDBDBD;
+    color: #202B30;
 }
 
 .breadcrumb-item.active {
@@ -30,7 +30,7 @@
 .broker-info {
     font-family: 'Roboto', sans-serif;
     line-height: 8px;
-    color: #BDBDBD;
+    color: #202B30;
 }
 
 
@@ -58,7 +58,7 @@
 .broker-body {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9em;
-    color: #BDBDBD;
+    color: ##202B30;
 }
 
 .broker-body > p {
@@ -107,7 +107,7 @@
 }
 
 .back-arrow {
-    color: #BDBDBD;
+    color: #202B30;
     cursor: pointer;
 }
 
