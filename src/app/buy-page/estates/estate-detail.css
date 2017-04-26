@@ -150,7 +150,7 @@ a:not([href]):not([tabindex]) {
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
-    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
    
