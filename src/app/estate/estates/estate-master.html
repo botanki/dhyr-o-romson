@@ -34,7 +34,7 @@
                     <h3 class="card-title">{{estate.address }}</h3>
                     <h3 class="card-title">{{estate.area }}</h3>
                     <p class="card-text">{{estate.rooms }} {{tags[0]}}</p>
-                    <p class="card-text">{{estate.space}} {{tags[1]}}</p>
+                    <p class="card-text">{{estate.space}} m<sup>2</sup></p>
 
                     <p *ngIf="!estate.on_sale" class="card-text">{{tags[5]}} <strong>{{estate.date_added | dateCount }}</strong>{{tags[6]}}</p>
 
