@@ -5,13 +5,16 @@ import { MemService } from '../../services/mem.service';
 @Component({
 	selector: 'estate-master',
 	templateUrl: './estate-master.html',
-	styleUrls: ['./estate-master.css']
+	styleUrls: ['./estate-master.css'],
+	providers: [ RestService, MemService ]
 })
 
 export class EstateMasterComponent implements OnInit {
-    global: any;
+
     estates = [];
     localMem: any;
+
+    global: any;
 
     sortHeader = 'Sortera Efter:';
     viewMode = '-date_added';
@@ -23,7 +26,7 @@ export class EstateMasterComponent implements OnInit {
     ];
 
     saleTag = "Såld";
-    tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd den', 'Mer Info']
+    tags = ['rum och kök', 'kvm', 'Budstart:', 'Inlagd: ', 'Mer Info']
 
 
     constructor(
@@ -31,11 +34,16 @@ export class EstateMasterComponent implements OnInit {
       private memService: MemService
     ){
       this.localMem = memService.get(this);
+
       this.global = memService.global();
-      this.global.estateMasterUpdate = (data)=>{
-      	// update my estate property to change what estates I show
+      this.global.estateMasterUpdate = (data) => {
+      	//update my estate property to change waht estates I show
       	this.estates = data;
       }
+
+      // Set sort option when we "return" to this page
+      this.dropdownTitle = this.localMem.currentSortOptionLabel || 'Senaste inlagt';
+      this.viewMode = this.localMem.currentSortOption || '-date_added';
     }
 
     ngOnInit(){
@@ -44,6 +52,11 @@ export class EstateMasterComponent implements OnInit {
         this.estates = data;
       });
 
+    }
+
+    saveSortOption(label,choice){
+      this.localMem.currentSortOptionLabel = label;
+      this.localMem.currentSortOption = choice;
     }
 
 }

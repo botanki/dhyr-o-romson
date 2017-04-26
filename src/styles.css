@@ -1,11 +1,12 @@
-// FONTS:
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
-
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	background: #FFF;
 	overflow-x: hidden;
+}
+
+input, textarea {
+	font-family: 'Roboto', sans-serif !important;
 }
 
 
@@ -18,6 +19,10 @@ body {
     opacity: 0.8;
 
 
+}
+
+#dropdownMenu, .dropdown-item, .input[type=text] {
+	font-family: 'Roboto', sans-serif;
 }
 
 // OUR COLOR-SCHEME:

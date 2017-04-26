@@ -28,7 +28,7 @@
         <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenPriceMin}}</button>
         <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
           <button (click)="priceMinChoice(0)" class="dropdown-item">{{title3}}</button>
-          <button *ngFor="let priceMin of priceMinOptions" (click)="priceMinChoice(priceMin)" class="dropdown-item">{{priceMin | number}} {{def3}}</button>
+          <button *ngFor="let priceMin of priceMinOptions" (click)="priceMinChoice(priceMin)" class="dropdown-item">{{priceMin | spacingCurrency}} {{def3}}</button>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
         <button class="btn btn-outline-primary search-btn search-btn2" id="dropdownMenu" ngbDropdownToggle>{{chosenPriceMax}}</button>
         <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
           <button (click)="priceMaxChoice(0)" class="dropdown-item">{{title4}}</button>
-          <button *ngFor="let priceMax of priceMaxOptions" (click)="priceMaxChoice(priceMax)" class="dropdown-item">{{priceMax | number}} {{def3}}</button>
+          <button *ngFor="let priceMax of priceMaxOptions" (click)="priceMaxChoice(priceMax)" class="dropdown-item">{{priceMax | spacingCurrency}} {{def3}}</button>
         </div>
       </div>
     </div>

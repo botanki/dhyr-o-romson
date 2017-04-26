@@ -1,8 +1,7 @@
-// @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+/*@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');*/
 
 h2 {
 	color: #F5F5F5;
-	padding-left: 17px;
 }
 
 p {
@@ -30,6 +29,13 @@ p {
 
 }
 
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-family: 'EB Garamond', serif;
+    color: #fafafa;
+}
+
 button {
 	border-radius: 0;
 	margin-right: 6px;
@@ -44,6 +50,14 @@ button {
 input {
 	width: 100%;
 }
+
+.form-control > input:text {
+    border-radius: 0;
+    font-family: 'roboto', sans-serif;
+    background: #4FA9B8;
+    color: #fafafa;
+}
+
 
 .shut-down {
 	position: absolute;

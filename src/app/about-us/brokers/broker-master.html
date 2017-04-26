@@ -1,23 +1,25 @@
 <div class="col-xs-12 col-lg-6 float-left" *ngFor="let broker of brokers;">
-	<div class="row">
+    <div class="row">
         <div class="col-12">
-        	<img class="broker-img" src="images/brokers/{{broker.img}}">
+            <img class="broker-img" src="images/brokers/{{broker.img}}">
         </div>
-        <div class="col-12">
-        	<span>{{tags[0]}}</span>
-        </div>
-        <div class="col-12">
-        	<span>{{broker.name}}</span>
-        </div>
-        <div class="col-12">
-        	<span>{{tags[1]}}{{broker.phone | phoneFormat}}</span>
-        </div>
-        <div class="col-12">
-        	<span class="smaller">{{tags[2]}} {{broker.email}}</span>
+        <div class="broker-content">
+            <div class="col-12">
+                <span><strong>{{tags[0]}}</strong></span>
+            </div>
+            <div class="col-12">
+                <span>{{broker.name}}</span>
+            </div>
+            <div class="col-12">
+                <span>{{tags[1]}}{{broker.phone | phoneFormat}}</span>
+            </div>
+            <div class="col-12">
+                <span class="smaller">{{tags[2]}} {{broker.email}}</span>
+            </div>
         </div>
         <div class="col-12">
             <div class="shaper">
-        	   <p class="about-broker">"{{broker.about}}"</p>
+                <p class="about-broker">"{{broker.about}}"</p>
             </div>
         </div>
         <br/>

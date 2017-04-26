@@ -16,6 +16,7 @@ export class EstateDetailComponent  {
     estate = [];
     location: Location;
     globalMem: any;
+
     breadcrumbs = ['Hem', 'Köp Bostad']
     tags = [
       'Rum:',

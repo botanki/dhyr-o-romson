@@ -7,7 +7,7 @@
             <div ngbDropdown class="d-inline-block">
                 <button class="btn btn-outline-secondary search-btn2" id="dropdownMenu" ngbDropdownToggle>{{dropdownTitle}}</button>
                 <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu">
-                    <button *ngFor="let option of options" class="dropdown-item" (click)="viewMode = option.sorting" (click)="dropdownTitle = option.text">{{option.text}}</button>
+                    <button *ngFor="let option of options" class="dropdown-item" (click)="viewMode = option.sorting" (click)="dropdownTitle = option.text;saveSortOption(option.text,option.sorting)">{{option.text}}</button>
                 </div>
             </div>
             <div class="breaker-top"></div>
@@ -31,12 +31,12 @@
         <div class="col-xs-12 col-sm-12  col-md-5">
             <div class="card wide-card">
                 <div class="card-block">
-                    <p class="card-text date-posted"><span>{{tags[3]}} {{estate.date_added | swedate: '-' }}</span></p>
                     <h3 class="card-title">{{estate.address }}</h3>
                     <h3 class="card-title">{{estate.area }}</h3>
                     <p class="card-text">{{estate.rooms }} {{tags[0]}}</p>
                     <p class="card-text">{{estate.space}} {{tags[1]}}</p>
-                    <p class="card-text">{{tags[2]}} <span>{{estate.price | spacingCurrency }} kr</span></p>
+                    <p class="card-text">{{tags[3]}} <strong>{{estate.date_added | swedate: '-' }}</strong></p>
+                    <p class="card-text">{{tags[2]}} <span class="blued">{{estate.price | spacingCurrency }} kr</span></p>
                     <a [routerLink]="['/estate', estate.id]" class=" btn btn-primary buttons drop-shadow">{{tags[4]}}</a>
                 </div>
             </div>
