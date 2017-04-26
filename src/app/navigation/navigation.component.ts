@@ -10,11 +10,10 @@ import { MemService } from '../services/mem.service';
 
 export class NavigationComponent {
     isNavbarCollapsed = true;
-    isActive = false;
     globalMem: any;
 
     sections = [
-        { text: 'Köp Bostad', route: 'buy-page' },
+        { text: 'Köp Bostad', route: 'estate/', },
         { text: 'Sälj Bostad', route: 'guide/1' },
         { text: 'Om Oss', route: 'about-us' }
     ];

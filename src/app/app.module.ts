@@ -11,11 +11,11 @@ import { SellPageComponent } from './sell-page/sell-page.component';
 import { GuideDetailComponent } from './sell-page/sell-guide/guide-detail.component';
 import { GuideMasterComponent } from './sell-page/sell-guide/guide-master.component';
 import { GuidePagerComponent } from './sell-page/sell-guide/guide-pager.component';
-import { BuyPageComponent } from './buy-page/buy-page.component';
-import { SearchComponent } from './buy-page/filtering/search.component';
-import { FilterComponent } from './buy-page/filtering/filter.component';
-import { EstateMasterComponent } from './buy-page/estates/estate-master.component';
-import { EstateDetailComponent } from './buy-page/estates/estate-detail.component';
+import { EstateComponent } from './estate/estate.component';
+import { SearchComponent } from './estate/filtering/search.component';
+import { FilterComponent } from './estate/filtering/filter.component';
+import { EstateMasterComponent } from './estate/estates/estate-master.component';
+import { EstateDetailComponent } from './estate/estates/estate-detail.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FooterComponent }  from './footer/footer.component';
 import { PageNotFoundComponent } from './pagenotfound.component';
@@ -52,9 +52,9 @@ import { AppRoutingModule } from './app-routing.module';
 		GuideDetailComponent,
 		GuideMasterComponent,
         GuidePagerComponent,
-		BuyPageComponent,
-		SearchComponent,
-		FilterComponent,
+		EstateComponent,
+        SearchComponent,
+        FilterComponent,
 		EstateMasterComponent,
 		EstateDetailComponent,
 		AboutUsComponent,

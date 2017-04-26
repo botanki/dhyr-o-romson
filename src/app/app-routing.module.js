@@ -9,11 +9,10 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var front_page_component_1 = require("./front-page/front-page.component");
 var sell_page_component_1 = require("./sell-page/sell-page.component");
-var buy_page_component_1 = require("./buy-page/buy-page.component");
+var estate_component_1 = require("./estate/estate.component");
 var guide_detail_component_1 = require("./sell-page/sell-guide/guide-detail.component");
-var guide_master_component_1 = require("./sell-page/sell-guide/guide-master.component");
-var estate_master_component_1 = require("./buy-page/estates/estate-master.component");
-var estate_detail_component_1 = require("./buy-page/estates/estate-detail.component");
+;
+var estate_detail_component_1 = require("./estate/estates/estate-detail.component");
 var about_us_component_1 = require("./about-us/about-us.component");
 var pagenotfound_component_1 = require("./pagenotfound.component");
 var routes = [
@@ -27,7 +26,7 @@ var routes = [
         component: front_page_component_1.FrontPageComponent
     },
     {
-        path: 'sell-page',
+        path: 'guide',
         component: sell_page_component_1.SellPageComponent
     },
     {
@@ -35,20 +34,12 @@ var routes = [
         component: guide_detail_component_1.GuideDetailComponent
     },
     {
-        path: 'sell-page',
-        component: guide_master_component_1.GuideMasterComponent
-    },
-    {
-        path: 'buy-page',
-        component: buy_page_component_1.BuyPageComponent
+        path: 'estate',
+        component: estate_component_1.EstateComponent
     },
     {
         path: 'estate/:id',
         component: estate_detail_component_1.EstateDetailComponent
-    },
-    {
-        path: 'buy-page',
-        component: estate_master_component_1.EstateMasterComponent
     },
     {
         path: 'about-us',

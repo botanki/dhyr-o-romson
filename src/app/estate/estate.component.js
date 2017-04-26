@@ -6,16 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var BuyPageComponent = (function () {
-    function BuyPageComponent() {
+var EstateComponent = (function () {
+    function EstateComponent() {
     }
-    return BuyPageComponent;
+    return EstateComponent;
 }());
-BuyPageComponent = __decorate([
+EstateComponent = __decorate([
     core_1.Component({
-        selector: 'buy-page',
-        templateUrl: './buy-page.html'
+        selector: 'estate',
+        templateUrl: './estate.html'
     })
-], BuyPageComponent);
-exports.BuyPageComponent = BuyPageComponent;
-//# sourceMappingURL=buy-page.component.js.map
+], EstateComponent);
+exports.EstateComponent = EstateComponent;
+//# sourceMappingURL=estate.component.js.map

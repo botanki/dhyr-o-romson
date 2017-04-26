@@ -5,12 +5,10 @@
  </button>
  <img class="navbar-brand logo-big" (click)="closeNav()" routerLink="/front-page" src="../images/big_logo.png">
 
-
  <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="exCollapsingNavbar2">
     <div class="navbar-nav mr-auto links-content">
         
         <a *ngFor="let section of sections" class="nav-item nav-link" (click)="closeNav()" routerLink="/{{section.route}}" routerLinkActive="active">{{section.text}}</a>
-
       </div>
 
     <div class="form-inline icon-content justify-content-center my-2 my-lg-0">

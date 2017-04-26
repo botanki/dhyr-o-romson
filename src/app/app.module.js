@@ -17,11 +17,11 @@ var sell_page_component_1 = require("./sell-page/sell-page.component");
 var guide_detail_component_1 = require("./sell-page/sell-guide/guide-detail.component");
 var guide_master_component_1 = require("./sell-page/sell-guide/guide-master.component");
 var guide_pager_component_1 = require("./sell-page/sell-guide/guide-pager.component");
-var buy_page_component_1 = require("./buy-page/buy-page.component");
-var search_component_1 = require("./buy-page/filtering/search.component");
-var filter_component_1 = require("./buy-page/filtering/filter.component");
-var estate_master_component_1 = require("./buy-page/estates/estate-master.component");
-var estate_detail_component_1 = require("./buy-page/estates/estate-detail.component");
+var estate_component_1 = require("./estate/estate.component");
+var search_component_1 = require("./estate/filtering/search.component");
+var filter_component_1 = require("./estate/filtering/filter.component");
+var estate_master_component_1 = require("./estate/estates/estate-master.component");
+var estate_detail_component_1 = require("./estate/estates/estate-detail.component");
 var about_us_component_1 = require("./about-us/about-us.component");
 var footer_component_1 = require("./footer/footer.component");
 var pagenotfound_component_1 = require("./pagenotfound.component");
@@ -59,7 +59,7 @@ AppModule = __decorate([
             guide_detail_component_1.GuideDetailComponent,
             guide_master_component_1.GuideMasterComponent,
             guide_pager_component_1.GuidePagerComponent,
-            buy_page_component_1.BuyPageComponent,
+            estate_component_1.EstateComponent,
             search_component_1.SearchComponent,
             filter_component_1.FilterComponent,
             estate_master_component_1.EstateMasterComponent,

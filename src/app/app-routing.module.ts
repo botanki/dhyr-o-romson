@@ -3,11 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { FrontPageComponent }  from './front-page/front-page.component';
 import { SellPageComponent } from './sell-page/sell-page.component';
-import { BuyPageComponent } from './buy-page/buy-page.component';
-import { GuideDetailComponent } from './sell-page/sell-guide/guide-detail.component';
-import { GuideMasterComponent } from './sell-page/sell-guide/guide-master.component';
-import { EstateMasterComponent } from './buy-page/estates/estate-master.component';
-import { EstateDetailComponent } from './buy-page/estates/estate-detail.component';
+import { EstateComponent } from './estate/estate.component';
+import { GuideDetailComponent } from './sell-page/sell-guide/guide-detail.component';;
+import { EstateDetailComponent } from './estate/estates/estate-detail.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { PageNotFoundComponent } from './pagenotfound.component';
 
@@ -22,7 +20,7 @@ const routes: Routes = [
 		component: FrontPageComponent
 	},
 	{
-		path: 'sell-page',
+		path: 'guide',
 		component: SellPageComponent
 	},
 	{
@@ -30,20 +28,12 @@ const routes: Routes = [
 		component: GuideDetailComponent
 	},
 	{
-		path: 'sell-page',
-		component:  GuideMasterComponent
-	},
-	{
-		path: 'buy-page',
-		component: BuyPageComponent
+		path: 'estate',
+		component: EstateComponent
 	},
 	{
         path: 'estate/:id',
         component: EstateDetailComponent
-	},
-	{
-        path: 'buy-page',
-        component: EstateMasterComponent
 	},
 	{
 		path: 'about-us',

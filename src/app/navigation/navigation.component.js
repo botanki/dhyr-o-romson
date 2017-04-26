@@ -14,9 +14,8 @@ var NavigationComponent = (function () {
     function NavigationComponent(memService) {
         this.memService = memService;
         this.isNavbarCollapsed = true;
-        this.isActive = false;
         this.sections = [
-            { text: 'Köp Bostad', route: 'buy-page' },
+            { text: 'Köp Bostad', route: 'estate/', },
             { text: 'Sälj Bostad', route: 'guide/1' },
             { text: 'Om Oss', route: 'about-us' }
         ];
