@@ -57,3 +57,36 @@ h1 {
 h2, h3 {
 	font-weight: lighter;
 }
+
+/* Sticky footer CSS */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height
+     or slightly more for more space before footer
+  */
+  margin-bottom: 120px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+}
+
+/*
+  Other footer height for Boostrap xs, sm
+  (for breakpoint see: http://getbootstrap.com/css/)
+*/
+@media screen and (max-width: 659px) {
+
+    .footer {
+      height: 180px;
+    }
+}

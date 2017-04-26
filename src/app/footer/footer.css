@@ -5,7 +5,7 @@ img:focus, i:focus, button:focus, li:focus { outline: none; border: 0; }
 	color: #F5F5F5;
 	background: #202B30;
 	border-top: 2px solid #F17E19;
-	top: 0px;
+	// top: 0px;
 	bottom: 0;
 	padding-top: 20px;
 
@@ -40,4 +40,31 @@ img:focus, i:focus, button:focus, li:focus { outline: none; border: 0; }
 
 .footer-icons:first-of-type {
 	margin-left: 10px;
+}
+
+@media screen and (max-width: 969px) {
+
+    .footer {
+    	color: #F5F5F5;
+    	background: #202B30;
+    	border-top: 2px solid #F17E19;
+    }
+
+    .footer-logo { 
+    	width: 120px;
+    	padding-bottom: 6px;
+    }
+
+    .footer-address {
+    	display: block;
+        font-size: 14px;
+        color: #F5F5F5;
+        padding: 0;
+        padding-left: 18px;
+        line-height: 16px;
+    }
+
+    .footer-icons {
+        font-size: 18px;
+    }	
 }
