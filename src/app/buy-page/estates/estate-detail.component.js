@@ -38,6 +38,7 @@ var EstateDetailComponent = (function () {
         ];
         this.sale = "Såld";
         this.location = location;
+        window.scrollTo(0, 0);
         this.globalMem = this.memService.global();
     }
     EstateDetailComponent.prototype.ngOnInit = function () {

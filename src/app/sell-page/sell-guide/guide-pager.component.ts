@@ -25,6 +25,7 @@ export class GuidePagerComponent implements OnInit {
 
     getPager(){
       let currentUrl = window.location.href;
+      window.scrollTo(0, 0);
       return currentUrl[currentUrl.length - 1];
     }
 

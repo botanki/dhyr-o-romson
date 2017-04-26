@@ -26,6 +26,7 @@ var GuidePagerComponent = (function () {
     };
     GuidePagerComponent.prototype.getPager = function () {
         var currentUrl = window.location.href;
+        window.scrollTo(0, 0);
         return currentUrl[currentUrl.length - 1];
     };
     return GuidePagerComponent;

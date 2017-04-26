@@ -43,6 +43,7 @@ export class EstateDetailComponent  {
       location: Location
 
     ){ this.location = location;
+      window.scrollTo(0, 0);
      this.globalMem = this.memService.global();
    }
 
