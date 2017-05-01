@@ -1,3 +1,13 @@
+/* CUSTOM COLOR-SCHEME:
+--------------------------------
+darker-white: #F5F5F5
+light-grey: #EFE9E5
+grey: #BDBDBD
+black: #202B30
+blue: #4FA9B8
+orange: #F17E19
+*/
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
@@ -5,58 +15,26 @@ body {
 	overflow-x: hidden;
 }
 
-input, textarea {
-	font-family: 'Roboto', sans-serif !important;
-}
+input, textarea { font-family: 'Roboto', sans-serif !important; }
 
+.headlines { font-family: 'EB Garamond', serif; }
 
+.modal-backdrop.show { opacity: 0.8; }
 
-.headlines {
-	font-family: 'EB Garamond', serif;
-}
+#dropdownMenu, .dropdown-item, .input[type=text] { font-family: 'Roboto', sans-serif; }
 
-.modal-backdrop.show {
-    opacity: 0.8;
+// Button Shadow w/hover.
 
+.drop-shadow { box-shadow: 0 2px 4px rgba(0,0,0,0.25), 0 1px 5px rgba(0,0,0,0.22); }
 
-}
-
-#dropdownMenu, .dropdown-item, .input[type=text] {
-	font-family: 'Roboto', sans-serif;
-}
-
-// OUR COLOR-SCHEME:
-
-/*
-
-darker-white: #F5F5F5
-light-grey: #EFE9E5
-grey: #BDBDBD
-black: #202B30
-blue: #4FA9B8
-orange: #F17E19
-
-*/
-
-// // Nice Shadow w/hover for the buttons and broker profile pics
-
-.drop-shadow {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.25), 0 1px 5px rgba(0,0,0,0.22);
-}
-
-.drop-shadow:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
+.drop-shadow:hover { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
 
 
 /* Master Styles */
-h1 {
-	font-size: 250%;
-}
 
-h2, h3 {
-	font-weight: lighter;
-}
+h1 { font-size: 250%;}
+
+h2, h3 { font-weight: lighter;}
 
 /* Sticky footer CSS */
 
@@ -65,27 +43,16 @@ html {
   min-height: 100%;
 }
 
-body {
-  /* Margin bottom by footer height
-     or slightly more for more space before footer
-  */
-  margin-bottom: 120px;
-}
+body {  margin-bottom: 120px; }
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 100px;
 }
 
-/*
-  Other footer height for Boostrap xs, sm
-  (for breakpoint see: http://getbootstrap.com/css/)
-*/
 @media screen and (max-width: 659px) {
-
     .footer {
       height: 180px;
     }
